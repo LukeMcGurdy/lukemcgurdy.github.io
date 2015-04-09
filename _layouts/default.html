@@ -1,51 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<!--[if lte IE 7]> <html class="ie7"> <![endif]-->  
+<!--[if IE 8]>     <html class="ie8"> <![endif]-->  
+<!--[if IE 9]>     <html class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html><!--<![endif]-->
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+        
+    	{% include meta.html %}
 
-    {% include meta.html %}
+		<!--[if lt IE 9]>
+		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/animate.css" />
+    	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    	<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.cycle2.min.js"></script>
+		<script src="js/functions.js"></script>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
+	</head>
+	<body class="homepage">
+		<main>
+			<section class="home-slider">
+				<figure class="slide slide-one">
+					<figcaption>
+						<p class="text-colour-one">Welcome to my website!</p>
+						<p class="text-colour-three">It's a little plain. But then again it's a work in progress.</p> 
+						<p class="text-colour-four">- - - End Transmission - - -</p>
+					</figcaption>
+				</figure>
+			</section>
+			<section class="content">
+				<div class="center">
+					{{ content }}
+				</div>
+			</section>
+		</main>
+		<footer>
+			
+		</footer>
+		{% include analytics.html %}
+	</body>
 </html>
+
