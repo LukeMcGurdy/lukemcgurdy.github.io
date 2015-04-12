@@ -1,6 +1,12 @@
 ---
 layout: post
-title: test
+title: Development Woes: A short tail of how to run Jekyll in Windows 7.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+After a lot of teething problems with tech I don't understand - namely Ruby and something called Hitimes - I was finally able to get Sass, Compass and Jekyll running together locally on Windows 7. Apparently Ruby had very recently updated to version 2.2 and Hitimes (whatever that is) had not released a corresponding fat-binary gem update (again, whatever that is). It was this what was causing me trouble.
+
+The fix was to run the following command from within Git Bash: `gem install hitimes -v 1.2.1 --platform ruby`. My assumption is that something equivalent to this command would have been automatically run during my initial setup of Ruby etc: `gem install hitimes -v 1.2.2 --platform ruby`). I'm also assuming that at some point down the line I should replace hitime -v 1.2.1 with the latest version. It's probably quite apparent that I'm completely out of my depth here. Nevertheless, I'm happy that I had the knowledge and skill to do a Google search and then copy and paste the solution from <a href="http://stackoverflow.com/questions/28985481/hitimes-require-error-when-running-jekyll-serve-on-windows-8-1/">this</a> post.
+
+For those who are interested in getting Jekyll up and running then I would recommend <a href="http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/" target="_blank">this</a> post as essential reading.
+
+Ok, that's it for now.
