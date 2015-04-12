@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Development Woes: A short tail of how to run Jekyll in Windows 7.
+title: Development Woes: A short tail of how to run Jekyll in Windows 7
+published: true
 ---
 
 After a lot of teething problems with tech I don't understand - namely Ruby and something called Hitimes - I was finally able to get Sass, Compass and Jekyll running together locally on Windows 7. Apparently Ruby had very recently updated to version 2.2 and Hitimes (whatever that is) had not released a corresponding fat-binary gem update (again, whatever that is). It was this what was causing me trouble.

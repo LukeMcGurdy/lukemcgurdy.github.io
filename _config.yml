@@ -21,11 +21,7 @@ footer-links:
   email:
   facebook:
   flickr:
-<<<<<<< HEAD
-  github: lukemcgurdy/jekyll-now
-=======
   github: 
->>>>>>> 808a2e1cf8dee09ee7e97d5275013f5cb69ac33b
   instagram:
   linkedin:
   pinterest:
@@ -49,7 +45,7 @@ url: http://lukemcgurdy.github.io
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "lukemcgurdy.github.io"
+baseurl: "/lukemcgurdy.github.io"
 
 #
 # !! You don't need to change any of the configuration flags below !!
