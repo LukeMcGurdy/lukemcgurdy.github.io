@@ -461,7 +461,21 @@ th {
 	Font Elements
 ======================
 */
-/* line 50, ../sass/ui_kit/_kit.scss */
+/* line 48, ../sass/ui_kit/_kit.scss */
+code {
+  clear: both;
+  background: #969ea2;
+  color: #fff;
+  padding: 0 10px;
+  margin: 0px 5px 0 0;
+}
+
+/*
+======================
+	Font Elements
+======================
+*/
+/* line 63, ../sass/ui_kit/_kit.scss */
 h1 {
   font: 700 30px 'Roboto', sans-serif;
   color: #fff;
@@ -473,32 +487,32 @@ h1 {
   -o-transition: background 0.2s ease;
   transition: background 0.2s ease;
 }
-/* line 61, ../sass/ui_kit/_kit.scss */
+/* line 74, ../sass/ui_kit/_kit.scss */
 h1:hover {
-  background-color: #FFC202;
+  background-color: #4c90c1;
 }
-/* line 65, ../sass/ui_kit/_kit.scss */
+/* line 78, ../sass/ui_kit/_kit.scss */
 h1 a {
   font: 700 30px 'Roboto', sans-serif;
   color: #fff;
   text-transform: capitalize;
 }
-/* line 70, ../sass/ui_kit/_kit.scss */
+/* line 83, ../sass/ui_kit/_kit.scss */
 h1 a:hover {
   text-decoration: none;
 }
 
-/* line 76, ../sass/ui_kit/_kit.scss */
+/* line 89, ../sass/ui_kit/_kit.scss */
 a {
   color: #02999a;
   text-decoration: none;
 }
-/* line 79, ../sass/ui_kit/_kit.scss */
+/* line 92, ../sass/ui_kit/_kit.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 84, ../sass/ui_kit/_kit.scss */
+/* line 97, ../sass/ui_kit/_kit.scss */
 p {
   font: 400 22px/35px 'Roboto', sans-serif;
   color: #969ea2;
@@ -510,34 +524,35 @@ p {
 	Slider Text
 ======================
 */
-/* line 94, ../sass/ui_kit/_kit.scss */
+/* line 107, ../sass/ui_kit/_kit.scss */
 .slide p {
   color: #fff;
   padding: 5px 15px;
 }
 
-/* line 98, ../sass/ui_kit/_kit.scss */
+/* line 111, ../sass/ui_kit/_kit.scss */
 .slide p:nth-child(1) {
   background-color: #cc6666;
 }
 
-/* line 102, ../sass/ui_kit/_kit.scss */
+/* line 115, ../sass/ui_kit/_kit.scss */
 .slide p:nth-child(2) {
-  background-color: #4c90c1;
-}
-
-/* line 106, ../sass/ui_kit/_kit.scss */
-.slide p:nth-child(3) {
   background-color: #FFC202;
 }
 
-/* line 110, ../sass/ui_kit/_kit.scss */
+/* line 119, ../sass/ui_kit/_kit.scss */
+.slide p:nth-child(3),
+.slide p:nth-child(4) {
+  background-color: #4c90c1;
+}
+
+/* line 124, ../sass/ui_kit/_kit.scss */
 .slide p:last-of-type {
   background-color: #59853D;
   text-align: center;
 }
 
-/* line 115, ../sass/ui_kit/_kit.scss */
+/* line 129, ../sass/ui_kit/_kit.scss */
 strong {
   font-weight: 700;
 }
@@ -547,10 +562,10 @@ strong {
 	Posts
 ======================
 */
-/* line 124, ../sass/ui_kit/_kit.scss */
+/* line 138, ../sass/ui_kit/_kit.scss */
 .read-more {
   margin: 30px 0 0 -80px;
-  background: #4c90c1;
+  background: #FFC202;
   padding: 10px 20px;
   color: #fff;
   display: inline-block;
@@ -558,9 +573,9 @@ strong {
   -o-transition: background 0.2s ease;
   transition: background 0.2s ease;
 }
-/* line 133, ../sass/ui_kit/_kit.scss */
+/* line 147, ../sass/ui_kit/_kit.scss */
 .read-more:hover {
-  background: #FFC202;
+  background: #4c90c1;
   text-decoration: none;
 }
 
@@ -652,4 +667,10 @@ main:hover #home-pager span.cycle-pager-active {
 .center {
   margin: 0 auto;
   width: 960px;
+}
+
+/* line 1, ../sass/base/_footer.scss */
+footer {
+  background: #4C90C1;
+  margin: 50px 0 0;
 }

@@ -24,8 +24,8 @@ $grey: #969ea2;
 */
 
 $text-bg-one:#cc6666;
-$text-bg-two:#4c90c1;
-$text-bg-three:#FFC202;
+$text-bg-two:#FFC202;
+$text-bg-three:#4c90c1;
 $text-bg-four:#59853D;
 /*
 ======================
@@ -39,6 +39,19 @@ $light: 300;
 $regular: 400;
 $semibold: 600;
 $bold: 700;
+
+/*
+======================
+	Font Elements
+======================
+*/
+code{
+	clear:both;
+	background: $grey;
+	color:#fff;
+	padding: 0 10px;
+	margin: 0px 5px 0 0;
+}
 
 
 /*
@@ -103,7 +116,8 @@ p {
 	background-color: $text-bg-two;
 }
 
-.slide p:nth-child(3) {
+.slide p:nth-child(3),
+.slide p:nth-child(4) {
 	background-color: $text-bg-three;
 }
 

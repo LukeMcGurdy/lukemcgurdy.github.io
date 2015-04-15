@@ -15,13 +15,13 @@ $(document).ready(function() {
 //		pager: '#home-pager',
 //		pagerTemplate: '<span></span>'	
 //	});	
+//
+//	$('.home-slider .slide figcaption').addClass('animated fadeInRight');
 
-	//$('.slide figcaption').addClass('animated fadeInRight');
-
-	$('.last').hide();
+	$('.text-colour-four').hide();
     setTimeout(function() {
-	    $(this).fadeIn(1000);
-    },20000);
+	    $('.text-colour-four').fadeIn(1000);
+    },5000);
 	
 
 	/*$( '.home-slider' ).on( 'cycle-pager-activated', function(event, optionHash) {
