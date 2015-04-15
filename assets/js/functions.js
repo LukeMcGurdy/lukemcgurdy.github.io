@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 	//$('.slide figcaption').addClass('animated fadeInRight');
 
-	$('.slide p:last-of-type').hide();
+	$('.slide p.last').hide();
     setTimeout(function() {
 	    $(this).fadeIn(1000);
     },20000);
