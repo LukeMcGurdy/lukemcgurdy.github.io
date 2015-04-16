@@ -479,7 +479,7 @@ code {
 h1 {
   font: 700 30px 'Roboto', sans-serif;
   color: #fff;
-  margin: 0 0 20px -80px;
+  margin: 0 0 35px -80px;
   padding: 5px 15px;
   background: #cc6666;
   display: inline-block;
@@ -519,40 +519,47 @@ p {
   margin: 0 0 20px;
 }
 
+/* line 102, ../sass/ui_kit/_kit.scss */
+.date {
+  font: 400 16px 'Roboto', sans-serif;
+  color: #000;
+  margin: 50px 0 0;
+}
+
 /*
 ======================
 	Slider Text
 ======================
 */
-/* line 107, ../sass/ui_kit/_kit.scss */
+/* line 112, ../sass/ui_kit/_kit.scss */
 .slide p {
   color: #fff;
   padding: 5px 15px;
 }
 
-/* line 111, ../sass/ui_kit/_kit.scss */
+/* line 116, ../sass/ui_kit/_kit.scss */
 .slide p:nth-child(1) {
   background-color: #cc6666;
 }
 
-/* line 115, ../sass/ui_kit/_kit.scss */
+/* line 120, ../sass/ui_kit/_kit.scss */
 .slide p:nth-child(2) {
   background-color: #FFC202;
 }
 
-/* line 119, ../sass/ui_kit/_kit.scss */
+/* line 124, ../sass/ui_kit/_kit.scss */
 .slide p:nth-child(3),
 .slide p:nth-child(4) {
   background-color: #4c90c1;
 }
 
-/* line 124, ../sass/ui_kit/_kit.scss */
+/* line 129, ../sass/ui_kit/_kit.scss */
 .slide p:last-of-type {
   background-color: #59853D;
   text-align: center;
 }
 
-/* line 129, ../sass/ui_kit/_kit.scss */
+/* line 134, ../sass/ui_kit/_kit.scss */
 strong {
   font-weight: 700;
 }
@@ -562,7 +569,7 @@ strong {
 	Posts
 ======================
 */
-/* line 138, ../sass/ui_kit/_kit.scss */
+/* line 143, ../sass/ui_kit/_kit.scss */
 .read-more {
   margin: 30px 0 0 -80px;
   background: #FFC202;
@@ -573,10 +580,21 @@ strong {
   -o-transition: background 0.2s ease;
   transition: background 0.2s ease;
 }
-/* line 147, ../sass/ui_kit/_kit.scss */
+/* line 152, ../sass/ui_kit/_kit.scss */
 .read-more:hover {
   background: #4c90c1;
   text-decoration: none;
+}
+
+/*
+==============================================
+	Common Styles
+==============================================
+*/
+/* line 6, ../sass/base/_common.scss */
+.center {
+  margin: 0 auto;
+  width: 960px;
 }
 
 /*
@@ -663,14 +681,43 @@ main:hover #home-pager span.cycle-pager-active {
   padding: 40px 0 0;
 }
 
-/* line 65, ../sass/base/_body.scss */
-.center {
-  margin: 0 auto;
-  width: 960px;
-}
-
 /* line 1, ../sass/base/_footer.scss */
 footer {
   background: #4C90C1;
   margin: 50px 0 0;
+}
+
+/*
+==============================================
+	Responsive Styles
+==============================================
+*/
+@media all and (max-width: 1024px) {
+  /* line 8, ../sass/ui_kit/_responsive.scss */
+  .main .slider-wrap .slide {
+    height: auto;
+  }
+
+  /* line 11, ../sass/ui_kit/_responsive.scss */
+  main .slider-wrap figure figcaption {
+    width: auto;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  /* line 16, ../sass/ui_kit/_responsive.scss */
+  .center {
+    width: auto;
+    padding: 0 20px;
+  }
+
+  /* line 20, ../sass/ui_kit/_responsive.scss */
+  h1 {
+    margin: 0 0 20px;
+  }
+
+  /* line 23, ../sass/ui_kit/_responsive.scss */
+  .read-more {
+    margin: 30px 0 0;
+  }
 }

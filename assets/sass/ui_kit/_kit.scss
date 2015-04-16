@@ -63,7 +63,7 @@ code{
 h1 {
 	font: 700 30px 'Roboto', sans-serif;
 	color: $white;
-	margin: 0 0 20px -80px;
+	margin: 0 0 35px -80px;
 	padding: 5px 15px;
 	background: $text-bg-one;
 	display: inline-block;
@@ -98,6 +98,11 @@ p {
 	font: 400 22px/35px 'Roboto', sans-serif;
 	color: $grey;
 	margin: 0 0 20px;
+}
+.date{
+	font: 400 16px 'Roboto', sans-serif;
+	color: #000;
+	margin: 50px 0 0;
 }
 /*
 ======================

@@ -17,11 +17,16 @@ $(document).ready(function() {
 //	});	
 //
 //	$('.home-slider .slide figcaption').addClass('animated fadeInRight');
-
-	$('.text-colour-four').hide();
-    setTimeout(function() {
-	    $('.text-colour-four').fadeIn(1000);
-    },5000);
+	
+	function magic(){
+		var textTransition = $('.slide p:last-of-type')
+		$(textTransition).hide();
+		setTimeout(function() {
+			$(textTransition).fadeIn(1000);
+		},5000);
+	}
+	magic("textTransition");
+		
 	
 
 	/*$( '.home-slider' ).on( 'cycle-pager-activated', function(event, optionHash) {

@@ -3,6 +3,10 @@
 @import "ui_kit/kit";
 
 // Base
+@import "base/common";
 @import "base/header";
 @import "base/body";
 @import "base/footer";
+
+// Responsive
+@import "ui_kit/responsive";

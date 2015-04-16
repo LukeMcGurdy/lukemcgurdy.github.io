@@ -1,0 +1,29 @@
+/*
+==============================================
+	Responsive Styles
+==============================================
+*/
+
+@media all and (max-width:1024px){
+	.main .slider-wrap .slide{
+		height: auto;
+	}
+	main .slider-wrap figure figcaption{
+		width: auto;
+		padding:20px;
+		margin: 0 auto;
+	}	
+	.center{
+		width: auto;
+		padding:0 20px;
+	}	
+	h1{
+		margin: 0 0 20px;
+	}
+	.read-more{
+		margin: 30px 0 0;
+	}
+}
+@media all and (max-width:640px){
+
+}
