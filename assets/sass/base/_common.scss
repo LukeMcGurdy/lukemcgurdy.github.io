@@ -3,7 +3,27 @@
 	Common Styles
 ==============================================
 */
+
 .center{
 	margin:0 auto;
 	width:960px;
 }
+.posts{
+    margin:-85px 0 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    .post{
+        padding:0 0 50px;    
+    }
+    .posts:first-of-type{
+        width: 100%;
+    }
+}
+

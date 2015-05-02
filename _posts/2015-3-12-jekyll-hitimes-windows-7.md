@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Development Woes - A short tail of how to run Jekyll in Windows 7
+title: Development Woes - A short tail of running Jekyll in Windows 7
 published: true
 ---
 

@@ -436,6 +436,11 @@ th {
   padding: 0;
 }
 
+/* line 430, ../sass/ui_kit/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
 /*
 ============================================
 	Fonts
@@ -446,7 +451,6 @@ th {
 	Font Colours
 ======================
 */
-/*Test*/
 /*
 ======================
 	Font Backgrounds
@@ -481,7 +485,7 @@ h1 {
   font: 700 30px 'Roboto', sans-serif;
   color: #fff;
   margin: 0 0 35px -80px;
-  padding: 5px 15px;
+  padding: 15px;
   background: #cc6666;
   display: inline-block;
   -webkit-transition: background 0.2s ease;
@@ -592,10 +596,32 @@ strong {
 	Common Styles
 ==============================================
 */
-/* line 6, ../sass/base/_common.scss */
+/* line 7, ../sass/base/_common.scss */
 .center {
   margin: 0 auto;
   width: 960px;
+}
+
+/* line 11, ../sass/base/_common.scss */
+.posts {
+  margin: -85px 0 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+}
+/* line 22, ../sass/base/_common.scss */
+.posts .post {
+  padding: 0 0 50px;
+}
+/* line 25, ../sass/base/_common.scss */
+.posts .posts:first-of-type {
+  width: 100%;
 }
 
 /*
@@ -685,7 +711,6 @@ main:hover #home-pager span.cycle-pager-active {
 /* line 1, ../sass/base/_footer.scss */
 footer {
   background: #4C90C1;
-  margin: 50px 0 0;
 }
 
 /*
