@@ -12,4 +12,4 @@ As I continue to develop this site flexbox will be used in on a limited basis. S
 
 For anyone interested in finding out about flexbox (e.g. what it is and how to use it) then CSS-Tricks has a fantastic <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">guide</a> on all thisgs flex.
 
-Long and short - flexbox is a layout module that will become increasingly relevant, just as floats will become less relevant. (This said, I don't think floats are going away entirely any time soon.) So if you are looking at what is coming down the pike in the near future (or "coming down the pipe" as some say) then flexbox is it. Actually, if you are't concerned with IE before 10 or 11 then the future is now!
+Long and short - flexbox is a layout module that will become increasingly relevant, just as floats will become less relevant. (This said, I don't think floats are going away entirely any time soon.) So if you are looking at what is coming down the pike in the near future (or "coming down the pipe" as some say) then flexbox is it. Actually, if you aren't concerned with IE before 10 or 11 then the future is now!

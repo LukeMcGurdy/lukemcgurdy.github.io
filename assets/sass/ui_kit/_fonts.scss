@@ -3,6 +3,19 @@
 	Fonts
 ============================================
 */
+
+/*
+======================
+	Font Family
+======================
+*/
+$font-open: 'Open Sans', Arial, sans-serif;
+$font-arial: 'Open Sans', Arial, sans-serif;
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
 /*
 ======================
 	Font Colours
@@ -29,22 +42,10 @@ $text-bg-three:#4c90c1;
 $text-bg-four:#59853D;
 /*
 ======================
-	Font Family
-======================
-*/
-
-$font-open: 'Open Sans', Arial, sans-serif;
-$font-arial: 'Open Sans', Arial, sans-serif;
-$light: 300;
-$regular: 400;
-$semibold: 600;
-$bold: 700;
-
-/*
-======================
 	Font Elements
 ======================
 */
+
 code{
 	clear:both;
 	background: $grey;
@@ -52,8 +53,6 @@ code{
 	padding: 0 10px;
 	margin: 0px 5px 0 0;
 }
-
-
 /*
 ======================
 	Font Elements
@@ -109,24 +108,24 @@ p {
 	Slider Text
 ======================
 */
-.slide p{
+.banner p{
 	color: $white;
 	padding: 5px 15px;
 }
-.slide p:nth-child(1) {
+.banner p:nth-child(1) {
 	background-color: $text-bg-one;
 }
 
-.slide p:nth-child(2) {
+.banner p:nth-child(2) {
 	background-color: $text-bg-two;
 }
 
-.slide p:nth-child(3),
-.slide p:nth-child(4) {
+.banner p:nth-child(3),
+.banner p:nth-child(4) {
 	background-color: $text-bg-three;
 }
 
-.slide p:last-of-type {
+.banner p:last-of-type {
 	background-color: $text-bg-four;
 	text-align: center;
 }
@@ -135,9 +134,9 @@ strong {
 	font-weight: 700;
 }
 /*
-======================
-	Posts
-======================
+============================================
+	Buttons
+============================================
 */
 
 .read-more {
