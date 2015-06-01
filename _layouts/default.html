@@ -9,46 +9,64 @@
         <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     	{% include meta.html %}
 
+        <!-- IE Shiv -->
+
 		<!--[if lt IE 9]>
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-
-
+        
+        <!-- Stylesheet -->  
+              
        	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css" />
+       	
+       	<!-- Feed -->
+       	 
     	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    	<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-
+        
+        <!-- Fonts -->
+        
+        <link href='http://fonts.googleapis.com/css?family=Lobster+Two|ABeeZee' rel='stylesheet' type='text/css'>
+    
+        <!-- Scripts -->
+        
 		<script src="{{ site.baseurl }}/assets/js/jquery-1.11.2.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/jquery.cycle2.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/functions.js"></script>
-
 	</head>
 	<body>
-		<main>
-			<section class="grid banner-wrap">
-				<figure class="col-full banner">
-					<figcaption class="col-1-2">
-						<p>Welcome to my website!</p>
-						<p>It's a little plain. But then again it's a work in progress.</p>
-						<p>Please don't be suprised if the site breaks in places. I plan to use this as a playground to learn a little more about Git, Jekyll, Jquery, SCSS, Bootstrap and more besides.</p> 
-						<p>Assuming that these early beginnings last beyond this particular Saturday, one in which I'm feeling uncharacteristically productive, I hope that by the end I'll have improved my knowledge and become more powerful than you can possibly imagine.</p>
-						<p>- - - End Transmission - - -</p>
-					</figcaption>
-				</figure>
-			</section>
-			<section class="grid content">
-				<div class="col-full center">
-					{{ content }}
-				</div>
-			</section>
-		</main>
-		<footer>
-			<div><a href="lukemcgurdy.github.io" class="home" title="home"></a></div>
-			<section class="content">
-				<a href="" class="twitter">Twitter</a>
-			</section>
-		</footer>
+	    <header>
+            <div class="menu-wrap">
+                <button class="menu-button" id="menu-button" type="button">
+                   <span class="burger-icon"></span>
+                   MENU
+                </button>           
+                <nav id="main-nav" class="main-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Current Projects</a>
+                </nav>
+	        </div> 
+	    </header>
+        <main>
+            <section class="grid banner-wrap">
+                <div class="col-full banner">
+                    <div class="col-1-3 banner-text">
+                        <h1>First<br>Things</h1>
+                        <!--h1><a class="link link--surinami" href="#"><span data-letters-l="First" data-letters-r="Things">First Things</span></a></h1-->
+                    </div>
+                </div>
+            </section>
+            <section class="grid content">
+                <div class="col-full center">
+                    {{ content }}
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="lukemcgurdy.github.io" class="home" title="home"></a>
+            <a href="" class="twitter">Twitter</a>
+        </footer>
 		{% include analytics.html %}
 	</body>
 </html>

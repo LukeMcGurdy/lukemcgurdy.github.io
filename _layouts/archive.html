@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html class="ie7"> <![endif]-->  
+<!--[if IE 8]>     <html class="ie8"> <![endif]-->  
+<!--[if IE 9]>     <html class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html><!--<![endif]-->
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    	{% include meta.html %}
+
+		<!--[if lt IE 9]>
+		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+
+       	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css" />
+    	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    	<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+		<script src="{{ site.baseurl }}/assets/js/jquery-1.11.2.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/jquery.cycle2.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/functions.js"></script>
+
+	</head>
+	<body>
+	    <header>
+            <button id="trigger" class="trigger" type="button">Click</button> 
+	        <nav id="main-nav" class="main-nav">
+	            <a href="">Home</a>
+	            <a href="">About</a>
+	            <a href="">Blog</a>
+	            <a href="">Tests</a>
+	        </nav>
+	    </header>
+		<main>
+			<section class="grid banner-wrap">
+				<figure class="col-full banner">
+					<figcaption class="col-1-2">
+						<h1>Welcome to my website!</h1>
+						<p>It's a little plain. But then again it's a work in progress.</p>
+						<p>Please don't be suprised if the site breaks in places. I plan to use this as a playground to learn a little more about Git, Jekyll, Jquery, SCSS, Bootstrap and more besides.</p> 
+					</figcaption>
+				</figure>
+			</section>
+			<section class="grid content">
+				<div class="col-full center">
+					{{ content }}
+				</div>
+			</section>
+		</main>
+		<footer>
+			<a href="lukemcgurdy.github.io" class="home" title="home"></a>
+            <a href="" class="twitter">Twitter</a>
+		</footer>
+		{% include analytics.html %}
+	</body>
+</html>
+

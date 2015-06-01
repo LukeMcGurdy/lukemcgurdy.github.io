@@ -1,53 +1,54 @@
 $(document).ready(function() {
 
+    // Main menu
 
-	// Slider - home page
-	
-	/*$( '.home-slider' ).on( 'cycle-initialized', function(e, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag ) {
-		animate();
-	});*/
+//    $('#menu-button').click(function() {
+//        //$(this).next().animate({width: 'toggle'});
+//        var $marginRight = $(this).next();
+//        
+//        $marginRight.animate({
+//            marginLeft: parseInt($marginRight.css('right'),10) == 0 ?
+//            $marginRight.outerWidth() : 0
+//        });
+//        
+//    });
 
-//	$('.home-slider').cycle({
-//		fx: 'scrollHorz',
-//		slides: '.slide',
-//		speed:    1000, 
-//		timeout:  15000,
-//		pager: '#home-pager',
-//		pagerTemplate: '<span></span>'	
-//	});	
-//
-//	$('.home-slider .slide figcaption').addClass('animated fadeInRight');
+    
+
+    
+
+    
+    // on click open menu
+    
+    $('.menu-button').on('click', function(event){
+        $(this).toggleClass('menu-active');
+        // create menu variables
+        var mainNav = $('.main-nav');
+        var mainNavWidth = $('.main-nav').width();    
+        
+    	// toggle open class
+    	mainNav.toggleClass('open');
+    	
+    	// slide menu
+    	if (mainNav.hasClass('open')) {
+	    	mainNav.animate({
+		    	width: '100%'
+	    	});	
+    	} else {
+	    	mainNav.animate({
+		    	width: '0'
+	    	}, 500);	
+    	}
+    });    
+
+
+
+
 	
-	function magic(){
-		var textTransition = $('.slide p:last-of-type')
-		$(textTransition).hide();
-		setTimeout(function() {
-			$(textTransition).fadeIn(1000);
-		},5000);
-	}
-	magic("textTransition");
-		
+	
 	
 
-	/*$( '.home-slider' ).on( 'cycle-pager-activated', function(event, optionHash) {
-		clearTimeout(timer1);
-		clearTimeout(timer2);
-		$('.home-slider .slide figcaption').hide();
-	});
-	
-	$( '.home-slider' ).on( 'cycle-after', function(e, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag ) {
-		animate();
-	});
-	
-	function animate() {
-		$('.home-slider .slide figcaption').removeClass('animated fadeOutLeft').hide();
-		timer1 = setTimeout(function(){
-			$('.home-slider .slide figcaption').addClass('animated fadeInRight').show();
-			timer2 = setTimeout(function(){
-				$('.home-slider .slide figcaption').removeClass('animated fadeInRight').addClass('animated fadeOutLeft');
-        	},14000);
-		},100);
-	}*/
-	
+
+    
 	
 });

@@ -4,7 +4,7 @@ title: First Flexbox Foray
 published: true
 ---
 
-My solitary goal behind this site is simple - to try out new technology. That I may occasionally produce bad post titles for the sake of illiteration or write semi-coherent posts are really only unfortunate by-products of this goal.
+My solitary goal behind this site is simple - to try out new technology. That I may occasionally produce bad post titles for the sake of illiteration (as above) or write semi-coherent posts (as below) are really only unfortunate by-products of this goal.
 
 One thing on my 'give-it-a-go' list is flexbox. With browser support limited to the <a href="http://caniuse.com/#feat=flexbox" target="_blank">latest browsers</a> there has been no reason for me to use it professionally. And on a personal level I've had bigger fish to fry of late. Besides all this, I still like floating and clearing elements. It might be a weird and hackish technique, but it's one that I understand well enough to be able to create sites.
 

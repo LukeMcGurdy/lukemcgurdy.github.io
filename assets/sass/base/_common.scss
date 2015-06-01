@@ -1,33 +1,21 @@
-*, *:after, *:before{
-    box-sizing: border-box;
-}
-
 /*
 ==============================================
 	Common Styles
 ==============================================
 */
 
-.content{
-	margin:0 auto;
-	max-width:960px;
+*, *:after, *:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-.posts{
-    margin:-85px 0 0;
+body{
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
-    .post{
-        padding:0 0 50px;    
-    }
-    .posts:first-of-type{
-        width: 100%;
-    }
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
 }
-

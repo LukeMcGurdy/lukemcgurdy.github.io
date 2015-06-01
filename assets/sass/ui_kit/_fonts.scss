@@ -2,20 +2,21 @@
 ============================================
 	Fonts
 ============================================
-*/
-
-/*
 ======================
 	Font Family
 ======================
 */
-$font-open: 'Open Sans', Arial, sans-serif;
-$font-arial: 'Open Sans', Arial, sans-serif;
+
+$font-open: 'Open Sans',
+Arial,
+sans-serif;
+$font-arial: 'Open Sans',
+Arial,
+sans-serif;
 $light: 300;
 $regular: 400;
 $semibold: 600;
 $bold: 700;
-
 /*
 ======================
 	Font Colours
@@ -42,16 +43,16 @@ $text-bg-three:#4c90c1;
 $text-bg-four:#59853D;
 /*
 ======================
-	Font Elements
+	Code block styles
 ======================
 */
 
-code{
-	clear:both;
-	background: $grey;
-	color:#fff;
-	padding: 0 10px;
-	margin: 0px 5px 0 0;
+code {
+    clear: both;
+    background: $grey;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0px 5px 0 0;
 }
 /*
 ======================
@@ -60,79 +61,77 @@ code{
 */
 
 h1 {
-	font: 700 30px 'Roboto', sans-serif;
-	color: $white;
-	margin: 0 0 35px -80px;
-	padding: 15px;
-	background: $text-bg-one;
-	display: inline-block;
-	-webkit-transition: background 0.2s ease;
-	-o-transition: background 0.2s ease;
-	transition: background 0.2s ease;
-	
-	&:hover{
-		background-color: $text-bg-three;
-	}	
-	
-	a {
-		font: 700 30px 'Roboto', sans-serif;
-		color: $white;
-		text-transform: capitalize;
-		
-		&:hover{
-			text-decoration: none;
-		}
-	}
+    font: 700 30px 'Roboto', sans-serif;
+    color: $white;
+    margin: 0 0 35px 0;
+    padding: 15px;
+    background: $text-bg-one;
+    display: inline-block;
+    a {
+        font: 700 30px 'Roboto', sans-serif;
+        color: $white;
+        text-transform: capitalize;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 a {
-	color: #02999a;
-	text-decoration: none;
-	&:hover{
-		text-decoration: underline;
-	}
+    color: #02999a;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 p {
-	font: 400 22px/35px 'Roboto', sans-serif;
-	color: $grey;
-	margin: 0 0 20px;
+    font: 400 22px/35px 'Roboto', sans-serif;
+    color: $grey;
+    margin: 0 0 20px;
 }
-.date{
-	font: 400 16px 'Roboto', sans-serif;
-	color: #000;
-	margin: 50px 0 0;
+
+.date {
+    font: 400 16px 'Roboto', sans-serif;
+    color: #000;
+    margin: 50px 0 0;
 }
 /*
 ======================
-	Slider Text
+	Banner Text
 ======================
 */
-.banner p{
-	color: $white;
-	padding: 5px 15px;
+
+.banner h1 {
+    position: relative;
+    z-index: 9;
+    background: none;
+    float: left;
+    display: inline-block;
+    font-size: 80px;
+    color: #fff;
+    font: 400 100px/80px 'Lobster Two', cursive;
+    color: #2b2b2b;
+    text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(88, 0, 20, 0.15);
 }
+
+.banner p {
+    color: $white;
+    padding: 5px 15px;
+    background-color: $text-bg-two;
+}
+
 .banner p:nth-child(1) {
-	background-color: $text-bg-one;
-}
-
-.banner p:nth-child(2) {
-	background-color: $text-bg-two;
-}
-
-.banner p:nth-child(3),
-.banner p:nth-child(4) {
-	background-color: $text-bg-three;
-}
-
-.banner p:last-of-type {
-	background-color: $text-bg-four;
-	text-align: center;
+    background-color: $text-bg-one;
 }
 
 strong {
-	font-weight: 700;
+    font-weight: 700;
 }
+
+
+
+
 /*
 ============================================
 	Buttons
@@ -140,16 +139,85 @@ strong {
 */
 
 .read-more {
-	margin: 30px 0 0 -80px;
-	background: $text-bg-two;
-	padding: 10px 20px;
-	color:$white;
-	display: inline-block;
-	-webkit-transition: background 0.2s ease;
-	-o-transition: background 0.2s ease;
-	transition: background 0.2s ease;
-	&:hover{
-		background: $text-bg-three;
-		text-decoration: none;
-	}
+    margin: 30px 0 0 0;
+    background: #E55EA2;
+    padding: 10px 20px;
+    color: $white;
+    display: inline-block;
+    -webkit-transition: all 0.55s ease;
+    -o-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+    &:hover {
+        text-decoration: none;
+        -webkit-box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
+        -moz-box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
+        box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
+    }
+}
+/* General link styles */
+
+.link {
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    font-size: 80px;
+    line-height: 1;
+    display: inline-block;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.link--surinami {
+    font: 400 100px/80px 'Lobster Two', cursive;
+    text-transform: uppercase;
+    color: #2b2b2b;
+}
+
+.link--surinami span {
+    position: relative;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.link--surinami:hover span {
+    color: transparent;
+}
+
+.link--surinami span::before,
+.link--surinami span::after {
+    position: absolute;
+    color: #2b2b2b;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+ .link--surinami span::before {
+    content: attr(data-letters-l);
+    top: 20px;
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+}
+
+.link--surinami span::after {
+    content: attr(data-letters-r);
+    left:0;
+    bottom: -60px;
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+}
+
+.link--surinami:hover span::before,
+.link--surinami:hover span::after {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+/* Media Queries */
+
+@media screen and (max-width: 50em) {
+    .link--surinami {
+        font-size: 3em;
+    }
 }
