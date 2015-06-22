@@ -27,3 +27,17 @@
 @media all and (max-width:640px){
 
 }
+@media all and (max-width:340px){
+    header .main-nav a{
+        float: left;
+        padding-left: 35px;
+        font-size: 25px;
+        &:nth-child(1){
+            margin-top: 200px;
+        }
+    }
+    .banner h1{
+        font-size: 70px
+    }
+    
+}

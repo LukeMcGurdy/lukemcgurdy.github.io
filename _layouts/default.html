@@ -1,73 +1,111 @@
 <!DOCTYPE html>
-<!--[if lte IE 7]> <html class="ie7"> <![endif]-->  
-<!--[if IE 8]>     <html class="ie8"> <![endif]-->  
-<!--[if IE 9]>     <html class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html><!--<![endif]-->
-	<head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-    	{% include meta.html %}
+<!--[if lte IE 7]> <html class="ie7"> <![endif]-->
+<!--[if IE 8]>     <html class="ie8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
 
-        <!-- IE Shiv -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% include meta.html %}
 
-		<!--[if lt IE 9]>
+    <!-- IE Shiv -->
+
+    <!--[if lt IE 9]>
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-        
-        <!-- Stylesheet -->  
-              
-       	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css" />
-       	
-       	<!-- Feed -->
-       	 
-    	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-        
-        <!-- Fonts -->
-        
-        <link href='http://fonts.googleapis.com/css?family=Lobster+Two|ABeeZee' rel='stylesheet' type='text/css'>
-    
-        <!-- Scripts -->
-        
-		<script src="{{ site.baseurl }}/assets/js/jquery-1.11.2.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/jquery.cycle2.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/functions.js"></script>
-	</head>
-	<body>
-	    <header>
-            <div class="menu-wrap">
-                <button class="menu-button" id="menu-button" type="button">
-                   <span class="burger-icon"></span>
-                   MENU
-                </button>           
-                <nav id="main-nav" class="main-nav">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Current Projects</a>
-                </nav>
-	        </div> 
-	    </header>
-        <main>
-            <section class="grid banner-wrap">
-                <div class="col-full banner">
-                    <div class="col-1-3 banner-text">
-                        <h1>First<br>Things</h1>
-                        <!--h1><a class="link link--surinami" href="#"><span data-letters-l="First" data-letters-r="Things">First Things</span></a></h1-->
+
+    <!-- Stylesheet -->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css" />
+
+    <!-- Feed -->
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Fonts -->
+
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two|ABeeZee' rel='stylesheet' type='text/css'>
+
+    <!-- Scripts -->
+
+    <script src="{{ site.baseurl }}/assets/js/jquery-1.11.2.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.cycle2.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/functions.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu-wrap">
+            <button class="menu-button" id="menu-button" type="button">
+                <span class="burger-icon"></span> MENU
+            </button>
+            <nav id="main-nav" class="main-nav">
+                <a href="#">Home</a>
+                <a href="/about">About</a>
+                <a href="/archive.html">Blog</a>
+<!--                <a href="#">Current Projects</a>-->
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="grid banner-wrap">
+            <div class="col-full banner">
+                <div class="col-1-3 banner-text">
+                    <h1>First<br>Things</h1>
+                    <!--h1><a class="link link--surinami" href="#"><span data-letters-l="First" data-letters-r="Things">First Things</span></a></h1-->               
+                   
+                    <div class="container">
+                        <div class="sun">                
+                            <div class="orbit mercury-orbit">
+                                <div class="planet mercury"></div>
+                            </div> 
+                            <div class="orbit venus-orbit">
+                                <div class="planet venus"></div>
+                            </div>
+                            <div class="orbit earth-orbit">
+                                <div class="shadow">
+                                    
+                                </div>
+                                <div class="planet earth"></div> 
+                            </div>
+                            <div class="orbit mars-orbit">
+                                <div class="planet mars"></div>
+                            </div>
+                            <div class="orbit jupiter-orbit">
+                                <div class="planet jupiter"></div>
+                            </div>
+                            <div class="orbit saturn-orbit">
+                                <div class="planet saturn"></div> 
+                            </div>
+                            <div class="orbit uranus-orbit">
+                                <div class="planet uranus"></div>
+                            </div> 
+                            <div class="orbit neptune-orbit">
+                                <div class="planet neptune"> </div>
+                            </div>                      
+                            <div class="orbit pluto-orbit">
+                                <div class="planet pluto"></div>
+                            </div>                        
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section class="grid content">
-                <div class="col-full center">
-                    {{ content }}
-                </div>
-            </section>
-        </main>
-        <footer>
-            <a href="lukemcgurdy.github.io" class="home" title="home"></a>
-            <a href="" class="twitter">Twitter</a>
-        </footer>
-		{% include analytics.html %}
-	</body>
-</html>
+            </div>
+        </section>
+        <section class="grid content">
+            <div class="col-full center">
+                {{ content }}
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="lukemcgurdy.github.io" class="home" title="home"></a>
+        <a href="" class="twitter">Twitter</a>
+    </footer>
+    {% include analytics.html %}
+</body>
 
+</html>

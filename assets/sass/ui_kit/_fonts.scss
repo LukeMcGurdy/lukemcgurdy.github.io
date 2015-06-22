@@ -108,11 +108,10 @@ p {
     background: none;
     float: left;
     display: inline-block;
-    font-size: 80px;
-    color: #fff;
     font: 400 100px/80px 'Lobster Two', cursive;
     color: #2b2b2b;
     text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(88, 0, 20, 0.15);
+    padding-right: 0;
 }
 
 .banner p {

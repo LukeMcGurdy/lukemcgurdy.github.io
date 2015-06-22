@@ -22,6 +22,8 @@ $(document).ready(function() {
     
     $('.menu-button').on('click', function(event){
         $(this).toggleClass('menu-active');
+        $(this).parent().find('main .container').hide();
+        
         // create menu variables
         var mainNav = $('.main-nav');
         var mainNavWidth = $('.main-nav').width();    
@@ -39,6 +41,8 @@ $(document).ready(function() {
 		    	width: '0'
 	    	}, 500);	
     	}
+        
+        
     });    
 
 
