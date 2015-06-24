@@ -15,35 +15,35 @@
 
 
        	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css" />
-    	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    	<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
 		<script src="{{ site.baseurl }}/assets/js/jquery-1.11.2.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/jquery.cycle2.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/functions.js"></script>
 
 	</head>
 	<body>
-	    <header>
-            <button id="trigger" class="trigger" type="button">Click</button> 
-	        <nav id="main-nav" class="main-nav">
-	            <a href="">Home</a>
-	            <a href="">About</a>
-	            <a href="">Blog</a>
-	            <a href="">Tests</a>
-	        </nav>
-	    </header>
+        <header id="blog">
+            <div class="menu-wrap">
+                <button class="menu-button" id="menu-button" type="button">
+                    <span class="burger-icon"></span> MENU
+                </button>
+                <nav id="main-nav" class="main-nav">
+                    <a href="#">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/archive.html">Blog</a>
+    <!--                <a href="#">Current Projects</a>-->
+                </nav>
+            </div>
+        </header>
 		<main>
-			<section class="grid banner-wrap">
-				<figure class="col-full banner">
-					<figcaption class="col-1-2">
-						<h1>Welcome to my website!</h1>
-						<p>It's a little plain. But then again it's a work in progress.</p>
-						<p>Please don't be suprised if the site breaks in places. I plan to use this as a playground to learn a little more about Git, Jekyll, Jquery, SCSS, Bootstrap and more besides.</p> 
-					</figcaption>
-				</figure>
-			</section>
+<!-- 			<section class="grid banner-wrap">
+			    <figure class="col-full banner">
+			        <figcaption class="col-1-2">
+			            <h1>Welcome to my website!</h1>
+			            <p>It's a little plain. But then again it's a work in progress.</p>
+			            <p>Please don't be suprised if the site breaks in places. I plan to use this as a playground to learn a little more about Git, Jekyll, Jquery, SCSS, Bootstrap and more besides.</p> 
+			        </figcaption>
+			    </figure>
+			</section> -->
 			<section class="grid content">
 				<div class="col-full center">
 					{{ content }}

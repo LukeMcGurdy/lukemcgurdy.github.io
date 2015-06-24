@@ -2,17 +2,23 @@
 ============================================
 	Fonts
 ============================================
+
+/*
+======================
+	Global Font Size
+======================
+*/
+html { 
+    font-size: 62.5%; 
+}
+/*
 ======================
 	Font Family
 ======================
 */
 
-$font-open: 'Open Sans',
-Arial,
-sans-serif;
-$font-arial: 'Open Sans',
-Arial,
-sans-serif;
+$font-open: 'Open Sans', Arial, sans-serif;
+$font-arial: 'Open Sans', Arial, sans-serif;
 $light: 300;
 $regular: 400;
 $semibold: 600;
@@ -60,21 +66,28 @@ code {
 ======================
 */
 
+// General font styles
+
 h1 {
-    font: 700 30px 'Roboto', sans-serif;
+    font: 700 3.0rem 'Roboto', sans-serif;
     color: $white;
     margin: 0 0 35px 0;
     padding: 15px;
     background: $text-bg-one;
     display: inline-block;
     a {
-        font: 700 30px 'Roboto', sans-serif;
+        font: 700 3.0rem 'Roboto', sans-serif;
         color: $white;
         text-transform: capitalize;
         &:hover {
             text-decoration: none;
         }
     }
+}
+
+h2{
+    font: 700 2.5rem 'Roboto', sans-serif;
+    margin: 0 0 15px 0;
 }
 
 a {
@@ -86,16 +99,30 @@ a {
 }
 
 p {
-    font: 400 22px/35px 'Roboto', sans-serif;
+    font: 400 2.2rem/3.5rem 'Roboto', sans-serif;
     color: $grey;
     margin: 0 0 20px;
 }
 
+time{
+    font: 400 1.6rem 'Roboto', sans-serif;
+    color: #fff;
+}
+
+// Specific font styles
+
 .date {
-    font: 400 16px 'Roboto', sans-serif;
+    font: 400 1.6rem 'Roboto', sans-serif;
     color: #000;
     margin: 50px 0 0;
 }
+
+
+
+
+
+
+
 /*
 ======================
 	Banner Text
@@ -138,7 +165,7 @@ strong {
 */
 
 .read-more {
-    margin: 30px 0 0 0;
+    margin: 3.0rem 0 0 0;
     background: #E55EA2;
     padding: 10px 20px;
     color: $white;

@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: blog
 title: Archive
 ---
 <section class="archive">
@@ -16,9 +16,13 @@ title: Archive
   <ul class="past">
   {% endif %}
   {% endunless %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a> - <time>{{ post.date | date:"%d %b" }}</time>
-    </li>
+    <a href="{{ post.url }}">
+       <li>
+            <h2>{{ post.title }}</h2>
+        
+            <time>&nbsp;{{ post.date | date:"%d %b" }}</time>
+        </li>
+    </a>
 {% endfor %}
   </ul>
 </section>
