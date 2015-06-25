@@ -23,19 +23,36 @@ main {
 }
 
 .banner-wrap .banner {
-    background: #4C90C1;
+    background: url('../images/tokyo.jpg') center / cover no-repeat #4C90C1;
     margin: 0;
     height: 500px;
 }
+/*
+======================
+	Banner Text
+======================
+*/
 
-.banner-wrap .banner .banner-text {
-    //float: left;
-    //margin-bottom: 20px;
-    height:100%;
+.banner h1 {
+    position: relative;
+    z-index: 9;
+    background: none;
+    float: left;
+    display: inline-block;
+    font: 400 100px/80px 'Lobster Two', cursive;
+    color: #2b2b2b;
+    text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(88, 0, 20, 0.15);
+    padding-right: 0;
 }
 
-.banner-wrap .banner .banner-text p {
-    padding: 10px 20px;
+.banner p {
+    color: $white;
+    padding: 5px 15px;
+    background-color: $text-bg-two;
+}
+
+.banner p:nth-child(1) {
+    background-color: $text-bg-one;
 }
 /*
 ======================
@@ -49,21 +66,19 @@ main {
     padding: 40px 0 150px;
     position: relative;
     z-index: 9;
-       opacity: 1;
-   transition: opacity .55s ease-in-out;
-   -moz-transition: opacity .55s ease-in-out;
-   -webkit-transition: opacity .55s ease-in-out;
-     
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
 }
 
-.test{
-    opacity:0.5;
-    position: static;
-    z-index: 0;
+.posts{
+    margin-top: 50px;
+    
 }
 /*
 ======================
-	Blog
+	Blog landing page
 ======================
 */
 
@@ -101,36 +116,54 @@ main {
     &:hover {
         background: rgba(255, 141, 71, 0.9);
         text-decoration: none;
-        -webkit-box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
-        -moz-box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
-        box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
+        -webkit-box-shadow: -5px 5px 0px 0px rgba(204, 204, 204, 1);
+        -moz-box-shadow: -5px 5px 0px 0px rgba(204, 204, 204, 1);
+        box-shadow: -5px 5px 0px 0px rgba(204, 204, 204, 1);
         cursor: pointer;
     }
 }
 
 .archive-container a:nth-child(1) {
     width: 100%;
-    background:rgba(255, 99, 71, 1);
-    &:hover{
+    background: rgba(255, 99, 71, 1);
+    &:hover {
         background: rgba(255, 99, 71, 0.9);
     }
 }
 
-.archive-container a li{
+.archive-container a li {
     -webkit-display: flex;
     -moz-display: flex;
     -ms-display: flex;
     -o-display: flex;
     flex-direction: column;
-    color:$white;
+    color: $white;
 }
 
-.archive-container a:nth-child(1) li h2{
+.archive-container h2 {
+    color: $white;
+    padding: 0;
+}
+
+.archive-container a:nth-child(1) li h2 {
     font-size: 4.0rem;
+}
+.archive-container a li h2{
+    font-size: 2.3rem;
+}
+/*
+======================
+	Individual Blog
+======================
+*/
+
+.date {
+    font: 400 1.6rem 'Roboto', sans-serif;
+    color: $darkGrey;
+    margin: 50px 0 20px;
 }
 
 // Project on home page
-
 .container {
     position: relative;
     width: 540px;
@@ -144,9 +177,15 @@ main {
     position: absolute;
 }
 
-// celestial bodies
 
-.planet{
+/*
+======================
+	Solar system test
+======================
+*/
+
+// celestial bodies 
+.planet {
     z-index: 9;
 }
 
@@ -194,42 +233,42 @@ main {
     background: url('../images/earth.png') no-repeat 0 0 #000533;
     top: 60px;
     left: 0;
-    &:before{
+    &:before {
         position: absolute;
         top: 0;
-        left: 0;            
+        left: 0;
         content: '';
         display: block;
         height: 30px;
         width: 30px;
         background: url('../images/clouds.png') no-repeat 0 0;
     }
-    &:after{
+    &:after {
         position: absolute;
         top: -15px;
-        left: 0;            
+        left: 0;
         content: '';
         display: block;
         height: 30px;
         width: 30px;
         background: #000;
-        -webkit-box-shadow: 0px 25px 7px -10px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 25px 7px -10px rgba(0,0,0,0.75);
-        box-shadow: 0px 25px 7px -10px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 25px 7px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 25px 7px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 25px 7px -10px rgba(0, 0, 0, 0.75);
     }
-//    .moon {
-//        width: 30px;
-//        height: 30px;
-//        border-radius: 15px;
-//        background: #fff;
-//        top: -30px;
-//        left: -30px;
-//        transform-origin: 15px 15px;
-//    }    
-
+    //    .moon {
+    //        width: 30px;
+    //        height: 30px;
+    //        border-radius: 15px;
+    //        background: #fff;
+    //        top: -30px;
+    //        left: -30px;
+    //        transform-origin: 15px 15px;
+    //    }    
 }
 
-.mars {display: none !important;
+.mars {
+    display: none !important;
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -238,7 +277,8 @@ main {
     right: -122px;
 }
 
-.jupiter {display: none !important;
+.jupiter {
+    display: none !important;
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -248,7 +288,8 @@ main {
     transform-origin: 8px 8px;
 }
 
-.saturn {display: none !important;
+.saturn {
+    display: none !important;
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -258,7 +299,11 @@ main {
     background: red;
 }
 
-.uranus /*snigger*/ {display: none !important;
+.uranus
+/*snigger*/
+
+{
+    display: none !important;
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -266,16 +311,9 @@ main {
     left: -50px;
     transform-origin: 10px 10px;
 }
-.neptune {display: none !important;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    top: -50px;
-    left: -50px;
-    transform-origin: 10px 10px;
-    background: red;
-}
-.pluto{display: none !important;
+
+.neptune {
+    display: none !important;
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -285,34 +323,46 @@ main {
     background: red;
 }
 
+.pluto {
+    display: none !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    top: -50px;
+    left: -50px;
+    transform-origin: 10px 10px;
+    background: red;
+}
 
 // Orbit lines
-
 .orbit {
-    border: 1px solid rgba(255, 255, 255, 0.5);   
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.mercury-orbit{
+.mercury-orbit {
     width: 110px;
     height: 110px;
     border-radius: 60px;
     left: -15px;
-    top: -15px; 
+    top: -15px;
 }
-.venus-orbit{
+
+.venus-orbit {
     width: 150px;
     height: 150px;
     border-radius: 75px;
     left: -35px;
-    top: -35px;   
+    top: -35px;
 }
-.earth-orbit{
+
+.earth-orbit {
     width: 280px;
     height: 280px;
     border-radius: 140px;
     left: -100px;
-    top: -100px;     
+    top: -100px;
 }
+
 //.mars-orbit{
 //    width: 110px;
 //    height: 110px;
@@ -355,10 +405,7 @@ main {
 //    left: -15px;
 //    top: -15px;     
 //}
-
-
 // celestial body animations
-
 .sun {
     //animation: spin 100s infinite linear;
 }
@@ -370,16 +417,20 @@ main {
 .venus-orbit {
     animation: spin 100s infinite linear;
 }
-.earth{
+
+.earth {
     animation: spin 50s infinite linear;
 }
-.shadow{
+
+.shadow {
     animation: spinCounter 50s infinite linear;
 }
-.earth:before{
+
+.earth:before {
     animation: spinCounter 100s infinite linear;
 }
-.earth-orbit{
+
+.earth-orbit {
     animation: spin 50s infinite linear;
 }
 
@@ -402,8 +453,6 @@ main {
 //.pluto-orbit {
 //    animation: spin 50s infinite linear;
 //}
-
-
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -412,11 +461,12 @@ main {
         transform: rotate(360deg);
     }
 }
-@keyframes spinCounter{
+
+@keyframes spinCounter {
     from {
         transform: rotate(360deg);
     }
     to {
         transform: rotate(0deg);
-    }    
+    }
 }

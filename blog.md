@@ -1,6 +1,7 @@
 ---
 layout: blog
-title: Archive
+title: Blog
+permalink: /blog/
 ---
 <section class="archive">
   

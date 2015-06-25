@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
 
 ### Information
 
-Hi, this is some dummy content
+Nothing much to see here

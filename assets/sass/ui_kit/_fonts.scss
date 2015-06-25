@@ -8,6 +8,7 @@
 	Global Font Size
 ======================
 */
+
 html { 
     font-size: 62.5%; 
 }
@@ -29,14 +30,10 @@ $bold: 700;
 ======================
 */
 
-$dark-turquoise: #02999a;
-$med-turquoise: #00c8c9;
-$light-turquoise: #b0e4e5;
-$dark-orange: #c96d00;
-$light-orange: #ec8c1c;
 $black: #000;
 $white: #fff;
-$grey: #969ea2;
+$grey: #828A8E;
+$darkGrey: #606666;
 /*
 ======================
 	Font Backgrounds
@@ -56,7 +53,7 @@ $text-bg-four:#59853D;
 code {
     clear: both;
     background: $grey;
-    color: #fff;
+    color: $white;
     padding: 0 10px;
     margin: 0px 5px 0 0;
 }
@@ -66,17 +63,35 @@ code {
 ======================
 */
 
-// General font styles
+/* General font styles */
 
-h1 {
-    font: 700 3.0rem 'Roboto', sans-serif;
+h1{
+    font: 700 4.0rem 'Roboto', sans-serif;
+    color:$white;
+    margin: 0 0 35px 0;
+    
+    //background: $text-bg-one;
+    //display: inline-block;
+    
+}
+
+h2{
+    font: 700 3.5rem 'Roboto', sans-serif;
+    color: $darkGrey;
+    margin: 0 0 20px 0;
+    
+    //background: $text-bg-one;
+    //display: inline-block;  
+}
+
+h3 {
+    font: 700 2.0rem 'Roboto', sans-serif;
     color: $white;
     margin: 0 0 35px 0;
     padding: 15px;
     background: $text-bg-one;
     display: inline-block;
     a {
-        font: 700 3.0rem 'Roboto', sans-serif;
         color: $white;
         text-transform: capitalize;
         &:hover {
@@ -85,12 +100,8 @@ h1 {
     }
 }
 
-h2{
-    font: 700 2.5rem 'Roboto', sans-serif;
-    margin: 0 0 15px 0;
-}
-
 a {
+    font-size: 2.1rem;
     color: #02999a;
     text-decoration: none;
     &:hover {
@@ -99,7 +110,7 @@ a {
 }
 
 p {
-    font: 400 2.2rem/3.5rem 'Roboto', sans-serif;
+    font: 400 2.1rem/3.5rem 'Roboto', sans-serif;
     color: $grey;
     margin: 0 0 20px;
 }
@@ -109,51 +120,14 @@ time{
     color: #fff;
 }
 
-// Specific font styles
-
-.date {
-    font: 400 1.6rem 'Roboto', sans-serif;
-    color: #000;
-    margin: 50px 0 0;
-}
-
-
-
-
-
-
-
-/*
-======================
-	Banner Text
-======================
-*/
-
-.banner h1 {
-    position: relative;
-    z-index: 9;
-    background: none;
-    float: left;
-    display: inline-block;
-    font: 400 100px/80px 'Lobster Two', cursive;
-    color: #2b2b2b;
-    text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(88, 0, 20, 0.15);
-    padding-right: 0;
-}
-
-.banner p {
-    color: $white;
-    padding: 5px 15px;
-    background-color: $text-bg-two;
-}
-
-.banner p:nth-child(1) {
-    background-color: $text-bg-one;
-}
-
 strong {
     font-weight: 700;
 }
+
+/* Specific font styles */
+
+
+
 
 
 
@@ -164,22 +138,23 @@ strong {
 ============================================
 */
 
-.read-more {
-    margin: 3.0rem 0 0 0;
-    background: #E55EA2;
-    padding: 10px 20px;
-    color: $white;
-    display: inline-block;
-    -webkit-transition: all 0.55s ease;
-    -o-transition: all 0.55s ease;
-    transition: all 0.55s ease;
-    &:hover {
-        text-decoration: none;
-        -webkit-box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
-        -moz-box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
-        box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
-    }
-}
+//.read-more {
+//    margin: 10px 0 0 0;
+//    background: #E55EA2;
+//    padding: 10px 20px;
+//    font-size: 1.8rem;
+//    color: $white;
+//    display: inline-block;
+//    -webkit-transition: all 0.55s ease;
+//    -o-transition: all 0.55s ease;
+//    transition: all 0.55s ease;
+//    &:hover {
+//        text-decoration: none;
+//        -webkit-box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
+//        -moz-box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
+//        box-shadow: -5px 5px 0px 0px rgba(204,204,204,1);
+//    }
+//}
 /* General link styles */
 
 .link {

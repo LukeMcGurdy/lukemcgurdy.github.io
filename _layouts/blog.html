@@ -21,15 +21,13 @@
 
 	</head>
 	<body>
-        <header id="blog">
+        <header id="blog-landing" class="blog-landing">
             <div class="menu-wrap">
-                <button class="menu-button" id="menu-button" type="button">
-                    <span class="burger-icon"></span> MENU
-                </button>
+                <button class="menu-button" id="menu-button" type="button">MENU</button>
                 <nav id="main-nav" class="main-nav">
-                    <a href="#">Home</a>
+                    <a href="{{ site.baseurl }}/">Home</a>
                     <a href="/about">About</a>
-                    <a href="/archive.html">Blog</a>
+                    <a href="/blog">Blog</a>
     <!--                <a href="#">Current Projects</a>-->
                 </nav>
             </div>
@@ -46,6 +44,7 @@
 			</section> -->
 			<section class="grid content">
 				<div class="col-full center">
+					<h2>Latest </h2>
 					{{ content }}
 				</div>
 			</section>

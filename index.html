@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
-
+<section>
+    <div class="col-full center">
+        <h2>Welcome</h2>
+        <p>This is a development playground. It exists primarily as a way for me to exxpreminet with technologies that are new or are new to me (perhaps both). So expect things to break from time to time. For example, this site is hosted on github, is built with Jekyll, and uses SCSS, flexbox (in parts) and my own simple grid system. Some of these I get to use professionally, while others are new to me.</p>
+    </div>
+</section>
 <div class="posts">
-  {% for post in site.posts limit:1 %}
+    <h2>Latest Post</h2> 
+    {% for post in site.posts limit:1 %}
     <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
       <div class="entry">
-        {{ post.excerpt }}
+          {{ post.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
