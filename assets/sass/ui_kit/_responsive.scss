@@ -25,7 +25,16 @@
 	}
 }
 @media all and (max-width:640px){
-
+    .menu-wrap{
+        height: 120px;
+        .main-nav{
+            align-items: flex-end;
+            padding-bottom: 20px;
+            a{
+                font-size: 1.6rem;
+            }
+        }
+    }
 }
 @media all and (max-width:340px){
     header .main-nav a{
@@ -39,5 +48,8 @@
     .banner h1{
         font-size: 70px
     }
+    
+}
+@media all and (max-width:320px){
     
 }

@@ -18,11 +18,11 @@ $(document).ready(function() {
         if (mainNav.hasClass('open')) {
             mainNav.animate({
                 width: '100%'
-            });	
+            }, 500);	
         } else {
             mainNav.animate({
                 width: '0'
-            }, 500);	
+            }, 300);	
         }
     });    
 
