@@ -175,6 +175,7 @@ main {
     -webkit-transition: all 0.55s ease;
     -o-transition: all 0.55s ease;
     transition: all 0.55s ease;
+    text-decoration: none;
     &:hover {
         background: rgba(255, 141, 71, 0.9);
         text-decoration: none;
