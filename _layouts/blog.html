@@ -22,7 +22,15 @@
 	</head>
 	<body>
         <header id="blog-landing" class="blog-landing">
-            <div class="menu-wrap">
+
+        </header>
+		<main>
+ 			<section class="grid banner-wrap">
+			    <figure class="col-full banner">
+
+			    </figure>
+			</section>
+			<div class="menu-wrap">
                 <button class="menu-button" id="menu-button" type="button">MENU</button>
                 <nav id="main-nav" class="main-nav">
                     <a href="{{ site.baseurl }}/">Home</a>
@@ -31,20 +39,9 @@
     <!--                <a href="#">Current Projects</a>-->
                 </nav>
             </div>
-        </header>
-		<main>
-<!-- 			<section class="grid banner-wrap">
-			    <figure class="col-full banner">
-			        <figcaption class="col-1-2">
-			            <h1>Welcome to my website!</h1>
-			            <p>It's a little plain. But then again it's a work in progress.</p>
-			            <p>Please don't be suprised if the site breaks in places. I plan to use this as a playground to learn a little more about Git, Jekyll, Jquery, SCSS, Bootstrap and more besides.</p> 
-			        </figcaption>
-			    </figure>
-			</section> -->
 			<section class="grid content">
 				<div class="col-full center">
-					<h2>Latest </h2>
+					<h2>Blog Posts</h2>
 					{{ content }}
 				</div>
 			</section>

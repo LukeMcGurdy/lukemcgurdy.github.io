@@ -79,25 +79,19 @@ h2{
     font: 700 4.0rem 'Roboto', sans-serif;
     color: #404446;
     margin: 0 0 35px 0;
-    
-    //background: $text-bg-one;
-    //display: inline-block;  
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c0c0c0;
+    &:first-of-type{
+        font-size: 6rem;
+    } 
 }
 
 h3 {
     font: 700 2.0rem 'Roboto', sans-serif;
-    color: $white;
-    margin: 0 0 35px 0;
-    padding: 15px;
-    background: $text-bg-one;
+    color: $darkGrey;
+    margin: 0 0 15px 0;
     display: inline-block;
-    a {
-        color: $white;
-        text-transform: capitalize;
-        &:hover {
-            text-decoration: none;
-        }
-    }
+    text-transform: capitalize;
 }
 
 a {
@@ -125,7 +119,6 @@ strong {
 }
 
 /* Specific font styles */
-
 
 
 

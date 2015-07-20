@@ -131,18 +131,11 @@ main {
 .content {
     margin: 0 auto;
     max-width: 960px;
-    padding: 30px 0 100px;
-    position: relative;
-    z-index: 9;
-    opacity: 1;
-    transition: opacity .55s ease-in-out;
-    -moz-transition: opacity .55s ease-in-out;
-    -webkit-transition: opacity .55s ease-in-out;
+    padding: 0 0 100px;
 }
 
 .intro{
-    margin-bottom: 70px;    
-    
+    margin-bottom: 70px;       
 }
 
 /*
