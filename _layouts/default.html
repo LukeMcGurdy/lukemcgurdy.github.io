@@ -12,31 +12,9 @@
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     {% include meta.html %}
 
-    <!-- IE Shiv -->
-
-    <!--[if lt IE 9]>
-		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
-    <!-- Stylesheet -->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css" />
-
-    <!-- Feed -->
-
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Fonts -->
-
-    <link href='http://fonts.googleapis.com/css?family=Lobster+Two|ABeeZee' rel='stylesheet' type='text/css'>
-
-    <!-- Scripts -->
-
-    <script src="{{ site.baseurl }}/assets/js/jquery-1.11.2.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/functions.js"></script>
 </head>
 
-<body>
+<body class="default">
     <header>
 
     </header>
@@ -63,10 +41,7 @@
             </div>
         </section>
     </main>
-    <footer>
-        <a href="lukemcgurdy.github.io" class="home" title="home"></a>
-        <a href="" class="twitter">Twitter</a>
-    </footer>
+    {% include footer.html %}
     {% include analytics.html %}
 </body>
 

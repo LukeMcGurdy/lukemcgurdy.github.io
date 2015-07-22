@@ -1,20 +1,20 @@
 /*
 ============================================
-	Fonts
+    Fonts
 ============================================
 
 /*
 ======================
-	Global Font Size
+    Global Font Size
 ======================
 */
 
-html { 
-    font-size: 62.5%; 
+html {
+    font-size: 62.5%;
 }
 /*
 ======================
-	Font Family
+    Font Family
 ======================
 */
 
@@ -26,7 +26,7 @@ $semibold: 600;
 $bold: 700;
 /*
 ======================
-	Font Colours
+    Font Colours
 ======================
 */
 
@@ -36,7 +36,7 @@ $grey: #828A8E;
 $darkGrey: #606666;
 /*
 ======================
-	Font Backgrounds
+    Font Backgrounds
 ======================
 */
 
@@ -46,7 +46,7 @@ $text-bg-three:#4c90c1;
 $text-bg-four:#59853D;
 /*
 ======================
-	Code block styles
+    Code block styles
 ======================
 */
 
@@ -59,7 +59,7 @@ code {
 }
 /*
 ======================
-	Font Elements
+    Font Elements
 ======================
 */
 
@@ -69,25 +69,22 @@ h1{
     font: 700 4.5rem 'Roboto', sans-serif;
     color:$white;
     margin: 0 0 35px 0;
-    
-    //background: $text-bg-one;
-    //display: inline-block;
-    
+
 }
 
 h2{
     font: 700 4.0rem 'Roboto', sans-serif;
     color: #404446;
-    margin: 0 0 35px 0;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #c0c0c0;
+    margin: 0 0 30px 0;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #d2dbe2;
     &:first-of-type{
         font-size: 6rem;
-    } 
+    }
 }
 
 h3 {
-    font: 700 2.0rem 'Roboto', sans-serif;
+    font: 700 2.5rem 'Raleway', sans-serif;
     color: $darkGrey;
     margin: 0 0 15px 0;
     display: inline-block;
@@ -127,7 +124,7 @@ strong {
 
 /*
 ============================================
-	Buttons
+    Buttons
 ============================================
 */
 

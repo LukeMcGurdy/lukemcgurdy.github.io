@@ -1,36 +1,26 @@
 <!DOCTYPE html>
-<!--[if lte IE 7]> <html class="ie7"> <![endif]-->  
-<!--[if IE 8]>     <html class="ie8"> <![endif]-->  
-<!--[if IE 9]>     <html class="ie9"> <![endif]-->  
+<!--[if lte IE 7]> <html class="ie7"> <![endif]-->
+<!--[if IE 8]>     <html class="ie8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html><!--<![endif]-->
-	<head>
+    <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-    	{% include meta.html %}
+        {% include meta.html %}
 
-		<!--[if lt IE 9]>
-		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
-
-       	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css" />
-
-		<script src="{{ site.baseurl }}/assets/js/jquery-1.11.2.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/functions.js"></script>
-
-	</head>
-	<body>
+    </head>
+    <body>
         <header id="blog-landing" class="blog-landing">
 
         </header>
-		<main>
- 			<section class="grid banner-wrap">
-			    <figure class="col-full banner">
+        <main>
+             <section class="grid banner-wrap">
+                <figure class="col-full banner">
 
-			    </figure>
-			</section>
-			<div class="menu-wrap">
+                </figure>
+            </section>
+            <div class="menu-wrap">
                 <button class="menu-button" id="menu-button" type="button">MENU</button>
                 <nav id="main-nav" class="main-nav">
                     <a href="{{ site.baseurl }}/">Home</a>
@@ -39,18 +29,15 @@
     <!--                <a href="#">Current Projects</a>-->
                 </nav>
             </div>
-			<section class="grid content">
-				<div class="col-full center">
-					<h2>Blog Posts</h2>
-					{{ content }}
-				</div>
-			</section>
-		</main>
-		<footer>
-			<a href="lukemcgurdy.github.io" class="home" title="home"></a>
-            <a href="" class="twitter">Twitter</a>
-		</footer>
-		{% include analytics.html %}
-	</body>
+            <section class="grid content">
+                <div class="col-full center">
+                    <h2>Blog Posts</h2>
+                    {{ content }}
+                </div>
+            </section>
+        </main>
+        {% include footer.html %}
+        {% include analytics.html %}
+    </body>
 </html>
 

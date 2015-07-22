@@ -438,12 +438,12 @@ th {
 
 /*
 ============================================
-	Fonts
+    Fonts
 ============================================
 
 /*
 ======================
-	Global Font Size
+    Global Font Size
 ======================
 */
 /* line 12, ../sass/ui_kit/_fonts.scss */
@@ -453,22 +453,22 @@ html {
 
 /*
 ======================
-	Font Family
+    Font Family
 ======================
 */
 /*
 ======================
-	Font Colours
+    Font Colours
 ======================
 */
 /*
 ======================
-	Font Backgrounds
+    Font Backgrounds
 ======================
 */
 /*
 ======================
-	Code block styles
+    Code block styles
 ======================
 */
 /* line 53, ../sass/ui_kit/_fonts.scss */
@@ -482,7 +482,7 @@ code {
 
 /*
 ======================
-	Font Elements
+    Font Elements
 ======================
 */
 /* General font styles */
@@ -493,53 +493,53 @@ h1 {
   margin: 0 0 35px 0;
 }
 
-/* line 78, ../sass/ui_kit/_fonts.scss */
+/* line 75, ../sass/ui_kit/_fonts.scss */
 h2 {
   font: 700 4.0rem 'Roboto', sans-serif;
   color: #404446;
-  margin: 0 0 35px 0;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #c0c0c0;
+  margin: 0 0 30px 0;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #d2dbe2;
 }
-/* line 84, ../sass/ui_kit/_fonts.scss */
+/* line 81, ../sass/ui_kit/_fonts.scss */
 h2:first-of-type {
   font-size: 6rem;
 }
 
-/* line 89, ../sass/ui_kit/_fonts.scss */
+/* line 86, ../sass/ui_kit/_fonts.scss */
 h3 {
-  font: 700 2.0rem 'Roboto', sans-serif;
+  font: 700 2.5rem 'Raleway', sans-serif;
   color: #606666;
   margin: 0 0 15px 0;
   display: inline-block;
   text-transform: capitalize;
 }
 
-/* line 97, ../sass/ui_kit/_fonts.scss */
+/* line 94, ../sass/ui_kit/_fonts.scss */
 a {
   font-size: 2.1rem;
   color: #02999a;
   text-decoration: none;
 }
-/* line 101, ../sass/ui_kit/_fonts.scss */
+/* line 98, ../sass/ui_kit/_fonts.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 106, ../sass/ui_kit/_fonts.scss */
+/* line 103, ../sass/ui_kit/_fonts.scss */
 p {
   font: 400 2.1rem/3.5rem 'Roboto', sans-serif;
   color: #828A8E;
   margin: 0 0 20px;
 }
 
-/* line 112, ../sass/ui_kit/_fonts.scss */
+/* line 109, ../sass/ui_kit/_fonts.scss */
 time {
   font: 400 1.6rem 'Roboto', sans-serif;
   color: #fff;
 }
 
-/* line 117, ../sass/ui_kit/_fonts.scss */
+/* line 114, ../sass/ui_kit/_fonts.scss */
 strong {
   font-weight: 700;
 }
@@ -547,11 +547,11 @@ strong {
 /* Specific font styles */
 /*
 ============================================
-	Buttons
+    Buttons
 ============================================
 */
 /* General link styles */
-/* line 153, ../sass/ui_kit/_fonts.scss */
+/* line 150, ../sass/ui_kit/_fonts.scss */
 .link {
   outline: none;
   text-decoration: none;
@@ -560,31 +560,31 @@ strong {
   line-height: 1;
   display: inline-block;
 }
-/* line 160, ../sass/ui_kit/_fonts.scss */
+/* line 157, ../sass/ui_kit/_fonts.scss */
 .link:hover {
   text-decoration: none;
 }
 
-/* line 165, ../sass/ui_kit/_fonts.scss */
+/* line 162, ../sass/ui_kit/_fonts.scss */
 .link--surinami {
   font: 400 100px/80px 'Lobster Two', cursive;
   text-transform: uppercase;
   color: #2b2b2b;
 }
 
-/* line 171, ../sass/ui_kit/_fonts.scss */
+/* line 168, ../sass/ui_kit/_fonts.scss */
 .link--surinami span {
   position: relative;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
-/* line 177, ../sass/ui_kit/_fonts.scss */
+/* line 174, ../sass/ui_kit/_fonts.scss */
 .link--surinami:hover span {
   color: transparent;
 }
 
-/* line 181, ../sass/ui_kit/_fonts.scss */
+/* line 178, ../sass/ui_kit/_fonts.scss */
 .link--surinami span::before,
 .link--surinami span::after {
   position: absolute;
@@ -594,7 +594,7 @@ strong {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-/* line 190, ../sass/ui_kit/_fonts.scss */
+/* line 187, ../sass/ui_kit/_fonts.scss */
 .link--surinami span::before {
   content: attr(data-letters-l);
   top: 20px;
@@ -602,7 +602,7 @@ strong {
   transform: translate3d(-5px, 0, 0);
 }
 
-/* line 197, ../sass/ui_kit/_fonts.scss */
+/* line 194, ../sass/ui_kit/_fonts.scss */
 .link--surinami span::after {
   content: attr(data-letters-r);
   left: 0;
@@ -611,7 +611,7 @@ strong {
   transform: translate3d(5px, 0, 0);
 }
 
-/* line 205, ../sass/ui_kit/_fonts.scss */
+/* line 202, ../sass/ui_kit/_fonts.scss */
 .link--surinami:hover span::before,
 .link--surinami:hover span::after {
   opacity: 1;
@@ -621,7 +621,7 @@ strong {
 
 /* Media Queries */
 @media screen and (max-width: 50em) {
-  /* line 214, ../sass/ui_kit/_fonts.scss */
+  /* line 211, ../sass/ui_kit/_fonts.scss */
   .link--surinami {
     font-size: 3em;
   }
@@ -720,7 +720,7 @@ img {
 
 /*
 ==============================================
-	Body styles 
+    Body styles
 ==============================================
 */
 /* line 7, ../sass/base/_body.scss */
@@ -735,7 +735,7 @@ main {
 
 /*
 ======================
-	Banner
+    Banner
 ======================
 */
 /* line 21, ../sass/base/_body.scss */
@@ -752,7 +752,7 @@ main {
 
 /*
 ======================
-	Banner Text
+    Banner Text
 ======================
 */
 /* line 36, ../sass/base/_body.scss */
@@ -762,37 +762,38 @@ main {
   background: none;
   float: left;
   display: inline-block;
-  font: 400 100px/80px 'Lobster Two', cursive;
+  font-size: 8.5rem;
   color: #4c90c1;
-  text-shadow: 1px 1px 0px #CCC, 6px 6px 0 rgba(88, 0, 20, 0.8);
+  text-shadow: 1px 1px 0px #000;
   padding-right: 0;
+  padding-left: 20px;
 }
 
-/* line 48, ../sass/base/_body.scss */
+/* line 50, ../sass/base/_body.scss */
 .banner p {
   color: #fff;
   padding: 5px 15px;
   background-color: #FFC202;
 }
 
-/* line 54, ../sass/base/_body.scss */
+/* line 56, ../sass/base/_body.scss */
 .banner p:nth-child(1) {
   background-color: #cc6666;
 }
 
 /*
 ======================
-	Menu
+    Menu
 ======================
 */
-/* line 63, ../sass/base/_body.scss */
+/* line 65, ../sass/base/_body.scss */
 .menu-wrap {
   position: relative;
   width: 100%;
   height: 65px;
 }
 
-/* line 68, ../sass/base/_body.scss */
+/* line 70, ../sass/base/_body.scss */
 .menu-button {
   display: inline-block;
   background: #E55EA2;
@@ -812,7 +813,7 @@ main {
   z-index: 999;
 }
 
-/* line 86, ../sass/base/_body.scss */
+/* line 88, ../sass/base/_body.scss */
 .menu-button:hover,
 .menu-active {
   -webkit-box-shadow: -5px 5px 0px 0px #cccccc;
@@ -820,7 +821,7 @@ main {
   box-shadow: -5px 5px 0px 0px #cccccc;
 }
 
-/* line 92, ../sass/base/_body.scss */
+/* line 94, ../sass/base/_body.scss */
 .main-nav {
   display: -webkit-flex;
   display: -moz-flex;
@@ -844,40 +845,40 @@ main {
   background-color: rgba(204, 204, 204, 0.3);
   white-space: nowrap;
 }
-/* line 114, ../sass/base/_body.scss */
+/* line 116, ../sass/base/_body.scss */
 .main-nav a {
   font-size: 2.5rem;
   margin-right: 35px;
   display: inline-block;
 }
-/* line 118, ../sass/base/_body.scss */
+/* line 120, ../sass/base/_body.scss */
 .main-nav a:last-of-type {
   margin-right: 0;
 }
 
 /*
 ======================
-	Content area
+    Content area
 ======================
 */
-/* line 131, ../sass/base/_body.scss */
+/* line 133, ../sass/base/_body.scss */
 .content {
   margin: 0 auto;
   max-width: 960px;
   padding: 0 0 100px;
 }
 
-/* line 137, ../sass/base/_body.scss */
+/* line 139, ../sass/base/_body.scss */
 .intro {
   margin-bottom: 70px;
 }
 
 /*
 ======================
-	Blog landing page
+    Blog landing page
 ======================
 */
-/* line 147, ../sass/base/_body.scss */
+/* line 149, ../sass/base/_body.scss */
 .archive-container {
   padding: 0;
   margin: 0;
@@ -892,7 +893,7 @@ main {
   align-items: center;
 }
 
-/* line 161, ../sass/base/_body.scss */
+/* line 163, ../sass/base/_body.scss */
 .archive-container a {
   -webkit-display: flex;
   -moz-display: flex;
@@ -910,8 +911,9 @@ main {
   -webkit-transition: all 0.55s ease;
   -o-transition: all 0.55s ease;
   transition: all 0.55s ease;
+  text-decoration: none;
 }
-/* line 178, ../sass/base/_body.scss */
+/* line 181, ../sass/base/_body.scss */
 .archive-container a:hover {
   background: rgba(255, 141, 71, 0.9);
   text-decoration: none;
@@ -921,17 +923,17 @@ main {
   cursor: pointer;
 }
 
-/* line 188, ../sass/base/_body.scss */
+/* line 191, ../sass/base/_body.scss */
 .archive-container a:nth-child(1) {
   width: 100%;
   background: tomato;
 }
-/* line 191, ../sass/base/_body.scss */
+/* line 194, ../sass/base/_body.scss */
 .archive-container a:nth-child(1):hover {
   background: rgba(255, 99, 71, 0.9);
 }
 
-/* line 196, ../sass/base/_body.scss */
+/* line 199, ../sass/base/_body.scss */
 .archive-container a li {
   -webkit-display: flex;
   -moz-display: flex;
@@ -941,35 +943,36 @@ main {
   color: #fff;
 }
 
-/* line 205, ../sass/base/_body.scss */
+/* line 208, ../sass/base/_body.scss */
 .archive-container h2 {
   color: #fff;
   padding: 0;
+  border-bottom: none;
 }
 
-/* line 210, ../sass/base/_body.scss */
+/* line 214, ../sass/base/_body.scss */
 .archive-container a:nth-child(1) li h2 {
   font-size: 4.0rem;
 }
 
-/* line 213, ../sass/base/_body.scss */
+/* line 217, ../sass/base/_body.scss */
 .archive-container a li h2 {
   font-size: 2.3rem;
 }
 
 /*
 ======================
-	Individual Blog
+    Individual Blog
 ======================
 */
-/* line 222, ../sass/base/_body.scss */
+/* line 226, ../sass/base/_body.scss */
 .date {
   font: 400 1.6rem 'Roboto', sans-serif;
   color: #606666;
   margin: 50px 0 20px;
 }
 
-/* line 229, ../sass/base/_body.scss */
+/* line 233, ../sass/base/_body.scss */
 .container {
   position: relative;
   width: 540px;
@@ -978,7 +981,7 @@ main {
   height: 600px;
 }
 
-/* line 237, ../sass/base/_body.scss */
+/* line 241, ../sass/base/_body.scss */
 .sun div {
   display: inline-block;
   position: absolute;
@@ -986,15 +989,15 @@ main {
 
 /*
 ======================
-	Solar system test
+    Solar system test
 ======================
 */
-/* line 250, ../sass/base/_body.scss */
+/* line 254, ../sass/base/_body.scss */
 .planet {
   z-index: 9;
 }
 
-/* line 254, ../sass/base/_body.scss */
+/* line 258, ../sass/base/_body.scss */
 .sun {
   width: 80px;
   height: 80px;
@@ -1013,7 +1016,7 @@ main {
   background: -ms-radial-gradient(center, ellipse cover, #fcf3a1 0%, #f1da36 100%);
 }
 
-/* line 272, ../sass/base/_body.scss */
+/* line 276, ../sass/base/_body.scss */
 .mercury {
   width: 10px;
   height: 10px;
@@ -1023,7 +1026,7 @@ main {
   background: red;
 }
 
-/* line 281, ../sass/base/_body.scss */
+/* line 285, ../sass/base/_body.scss */
 .venus {
   width: 15px;
   height: 15px;
@@ -1033,7 +1036,7 @@ main {
   left: 0px;
 }
 
-/* line 290, ../sass/base/_body.scss */
+/* line 294, ../sass/base/_body.scss */
 .earth {
   overflow: hidden;
   width: 30px;
@@ -1043,7 +1046,7 @@ main {
   top: 60px;
   left: 0;
 }
-/* line 298, ../sass/base/_body.scss */
+/* line 302, ../sass/base/_body.scss */
 .earth:before {
   position: absolute;
   top: 0;
@@ -1054,7 +1057,7 @@ main {
   width: 30px;
   background: url("../images/clouds.png") no-repeat 0 0;
 }
-/* line 308, ../sass/base/_body.scss */
+/* line 312, ../sass/base/_body.scss */
 .earth:after {
   position: absolute;
   top: -15px;
@@ -1069,7 +1072,7 @@ main {
   box-shadow: 0px 25px 7px -10px rgba(0, 0, 0, 0.75);
 }
 
-/* line 332, ../sass/base/_body.scss */
+/* line 336, ../sass/base/_body.scss */
 .mars {
   display: none !important;
   width: 30px;
@@ -1080,7 +1083,7 @@ main {
   right: -122px;
 }
 
-/* line 342, ../sass/base/_body.scss */
+/* line 346, ../sass/base/_body.scss */
 .jupiter {
   display: none !important;
   width: 30px;
@@ -1092,7 +1095,7 @@ main {
   transform-origin: 8px 8px;
 }
 
-/* line 353, ../sass/base/_body.scss */
+/* line 357, ../sass/base/_body.scss */
 .saturn {
   display: none !important;
   width: 30px;
@@ -1104,7 +1107,7 @@ main {
   background: red;
 }
 
-/* line 364, ../sass/base/_body.scss */
+/* line 368, ../sass/base/_body.scss */
 .uranus
  {
   display: none !important;
@@ -1116,7 +1119,7 @@ main {
   transform-origin: 10px 10px;
 }
 
-/* line 377, ../sass/base/_body.scss */
+/* line 381, ../sass/base/_body.scss */
 .neptune {
   display: none !important;
   width: 30px;
@@ -1128,7 +1131,7 @@ main {
   background: red;
 }
 
-/* line 388, ../sass/base/_body.scss */
+/* line 392, ../sass/base/_body.scss */
 .pluto {
   display: none !important;
   width: 30px;
@@ -1140,12 +1143,12 @@ main {
   background: red;
 }
 
-/* line 400, ../sass/base/_body.scss */
+/* line 404, ../sass/base/_body.scss */
 .orbit {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/* line 404, ../sass/base/_body.scss */
+/* line 408, ../sass/base/_body.scss */
 .mercury-orbit {
   width: 110px;
   height: 110px;
@@ -1154,7 +1157,7 @@ main {
   top: -15px;
 }
 
-/* line 412, ../sass/base/_body.scss */
+/* line 416, ../sass/base/_body.scss */
 .venus-orbit {
   width: 150px;
   height: 150px;
@@ -1163,7 +1166,7 @@ main {
   top: -35px;
 }
 
-/* line 420, ../sass/base/_body.scss */
+/* line 424, ../sass/base/_body.scss */
 .earth-orbit {
   width: 280px;
   height: 280px;
@@ -1172,32 +1175,32 @@ main {
   top: -100px;
 }
 
-/* line 475, ../sass/base/_body.scss */
+/* line 479, ../sass/base/_body.scss */
 .mercury-orbit {
   animation: spin 50s infinite linear;
 }
 
-/* line 479, ../sass/base/_body.scss */
+/* line 483, ../sass/base/_body.scss */
 .venus-orbit {
   animation: spin 100s infinite linear;
 }
 
-/* line 483, ../sass/base/_body.scss */
+/* line 487, ../sass/base/_body.scss */
 .earth {
   animation: spin 50s infinite linear;
 }
 
-/* line 487, ../sass/base/_body.scss */
+/* line 491, ../sass/base/_body.scss */
 .shadow {
   animation: spinCounter 50s infinite linear;
 }
 
-/* line 491, ../sass/base/_body.scss */
+/* line 495, ../sass/base/_body.scss */
 .earth:before {
   animation: spinCounter 100s infinite linear;
 }
 
-/* line 495, ../sass/base/_body.scss */
+/* line 499, ../sass/base/_body.scss */
 .earth-orbit {
   animation: spin 50s infinite linear;
 }
@@ -1222,12 +1225,19 @@ main {
 footer {
   height: 100px;
   width: 100%;
-  background: #4C90C1;
+  background: #2c3637;
+  text-align: center;
+}
+/* line 7, ../sass/base/_footer.scss */
+footer small {
+  display: block;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 /*
 ==============================================
-	Responsive Styles
+    Responsive Styles
 ==============================================
 */
 @media all and (max-width: 1024px) {
@@ -1259,34 +1269,63 @@ footer {
     margin: 30px 0 0;
   }
 }
+@media all and (max-width: 768px) {
+  /* line 29, ../sass/ui_kit/_responsive.scss */
+  .archive-container a:nth-child(1) li h2 {
+    font-size: 2.5rem;
+    padding: 0 20px;
+  }
+
+  /* line 33, ../sass/ui_kit/_responsive.scss */
+  .archive-container a {
+    width: 100%;
+    height: 250px;
+    padding: 0 20px;
+  }
+
+  /* line 38, ../sass/ui_kit/_responsive.scss */
+  .archive-container h2 {
+    line-height: 3rem;
+  }
+}
 @media all and (max-width: 640px) {
-  /* line 28, ../sass/ui_kit/_responsive.scss */
+  /* line 44, ../sass/ui_kit/_responsive.scss */
   .menu-wrap {
     height: 120px;
   }
-  /* line 30, ../sass/ui_kit/_responsive.scss */
+  /* line 46, ../sass/ui_kit/_responsive.scss */
   .menu-wrap .main-nav {
     align-items: flex-end;
     padding-bottom: 20px;
   }
-  /* line 33, ../sass/ui_kit/_responsive.scss */
+  /* line 49, ../sass/ui_kit/_responsive.scss */
   .menu-wrap .main-nav a {
     font-size: 1.6rem;
   }
+
+  /* line 54, ../sass/ui_kit/_responsive.scss */
+  .content {
+    padding-bottom: 50px;
+  }
 }
 @media all and (max-width: 340px) {
-  /* line 40, ../sass/ui_kit/_responsive.scss */
+  /* line 60, ../sass/ui_kit/_responsive.scss */
+  h2:first-of-type {
+    font-size: 5rem;
+  }
+
+  /* line 63, ../sass/ui_kit/_responsive.scss */
   header .main-nav a {
     float: left;
     padding-left: 35px;
     font-size: 25px;
   }
-  /* line 44, ../sass/ui_kit/_responsive.scss */
+  /* line 67, ../sass/ui_kit/_responsive.scss */
   header .main-nav a:nth-child(1) {
     margin-top: 200px;
   }
 
-  /* line 48, ../sass/ui_kit/_responsive.scss */
+  /* line 71, ../sass/ui_kit/_responsive.scss */
   .banner h1 {
     font-size: 70px;
   }
