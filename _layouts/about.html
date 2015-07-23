@@ -10,31 +10,27 @@
         {% include meta.html %}
 
     </head>
-    <body>
-    <header>
-        <div class="menu-wrap">
-            <button class="menu-button" id="menu-button" type="button">
-                <span class="burger-icon"></span> MENU
-            </button>
-            <nav id="main-nav" class="main-nav">
-                <a href="#">Home</a>
-                <a href="/about">About</a>
-                <a href="/archive.html">Blog</a>
-<!--                <a href="#">Current Projects</a>-->
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="grid banner-wrap">
-            <div class="col-full banner">
+    <body class="about">
+    <header class="grid banner-wrap">
+        <div class="col-full banner">
                 <div class="col-1-3 banner-text">
                     <h1>First<br>Things</h1>
                 </div>
-            </div>
-        </section>
+        </div>
+    </header>
+    <main>
+        <div class="menu-wrap">
+            <button class="menu-button" id="menu-button" type="button">MENU</button>
+            <nav id="main-nav" class="main-nav">
+                <a href="{{ site.baseurl }}/">Home</a>
+                <a href="/about">About</a>
+                <a href="/blog">Blog</a>
+                <!-- <a href="#">Current Projects</a>-->
+            </nav>
+        </div>
         <section class="grid content">
             <div class="col-full center">
-                Nothing to see here yet
+                {{ content }}
             </div>
         </section>
     </main>

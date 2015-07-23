@@ -1,0 +1,59 @@
+$bannerLarge: 500px;
+$bannerSmall: 220px;
+
+
+/*
+======================
+    Banner
+======================
+*/
+
+.banner-wrap {
+    overflow: hidden;
+}
+
+.banner-wrap .banner {
+    background: url('../images/tokyo.jpg') center / cover no-repeat;
+    margin: 0;
+    height: $bannerLarge;
+}
+
+.blog-landing .banner-wrap .banner{
+    background: url('../images/building.jpg') center / cover no-repeat;
+    height: $bannerSmall;
+}
+
+.about .banner-wrap .banner{
+    background: url('../images/floor.jpg') center / cover no-repeat;
+    height: $bannerSmall;
+}
+
+/*
+======================
+    Banner Text
+======================
+*/
+
+.banner h1 {
+    position: relative;
+    z-index: 9;
+    background: none;
+    float: left;
+    display: inline-block;
+    font-size: 8.5rem;
+    //font: 400 100px/80px 'Lobster Two', cursive;
+    color: #4c90c1;
+    text-shadow: 1px 1px 0px #000;
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+.banner p {
+    color: $white;
+    padding: 5px 15px;
+    background-color: $text-bg-two;
+}
+
+.banner p:nth-child(1) {
+    background-color: $text-bg-one;
+}

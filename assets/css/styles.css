@@ -471,7 +471,7 @@ html {
     Code block styles
 ======================
 */
-/* line 53, ../sass/ui_kit/_fonts.scss */
+/* line 57, ../sass/ui_kit/_fonts.scss */
 code {
   clear: both;
   background: #828A8E;
@@ -486,27 +486,27 @@ code {
 ======================
 */
 /* General font styles */
-/* line 68, ../sass/ui_kit/_fonts.scss */
+/* line 71, ../sass/ui_kit/_fonts.scss */
 h1 {
   font: 700 4.5rem 'Roboto', sans-serif;
   color: #fff;
   margin: 0 0 35px 0;
 }
 
-/* line 75, ../sass/ui_kit/_fonts.scss */
+/* line 77, ../sass/ui_kit/_fonts.scss */
 h2 {
   font: 700 4.0rem 'Roboto', sans-serif;
   color: #404446;
-  margin: 0 0 30px 0;
+  margin: 10px 0 30px 0;
   padding-bottom: 25px;
   border-bottom: 2px solid #d2dbe2;
 }
-/* line 81, ../sass/ui_kit/_fonts.scss */
+/* line 83, ../sass/ui_kit/_fonts.scss */
 h2:first-of-type {
   font-size: 6rem;
 }
 
-/* line 86, ../sass/ui_kit/_fonts.scss */
+/* line 88, ../sass/ui_kit/_fonts.scss */
 h3 {
   font: 700 2.5rem 'Raleway', sans-serif;
   color: #606666;
@@ -515,43 +515,48 @@ h3 {
   text-transform: capitalize;
 }
 
-/* line 94, ../sass/ui_kit/_fonts.scss */
+/* line 96, ../sass/ui_kit/_fonts.scss */
 a {
   font-size: 2.1rem;
-  color: #02999a;
+  color: #4C90C1;
   text-decoration: none;
 }
-/* line 98, ../sass/ui_kit/_fonts.scss */
+/* line 100, ../sass/ui_kit/_fonts.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 103, ../sass/ui_kit/_fonts.scss */
+/* line 105, ../sass/ui_kit/_fonts.scss */
 p {
   font: 400 2.1rem/3.5rem 'Roboto', sans-serif;
   color: #828A8E;
   margin: 0 0 20px;
 }
 
-/* line 109, ../sass/ui_kit/_fonts.scss */
+/* line 111, ../sass/ui_kit/_fonts.scss */
 time {
   font: 400 1.6rem 'Roboto', sans-serif;
   color: #fff;
 }
 
-/* line 114, ../sass/ui_kit/_fonts.scss */
+/* line 116, ../sass/ui_kit/_fonts.scss */
 strong {
   font-weight: 700;
 }
 
 /* Specific font styles */
+/* line 121, ../sass/ui_kit/_fonts.scss */
+.back {
+  float: right;
+}
+
 /*
 ============================================
     Buttons
 ============================================
 */
 /* General link styles */
-/* line 150, ../sass/ui_kit/_fonts.scss */
+/* line 149, ../sass/ui_kit/_fonts.scss */
 .link {
   outline: none;
   text-decoration: none;
@@ -560,31 +565,31 @@ strong {
   line-height: 1;
   display: inline-block;
 }
-/* line 157, ../sass/ui_kit/_fonts.scss */
+/* line 156, ../sass/ui_kit/_fonts.scss */
 .link:hover {
   text-decoration: none;
 }
 
-/* line 162, ../sass/ui_kit/_fonts.scss */
+/* line 161, ../sass/ui_kit/_fonts.scss */
 .link--surinami {
   font: 400 100px/80px 'Lobster Two', cursive;
   text-transform: uppercase;
   color: #2b2b2b;
 }
 
-/* line 168, ../sass/ui_kit/_fonts.scss */
+/* line 167, ../sass/ui_kit/_fonts.scss */
 .link--surinami span {
   position: relative;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
-/* line 174, ../sass/ui_kit/_fonts.scss */
+/* line 173, ../sass/ui_kit/_fonts.scss */
 .link--surinami:hover span {
   color: transparent;
 }
 
-/* line 178, ../sass/ui_kit/_fonts.scss */
+/* line 177, ../sass/ui_kit/_fonts.scss */
 .link--surinami span::before,
 .link--surinami span::after {
   position: absolute;
@@ -594,7 +599,7 @@ strong {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-/* line 187, ../sass/ui_kit/_fonts.scss */
+/* line 186, ../sass/ui_kit/_fonts.scss */
 .link--surinami span::before {
   content: attr(data-letters-l);
   top: 20px;
@@ -602,7 +607,7 @@ strong {
   transform: translate3d(-5px, 0, 0);
 }
 
-/* line 194, ../sass/ui_kit/_fonts.scss */
+/* line 193, ../sass/ui_kit/_fonts.scss */
 .link--surinami span::after {
   content: attr(data-letters-r);
   left: 0;
@@ -611,7 +616,7 @@ strong {
   transform: translate3d(5px, 0, 0);
 }
 
-/* line 202, ../sass/ui_kit/_fonts.scss */
+/* line 201, ../sass/ui_kit/_fonts.scss */
 .link--surinami:hover span::before,
 .link--surinami:hover span::after {
   opacity: 1;
@@ -621,7 +626,7 @@ strong {
 
 /* Media Queries */
 @media screen and (max-width: 50em) {
-  /* line 211, ../sass/ui_kit/_fonts.scss */
+  /* line 210, ../sass/ui_kit/_fonts.scss */
   .link--surinami {
     font-size: 3em;
   }
@@ -719,6 +724,66 @@ img {
 }
 
 /*
+======================
+    Banner
+======================
+*/
+/* line 11, ../sass/base/_header.scss */
+.banner-wrap {
+  overflow: hidden;
+}
+
+/* line 15, ../sass/base/_header.scss */
+.banner-wrap .banner {
+  background: url("../images/tokyo.jpg") center/cover no-repeat;
+  margin: 0;
+  height: 500px;
+}
+
+/* line 21, ../sass/base/_header.scss */
+.blog-landing .banner-wrap .banner {
+  background: url("../images/building.jpg") center/cover no-repeat;
+  height: 220px;
+}
+
+/* line 26, ../sass/base/_header.scss */
+.about .banner-wrap .banner {
+  background: url("../images/floor.jpg") center/cover no-repeat;
+  height: 220px;
+}
+
+/*
+======================
+    Banner Text
+======================
+*/
+/* line 37, ../sass/base/_header.scss */
+.banner h1 {
+  position: relative;
+  z-index: 9;
+  background: none;
+  float: left;
+  display: inline-block;
+  font-size: 8.5rem;
+  color: #4c90c1;
+  text-shadow: 1px 1px 0px #000;
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+/* line 51, ../sass/base/_header.scss */
+.banner p {
+  color: #fff;
+  padding: 5px 15px;
+  background-color: #FFC202;
+}
+
+/* line 57, ../sass/base/_header.scss */
+.banner p:nth-child(1) {
+  background-color: #cc6666;
+}
+
+/*
 ==============================================
     Body styles
 ==============================================
@@ -735,65 +800,17 @@ main {
 
 /*
 ======================
-    Banner
-======================
-*/
-/* line 21, ../sass/base/_body.scss */
-.banner-wrap {
-  overflow: hidden;
-}
-
-/* line 25, ../sass/base/_body.scss */
-.banner-wrap .banner {
-  background: url("../images/tokyo.jpg") center/cover no-repeat #4C90C1;
-  margin: 0;
-  height: 500px;
-}
-
-/*
-======================
-    Banner Text
-======================
-*/
-/* line 36, ../sass/base/_body.scss */
-.banner h1 {
-  position: relative;
-  z-index: 9;
-  background: none;
-  float: left;
-  display: inline-block;
-  font-size: 8.5rem;
-  color: #4c90c1;
-  text-shadow: 1px 1px 0px #000;
-  padding-right: 0;
-  padding-left: 20px;
-}
-
-/* line 50, ../sass/base/_body.scss */
-.banner p {
-  color: #fff;
-  padding: 5px 15px;
-  background-color: #FFC202;
-}
-
-/* line 56, ../sass/base/_body.scss */
-.banner p:nth-child(1) {
-  background-color: #cc6666;
-}
-
-/*
-======================
     Menu
 ======================
 */
-/* line 65, ../sass/base/_body.scss */
+/* line 21, ../sass/base/_body.scss */
 .menu-wrap {
   position: relative;
   width: 100%;
   height: 65px;
 }
 
-/* line 70, ../sass/base/_body.scss */
+/* line 27, ../sass/base/_body.scss */
 .menu-button {
   display: inline-block;
   background: #E55EA2;
@@ -813,7 +830,7 @@ main {
   z-index: 999;
 }
 
-/* line 88, ../sass/base/_body.scss */
+/* line 46, ../sass/base/_body.scss */
 .menu-button:hover,
 .menu-active {
   -webkit-box-shadow: -5px 5px 0px 0px #cccccc;
@@ -821,7 +838,7 @@ main {
   box-shadow: -5px 5px 0px 0px #cccccc;
 }
 
-/* line 94, ../sass/base/_body.scss */
+/* line 53, ../sass/base/_body.scss */
 .main-nav {
   display: -webkit-flex;
   display: -moz-flex;
@@ -845,13 +862,13 @@ main {
   background-color: rgba(204, 204, 204, 0.3);
   white-space: nowrap;
 }
-/* line 116, ../sass/base/_body.scss */
+/* line 75, ../sass/base/_body.scss */
 .main-nav a {
   font-size: 2.5rem;
   margin-right: 35px;
   display: inline-block;
 }
-/* line 120, ../sass/base/_body.scss */
+/* line 79, ../sass/base/_body.scss */
 .main-nav a:last-of-type {
   margin-right: 0;
 }
@@ -861,14 +878,14 @@ main {
     Content area
 ======================
 */
-/* line 133, ../sass/base/_body.scss */
+/* line 90, ../sass/base/_body.scss */
 .content {
   margin: 0 auto;
   max-width: 960px;
   padding: 0 0 100px;
 }
 
-/* line 139, ../sass/base/_body.scss */
+/* line 96, ../sass/base/_body.scss */
 .intro {
   margin-bottom: 70px;
 }
@@ -878,7 +895,7 @@ main {
     Blog landing page
 ======================
 */
-/* line 149, ../sass/base/_body.scss */
+/* line 105, ../sass/base/_body.scss */
 .archive-container {
   padding: 0;
   margin: 0;
@@ -893,7 +910,7 @@ main {
   align-items: center;
 }
 
-/* line 163, ../sass/base/_body.scss */
+/* line 119, ../sass/base/_body.scss */
 .archive-container a {
   -webkit-display: flex;
   -moz-display: flex;
@@ -913,7 +930,7 @@ main {
   transition: all 0.55s ease;
   text-decoration: none;
 }
-/* line 181, ../sass/base/_body.scss */
+/* line 137, ../sass/base/_body.scss */
 .archive-container a:hover {
   background: rgba(255, 141, 71, 0.9);
   text-decoration: none;
@@ -923,17 +940,17 @@ main {
   cursor: pointer;
 }
 
-/* line 191, ../sass/base/_body.scss */
+/* line 147, ../sass/base/_body.scss */
 .archive-container a:nth-child(1) {
   width: 100%;
   background: tomato;
 }
-/* line 194, ../sass/base/_body.scss */
+/* line 150, ../sass/base/_body.scss */
 .archive-container a:nth-child(1):hover {
   background: rgba(255, 99, 71, 0.9);
 }
 
-/* line 199, ../sass/base/_body.scss */
+/* line 155, ../sass/base/_body.scss */
 .archive-container a li {
   -webkit-display: flex;
   -moz-display: flex;
@@ -943,19 +960,19 @@ main {
   color: #fff;
 }
 
-/* line 208, ../sass/base/_body.scss */
+/* line 164, ../sass/base/_body.scss */
 .archive-container h2 {
   color: #fff;
   padding: 0;
   border-bottom: none;
 }
 
-/* line 214, ../sass/base/_body.scss */
+/* line 170, ../sass/base/_body.scss */
 .archive-container a:nth-child(1) li h2 {
   font-size: 4.0rem;
 }
 
-/* line 217, ../sass/base/_body.scss */
+/* line 174, ../sass/base/_body.scss */
 .archive-container a li h2 {
   font-size: 2.3rem;
 }
@@ -965,14 +982,19 @@ main {
     Individual Blog
 ======================
 */
-/* line 226, ../sass/base/_body.scss */
+/* line 183, ../sass/base/_body.scss */
 .date {
   font: 400 1.6rem 'Roboto', sans-serif;
   color: #606666;
   margin: 50px 0 20px;
 }
 
-/* line 233, ../sass/base/_body.scss */
+/*
+======================
+    Solar system test
+======================
+*/
+/* line 196, ../sass/base/_body.scss */
 .container {
   position: relative;
   width: 540px;
@@ -981,23 +1003,18 @@ main {
   height: 600px;
 }
 
-/* line 241, ../sass/base/_body.scss */
+/* line 204, ../sass/base/_body.scss */
 .sun div {
   display: inline-block;
   position: absolute;
 }
 
-/*
-======================
-    Solar system test
-======================
-*/
-/* line 254, ../sass/base/_body.scss */
+/* line 210, ../sass/base/_body.scss */
 .planet {
   z-index: 9;
 }
 
-/* line 258, ../sass/base/_body.scss */
+/* line 214, ../sass/base/_body.scss */
 .sun {
   width: 80px;
   height: 80px;
@@ -1016,7 +1033,7 @@ main {
   background: -ms-radial-gradient(center, ellipse cover, #fcf3a1 0%, #f1da36 100%);
 }
 
-/* line 276, ../sass/base/_body.scss */
+/* line 232, ../sass/base/_body.scss */
 .mercury {
   width: 10px;
   height: 10px;
@@ -1026,7 +1043,7 @@ main {
   background: red;
 }
 
-/* line 285, ../sass/base/_body.scss */
+/* line 241, ../sass/base/_body.scss */
 .venus {
   width: 15px;
   height: 15px;
@@ -1036,7 +1053,7 @@ main {
   left: 0px;
 }
 
-/* line 294, ../sass/base/_body.scss */
+/* line 250, ../sass/base/_body.scss */
 .earth {
   overflow: hidden;
   width: 30px;
@@ -1046,7 +1063,7 @@ main {
   top: 60px;
   left: 0;
 }
-/* line 302, ../sass/base/_body.scss */
+/* line 258, ../sass/base/_body.scss */
 .earth:before {
   position: absolute;
   top: 0;
@@ -1057,7 +1074,7 @@ main {
   width: 30px;
   background: url("../images/clouds.png") no-repeat 0 0;
 }
-/* line 312, ../sass/base/_body.scss */
+/* line 268, ../sass/base/_body.scss */
 .earth:after {
   position: absolute;
   top: -15px;
@@ -1072,7 +1089,7 @@ main {
   box-shadow: 0px 25px 7px -10px rgba(0, 0, 0, 0.75);
 }
 
-/* line 336, ../sass/base/_body.scss */
+/* line 292, ../sass/base/_body.scss */
 .mars {
   display: none !important;
   width: 30px;
@@ -1083,7 +1100,7 @@ main {
   right: -122px;
 }
 
-/* line 346, ../sass/base/_body.scss */
+/* line 302, ../sass/base/_body.scss */
 .jupiter {
   display: none !important;
   width: 30px;
@@ -1095,7 +1112,7 @@ main {
   transform-origin: 8px 8px;
 }
 
-/* line 357, ../sass/base/_body.scss */
+/* line 313, ../sass/base/_body.scss */
 .saturn {
   display: none !important;
   width: 30px;
@@ -1107,7 +1124,7 @@ main {
   background: red;
 }
 
-/* line 368, ../sass/base/_body.scss */
+/* line 324, ../sass/base/_body.scss */
 .uranus
  {
   display: none !important;
@@ -1119,7 +1136,7 @@ main {
   transform-origin: 10px 10px;
 }
 
-/* line 381, ../sass/base/_body.scss */
+/* line 337, ../sass/base/_body.scss */
 .neptune {
   display: none !important;
   width: 30px;
@@ -1131,7 +1148,7 @@ main {
   background: red;
 }
 
-/* line 392, ../sass/base/_body.scss */
+/* line 348, ../sass/base/_body.scss */
 .pluto {
   display: none !important;
   width: 30px;
@@ -1143,12 +1160,12 @@ main {
   background: red;
 }
 
-/* line 404, ../sass/base/_body.scss */
+/* line 360, ../sass/base/_body.scss */
 .orbit {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/* line 408, ../sass/base/_body.scss */
+/* line 364, ../sass/base/_body.scss */
 .mercury-orbit {
   width: 110px;
   height: 110px;
@@ -1157,7 +1174,7 @@ main {
   top: -15px;
 }
 
-/* line 416, ../sass/base/_body.scss */
+/* line 372, ../sass/base/_body.scss */
 .venus-orbit {
   width: 150px;
   height: 150px;
@@ -1166,7 +1183,7 @@ main {
   top: -35px;
 }
 
-/* line 424, ../sass/base/_body.scss */
+/* line 380, ../sass/base/_body.scss */
 .earth-orbit {
   width: 280px;
   height: 280px;
@@ -1175,32 +1192,32 @@ main {
   top: -100px;
 }
 
-/* line 479, ../sass/base/_body.scss */
+/* line 435, ../sass/base/_body.scss */
 .mercury-orbit {
   animation: spin 50s infinite linear;
 }
 
-/* line 483, ../sass/base/_body.scss */
+/* line 439, ../sass/base/_body.scss */
 .venus-orbit {
   animation: spin 100s infinite linear;
 }
 
-/* line 487, ../sass/base/_body.scss */
+/* line 443, ../sass/base/_body.scss */
 .earth {
   animation: spin 50s infinite linear;
 }
 
-/* line 491, ../sass/base/_body.scss */
+/* line 447, ../sass/base/_body.scss */
 .shadow {
   animation: spinCounter 50s infinite linear;
 }
 
-/* line 495, ../sass/base/_body.scss */
+/* line 451, ../sass/base/_body.scss */
 .earth:before {
   animation: spinCounter 100s infinite linear;
 }
 
-/* line 499, ../sass/base/_body.scss */
+/* line 455, ../sass/base/_body.scss */
 .earth-orbit {
   animation: spin 50s infinite linear;
 }

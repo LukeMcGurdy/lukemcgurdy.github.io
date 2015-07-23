@@ -18,8 +18,12 @@ html {
 ======================
 */
 
-$font-open: 'Open Sans', Arial, sans-serif;
-$font-arial: 'Open Sans', Arial, sans-serif;
+$font-open: 'Open Sans',
+Arial,
+sans-serif;
+$font-arial: 'Open Sans',
+Arial,
+sans-serif;
 $light: 300;
 $regular: 400;
 $semibold: 600;
@@ -62,23 +66,21 @@ code {
     Font Elements
 ======================
 */
-
 /* General font styles */
 
-h1{
+h1 {
     font: 700 4.5rem 'Roboto', sans-serif;
-    color:$white;
+    color: $white;
     margin: 0 0 35px 0;
-
 }
 
-h2{
+h2 {
     font: 700 4.0rem 'Roboto', sans-serif;
     color: #404446;
-    margin: 0 0 30px 0;
+    margin: 10px 0 30px 0;
     padding-bottom: 25px;
     border-bottom: 2px solid #d2dbe2;
-    &:first-of-type{
+    &:first-of-type {
         font-size: 6rem;
     }
 }
@@ -93,7 +95,7 @@ h3 {
 
 a {
     font-size: 2.1rem;
-    color: #02999a;
+    color: #4C90C1;
     text-decoration: none;
     &:hover {
         text-decoration: underline;
@@ -106,7 +108,7 @@ p {
     margin: 0 0 20px;
 }
 
-time{
+time {
     font: 400 1.6rem 'Roboto', sans-serif;
     color: #fff;
 }
@@ -114,14 +116,11 @@ time{
 strong {
     font-weight: 700;
 }
-
 /* Specific font styles */
 
-
-
-
-
-
+.back {
+    float: right;
+}
 /*
 ============================================
     Buttons
@@ -154,7 +153,7 @@ strong {
     font-size: 80px;
     line-height: 1;
     display: inline-block;
-    &:hover{
+    &:hover {
         text-decoration: none;
     }
 }
@@ -184,7 +183,7 @@ strong {
     transition: transform 0.5s, opacity 0.5s;
 }
 
- .link--surinami span::before {
+.link--surinami span::before {
     content: attr(data-letters-l);
     top: 20px;
     -webkit-transform: translate3d(-5px, 0, 0);
@@ -193,7 +192,7 @@ strong {
 
 .link--surinami span::after {
     content: attr(data-letters-r);
-    left:0;
+    left: 0;
     bottom: -60px;
     -webkit-transform: translate3d(5px, 0, 0);
     transform: translate3d(5px, 0, 0);

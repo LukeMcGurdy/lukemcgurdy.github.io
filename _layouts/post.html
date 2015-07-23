@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: headless
 ---
 
 <article class="post">
@@ -11,9 +11,9 @@ layout: default
 
   <div class="date">
     {{ page.date | date: "%B %e, %Y" }}
-    <a class="back" href="{{ site.baseurl }}">Home</a>
+    <a class="back" href="{{ site.baseurl }}/blog">Back</a>
   </div>
- 
+
 
   {% include disqus.html %}
 </article>

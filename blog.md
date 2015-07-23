@@ -1,10 +1,10 @@
 ---
-layout: blog
+layout: blog-landing
 title: Blog
 permalink: /blog/
 ---
 <section class="archive">
-  
+
 {% for post in site.posts %}
   {% unless post.next %}
   <ul class="archive-container">
@@ -20,7 +20,7 @@ permalink: /blog/
     <a href="{{ post.url }}">
        <li>
             <h2>{{ post.title }}</h2>
-        
+
             <time>&nbsp;{{ post.date | date:"%d %b" }}</time>
         </li>
     </a>
