@@ -725,11 +725,11 @@ img {
 */
 /* line 7, ../sass/base/_body.scss */
 main {
-  -webkit-flex: 1px;
-  -moz-flex: 1px;
-  -ms-flex: 1px;
-  -o-flex: 1px;
-  flex: 1px;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
   background: #fff;
 }
 
