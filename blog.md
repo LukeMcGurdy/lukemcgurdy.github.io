@@ -1,5 +1,5 @@
 ---
-layout: blog-landing
+layout: headless
 title: Blog
 permalink: /blog/
 ---
@@ -21,7 +21,7 @@ permalink: /blog/
        <li>
             <h2>{{ post.title }}</h2>
 
-            <time>&nbsp;{{ post.date | date:"%d %b" }}</time>
+            <div class="bottom-half"><time>&nbsp;{{ post.date | date:"%d %b" }}</time></div>
         </li>
     </a>
 {% endfor %}

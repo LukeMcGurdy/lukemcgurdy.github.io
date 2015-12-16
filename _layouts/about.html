@@ -2,20 +2,22 @@
 <!--[if lte IE 7]> <html class="ie7"> <![endif]-->
 <!--[if IE 8]>     <html class="ie8"> <![endif]-->
 <!--[if IE 9]>     <html class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html><!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-        {% include meta.html %}
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
 
-    </head>
-    <body class="about">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% include meta.html %}
+
+</head>
+
+<body class="about">
     <header class="grid banner-wrap">
         <div class="col-full banner">
-                <div class="col-1-3 banner-text">
-                    <h1>First<br>Things</h1>
-                </div>
+            <h1>First<br>Things</h1>
         </div>
     </header>
     <main>
@@ -34,8 +36,7 @@
             </div>
         </section>
     </main>
-    {% include footer.html %}
-    {% include analytics.html %}
-    </body>
-</html>
+    {% include footer.html %} {% include analytics.html %}
+</body>
 
+</html>

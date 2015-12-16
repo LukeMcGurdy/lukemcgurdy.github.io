@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Only the penitent man shall pass
+category: posts
 published: true
 ---
 

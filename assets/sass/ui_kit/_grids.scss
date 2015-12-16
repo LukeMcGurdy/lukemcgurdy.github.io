@@ -1,9 +1,9 @@
 // Variables and extensions
 $padding: 20px;
-.clearfix{
+.clearfix {
     content: "";
     display: table;
-    clear: both;   
+    clear: both;
 }
 
 // Grid wrapper
@@ -19,31 +19,39 @@ $padding: 20px;
 }
 
 // Set column widths
-.col-full{
+.col-full {
     width: 100%;
     float: none;
 }
-.col-1-2{
+
+.col-1-2 {
     width: 50%;
 }
-.col-1-3{
+
+.col-1-3 {
     width: 33.3%;
 }
-.col-2-3{
-     width: 66.6%;   
+
+.col-2-3 {
+    width: 66.6%;
 }
-.col-1-4{
+
+.col-1-4 {
     width: 25%;
 }
-.col-1-5{
+
+.col-1-5 {
     width: 20%;
 }
-.col-3-5{
+
+.col-3-5 {
     width: 60%;
 }
-.col-4-5{
+
+.col-4-5 {
     width: 80%;
 }
-.col-1-8{
+
+.col-1-8 {
     width: 12.5%;
 }

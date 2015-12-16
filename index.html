@@ -1,24 +1,39 @@
 ---
 layout: front
 ---
-<section>
-    <div class="intro">
-        <h2>Welcome</h2>
-        <p>"What's all this, then?", you may ask. Well this is my site. It's where I experiment with web technologies that range from the familiar to the unfamiliar. For example, this site is hosted on github, is built in Jekyll, uses HTML, SCSS, jQuery, flexbox (in parts) and utilizes my own simple grid system. About half of these I get to use professionally, while the remainder is completely new to me. So expect things to break from time to time (or always if you are using anything below IE10).</p>
-        <p>This entire site is a work in progress and probalbly will be as long as I maintain it.</p>
+
+<div class="intro">
+    <h2>Welcome</h2>
+    <p>"What's all this, then?", you may ask. Well this is my site. It's where I, a lowely front-end developer, experiment with web technologies. So expect things to break from time to time (or always if you are using anything below IE10). It's built in Jekyll, uses HTML5, SCSS, jQuery, flexbox (in parts) and utilizes my own simple grid system. About half of these I get to use professionally, while the remainder are new to me.</p>
+    <p>This entire site is a work in progress and probalbly will be as long as I maintain it. Best viewed in Firefox or Chrome.</p>
+</div>
+<div class="posts-projects">
+    <div class="teaser">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            <h3>Latest Post</h3> 
+            {% for post in site.categories.posts limit:1 %}
+                <article class="post">
+                    <h4>{{ post.title }}</h4>
+                    <div class="entry">
+                        <p>{{ post.excerpt | strip_html | truncatewords: 45 }}</p>
+                        <span class="read-more">Read More</span>
+                    </div>
+                </article>
+            {% endfor %}
+        </a>
     </div>
-</section>
-<div class="posts">
-    <h2>Latest Post</h2> {% for post in site.posts limit:1 %}
-    <article class="post">
-
-        <a href="{{ site.baseurl }}{{ post.url }}"><h3>{{ post.title }}</h3></a>
-
-        <div class="entry">
-            {{ post.excerpt }}
-        </div>
-
-        <a class="read-more" href="{{ site.baseurl }}{{ post.url }}">Read More</a>
-    </article>
-    {% endfor %}
+    <div class="teaser">
+        <a href="{{ site.baseurl }}{{ project.url }}">
+            <h3>Latest Project</h3> 
+            {% for project in site.categories.projects limit:1 %}
+                <article class="project">
+                    <h4>{{ project.title }}</h4>
+                    <div class="entry">
+                        <p>{{ project.excerpt | strip_html | truncatewords: 45 }}</p>
+                        <span class="read-more">Read More</span>
+                    </div>
+                </article>
+            {% endfor %}
+        </a>
+    </div>
 </div>

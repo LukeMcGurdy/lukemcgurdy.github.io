@@ -14,13 +14,35 @@
 
 </head>
 
-<body>
+<body class="front">
     <header class="grid banner-wrap">
-            <div class="col-full banner">
-                <div class="col-1-3 banner-text">
-                    <h1>First<br>Things</h1>
-                </div>
-            </div>
+        <h1>First<br>Things</h1>
+        <div class="col-full banner">
+        </div>
+        <!--
+        <div id="cd-nav">
+            <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+            <nav id="cd-main-nav">
+                <ul>
+                    <li><a href="#0">Homepage</a></li>
+                    <li><a href="#0">Services</a></li>
+                    <li><a href="#0">Portfolio</a></li>
+                    <li><a href="#0">Pricing</a></li>
+                    <li><a href="#0">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+-->
+        <!--
+        <nav class="nav-2">
+            <ul>
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+-->
     </header>
     <main>
         <div class="menu-wrap">
@@ -38,8 +60,7 @@
             </div>
         </section>
     </main>
-    {% include footer.html %}
-    {% include analytics.html %}
+    {% include footer.html %} {% include analytics.html %}
 </body>
 
 </html>
