@@ -9,7 +9,7 @@ layout: front
 </div>
 <div class="posts-projects">
     <div class="teaser">
-        <a href="{{ post.url | prepend: site.baseurl }}">
+        <a href="{{ site.baseurl }}/slack/">
             <h3>Latest Post</h3> 
             {% for post in site.categories.posts limit:1 %}
                 <article class="post">
@@ -23,11 +23,11 @@ layout: front
         </a>
     </div>
     <div class="teaser">
-        <a href="{{ site.baseurl }}{{ project.url }}">
+        <a href="{{ site.baseurl }}/pop-and-lock">
             <h3>Latest Project</h3> 
             {% for project in site.categories.projects limit:1 %}
                 <article class="project">
-                    <h4>{{ project.title }}</h4>
+                    <h4>Just a Test</h4>
                     <div class="entry">
                         <p>{{ project.excerpt | strip_html | truncatewords: 45 }}</p>
                         <span class="read-more">Read More</span>
