@@ -1,149 +1,65 @@
 $bannerLarge: 500px;
 $bannerSmall: 220px;
 
-
-
-
 /*
 ======================
-    Banner
+    Header
 ======================
 */
 
+// front page
 .banner-wrap {
     overflow: hidden;
     position: relative;
 }
 
-.banner-wrap .banner {
-    background: url('../images/tokyo1.jpg') center / cover no-repeat;
+.banner-wrap svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.banner-wrap .banner-image {
+    background-image: url('../images/tokyo2.jpg');
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     height: $bannerLarge;
 }
 
-.blog-landing .banner-wrap .banner{
-    background: url('../images/building.jpg') center / cover no-repeat;
-    height: $bannerSmall;
+// inner pages
+.default header {
+    height: 180px;
 }
 
-.about .banner-wrap .banner{
-    background: url('../images/floor.jpg') center / cover no-repeat;
-    height: $bannerSmall;
+.default .banner-wrap svg {
+    height: 180px;
+    width: 220px;
 }
+
+// general header
+.banner-wrap .st0 {
+    fill: #E55EA2;
+}
+
 
 /*
 ======================
-    Banner Text
+    Nav
 ======================
 */
-.banner-text{
-    position: absolute;
-    top: 50px;
-    left: 20px;
-}
 
-
-
-.nav-2{
-    position: absolute;
-    top:50px;
-    right: 0;
-    height: 50px;
-    background: #E55EA2 ;
-
-    ul{
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        padding: 0 20px;
-    }
-    li{
-        padding-right: 20px;
-        a{
-            color: #fff;
-        }   
-    }
-    li:last-of-type{
-        padding-right: 0;
-    }
-    
-}
-
-
-
-
-
-
-
-
-
-// codyhouse
-
-
-#cd-nav ul {
-  /* mobile first */
-  position: fixed;
-  width: 90%;
-  max-width: 400px;
-  right: 5%;
-  bottom: 20px;
-  visibility: hidden;
-  overflow: hidden;
-  z-index: 1;
- 
-  transform: scale(0);
-  transform-origin: 100% 100%;
-  transition: transform 0.3s, visibility 0s 0.3s;
-}
- 
-#cd-nav ul.is-visible {
-  visibility: visible;
-  transform: scale(1);
-  transition: transform 0.3s, visibility 0s 0s;
-}
- 
-.cd-nav-trigger {
-  position: fixed;
-  bottom: 20px;
-  right: 5%;
-  width: 44px;
-  height: 44px;
-  
-  /* image replacement */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  z-index: 2;
-}
-
-@media only screen and (min-width: 1170px) {
-  #cd-nav ul {
-    /* the navigation moves to the top */
-    position: absolute;
-    width: auto;
-    max-width: none;
-    bottom: auto;
-    top: 36px;
-    visibility: visible;
-    transform: scale(1);
-    transition: all 0s;
-  }
- 
-  #cd-nav.is-fixed ul {
+nav {
+    z-index: 99;
     position: fixed;
-    width: 90%;
-    max-width: 400px;
-    bottom: 20px;
-    top: auto;
-    visibility: hidden;
-    transform: scale(0);
-  }
+    right: 0px;
+    padding: 20px 0 20px 20px;
+    background: #009FC3;
+    a {
+        margin-right: 20px;
+        color: #fff;
+    }
 }
-
-
-
-

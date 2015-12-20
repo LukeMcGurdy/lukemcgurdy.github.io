@@ -1,10 +1,10 @@
 ---
-layout: headless
+layout: default
 title: Blog
 permalink: /blog/
 ---
 <section class="archive">
-
+<h1>Blog Posts</h1> 
 {% for post in site.posts %}
   {% unless post.next %}
   <ul class="archive-container">

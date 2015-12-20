@@ -3,37 +3,34 @@ layout: front
 ---
 
 <div class="intro">
-    <h2>Welcome</h2>
-    <p>"What's all this, then?", you may ask. Well this is my site. It's where I, a lowely front-end developer, experiment with web technologies. So expect things to break from time to time (or always if you are using anything below IE10). It's built in Jekyll, uses HTML5, SCSS, jQuery, flexbox (in parts) and utilizes my own simple grid system. About half of these I get to use professionally, while the remainder are new to me.</p>
-    <p>This entire site is a work in progress and probalbly will be as long as I maintain it. Best viewed in Firefox or Chrome.</p>
+    <h2>Hi</h2>
+    <p>My name is Luke and I'm a front-end developer working in Dublin. This site is a playground in which I experiment with web technologies (some old, some new), showcase some projects and perhaps write the odd blog post.</p>
 </div>
 <div class="posts-projects">
     <div class="teaser">
-        <a href="http://lukemcgurdy.com/slack/">
-            <h3>Latest Post</h3> 
-            {% for post in site.categories.posts limit:1 %}
-                <article class="post">
-                    <h4>{{ post.title }}</h4>
-                    <div class="entry">
-                        <p>{{ post.excerpt | strip_html | truncatewords: 45 }}</p>
-                        <span class="read-more">Read More</span>
-                    </div>
-                </article>
-            {% endfor %}
+        <a href="http://codepen.io/LMG/" target="_blank">
+            <h3>Latest Project</h3> 
+            <article class="project">
+                <h4>Coming Soon!</h4>
+                <div class="entry">
+                    <p>You can check out my published pens on codepen <span class="icon-codepen"></span> </p>
+                    <span class="read-more">Read More</span>
+                </div>
+            </article>
         </a>
     </div>
     <div class="teaser">
-        <a href="http://lukemcgurdy.com/pop-and-lock">
-            <h3>Latest Project</h3> 
-            {% for project in site.categories.projects limit:1 %}
-                <article class="project">
-                    <h4>Just a Test</h4>
-                    <div class="entry">
-                        <p>{{ project.excerpt | strip_html | truncatewords: 45 }}</p>
-                        <span class="read-more">Read More</span>
-                    </div>
-                </article>
-            {% endfor %}
+        {% for post in site.categories.posts limit:1 %}
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            <h3>Latest Post</h3> 
+            <article class="post">
+                <h4>{{ post.title }}</h4>
+                <div class="entry">
+                    <p>{{ post.subtitle | strip_html | truncatewords: 45 }}</p>
+                    <span class="read-more">Read More</span>
+                </div>
+            </article>
         </a>
+        {% endfor %}
     </div>
 </div>

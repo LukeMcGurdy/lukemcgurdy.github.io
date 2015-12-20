@@ -1,8 +1,8 @@
 ---
-layout: post
-title: "Pop and lock header"
+layout: default
+title: Pop and lock header
 category: projects
-published: true
+published: false
 ---
 
 <p>This is a fairly simple menu that on scroll will move down the DOM to a specified point (say below a banner image). Once the page collects the newly positioned menu it will lock to the top of the page.</p>
