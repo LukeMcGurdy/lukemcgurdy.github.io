@@ -633,11 +633,6 @@ footer a {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  min-height: 100vh;
-  flex-direction: column;
-  position: relative; }
-
 img {
   width: 100%; }
 
@@ -695,13 +690,18 @@ nav {
     Body styles
 ==============================================
 */
+body {
+  min-height: 100vh;
+  position: relative; }
+
 main {
-  -webkit-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  -o-flex: 1;
-  flex: 1;
-  background: #fff; }
+  background: #fff;
+  margin-bottom: 180px; }
+
+footer {
+  position: absolute;
+  bottom: -180px;
+  height: 140px; }
 
 /*
 ======================
@@ -778,7 +778,7 @@ main {
   max-width: 960px; }
 
 .intro {
-  margin-bottom: 70px; }
+  margin-bottom: 50px; }
 
 /*
 ======================
