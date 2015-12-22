@@ -18,10 +18,11 @@ $bannerSmall: 220px;
     top: 0;
     left: 0;
     z-index: 10;
+    max-width: 850px;
 }
 
 .banner-wrap .banner-image {
-    background-image: url('../images/tokyo2.jpg');
+    background-image: url('../images/tokyo3.jpg');
     background-attachment: fixed;
     background-position: center bottom;
     background-size: cover;
@@ -36,12 +37,11 @@ $bannerSmall: 220px;
 }
 
 .default .banner-wrap svg {
-    height: 180px;
-    width: 220px;
+    width: 270px;
 }
 
 // general header
-.banner-wrap .st0 {
+.banner-wrap .st1 {
     fill: #E55EA2;
 }
 

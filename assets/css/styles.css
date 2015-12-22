@@ -470,7 +470,7 @@ code {
 */
 /* General font styles */
 h1 {
-  font: 700 4.5rem "Alegreya Sans SC", sans-serif;
+  font: 700 5.5rem "Alegreya Sans SC", sans-serif;
   color: #009FC3;
   margin: 0 0 35px 0; }
 
@@ -574,9 +574,9 @@ footer a {
 
 /* Archive page */
 .archive-container h2 {
-  font-size: 2.3rem;
+  font-size: 3rem;
   color: #fff;
-  padding: 0;
+  padding: 0 10px;
   border-bottom: none; }
 
 .archive-container a:nth-child(1) li h2 {
@@ -626,17 +626,14 @@ footer a {
 	Common Styles
 ==============================================
 */
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
   min-height: 100vh;
   flex-direction: column;
   position: relative; }
@@ -657,10 +654,11 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10; }
+  z-index: 10;
+  max-width: 850px; }
 
 .banner-wrap .banner-image {
-  background-image: url("../images/tokyo2.jpg");
+  background-image: url("../images/tokyo3.jpg");
   background-attachment: fixed;
   background-position: center bottom;
   background-size: cover;
@@ -672,10 +670,9 @@ img {
   height: 180px; }
 
 .default .banner-wrap svg {
-  height: 180px;
-  width: 220px; }
+  width: 270px; }
 
-.banner-wrap .st0 {
+.banner-wrap .st1 {
   fill: #E55EA2; }
 
 /*
@@ -959,10 +956,7 @@ footer {
     padding: 0 20px; }
 
   .archive-container h2 {
-    line-height: 3rem; }
-
-  h2:first-of-type {
-    font-size: 3rem; } }
+    line-height: 3rem; } }
 @media all and (min-width: 641px) {
   .content {
     margin: 50px auto; } }

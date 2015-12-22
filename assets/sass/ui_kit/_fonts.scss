@@ -106,8 +106,10 @@ html {
 ======================
 */
 
-$header-font: 'Alegreya Sans SC',sans-serif;
-$text-font: 'Lato',sans-serif;
+$header-font: 'Alegreya Sans SC',
+sans-serif;
+$text-font: 'Lato',
+sans-serif;
 
 /*
 ======================
@@ -157,7 +159,7 @@ code {
 /* General font styles */
 
 h1 {
-    font: 700 4.5rem $header-font;
+    font: 700 5.5rem $header-font;
     color: $aqua;
     margin: 0 0 35px 0;
 }
@@ -296,9 +298,9 @@ footer a {
 /* Archive page */
 
 .archive-container h2 {
-    font-size: 2.3rem;
+    font-size: 3rem;
     color: $white;
-    padding: 0;
+    padding: 0 10px;
     border-bottom: none;
 }
 
