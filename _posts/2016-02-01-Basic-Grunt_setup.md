@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Basic Grunt Setup
 subtitle: If you are reading this the it's likely that you already know what Grunt does for a developer. However, on the off chance you don't really know what Grunt is then think of it like...
 category: posts
