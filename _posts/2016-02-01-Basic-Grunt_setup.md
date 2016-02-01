@@ -1,14 +1,16 @@
 ---
-published: false
+title: Basic Grunt Setup
+subtitle: If you are reading this the it's likely that you already know what Grunt does for a developer. However, on the off chance you don't really know what Grunt is then think of it like...
+category: posts
+published: true
 ---
+# Basic Grunt Setup - a noobs guide
 
-## What this tutorial covers
-
-If you are reading this the it's likely that you already know what Grunt does for a developer. However, on the off chance you don't really know what Grunt is then think of it like [Mojo, your very own helper monkey](https://www.youtube.com/watch?v=BFts5ISnaxQ). It performs all the tedious tasks that you don't want to do.
+If you are reading this then it's likely that you already have some idea what Grunt does for a developer. (I'm still trying to figure it out ;)) On the off chance you don't really know what Grunt is then think of it like [Mojo, your very own helper monkey](https://www.youtube.com/watch?v=BFts5ISnaxQ). It performs all the tedious tasks that you don't want to do.
 
 Can't be bothered pressing F5 to refresh your browser? Well, never fear for Grunt is here. After a little bit of configuration Grunt will automatically do it for you each time you save a file. Congratulations! You have saved 0.3 seconds.
 
-At the end of this tutorial you will find 
+At the end of this tutorial you will find a link to two grunt file that watch for any changes you make to file and then compile Sass, run the autoprefix processor to add/ remove vendor prefixes as required, run cssnano which is a very powerful modular minifier, reload your browser on save and notify you when the above tasks are complete. There are many more packages available but see [here](http://ipestov.com/essential-plugins-for-grunt/) for list of some interesting ones. 
 
 ## Setting up Grunt
 
@@ -57,7 +59,7 @@ A basic example follows below:
 
 #### 3. Create a file called package.json.
 
-  In this file you identify your project essentials - project name, description, version etc. It also lists your dependencies once you have installed them. These dependencies are the packages that you install via npm. See here for a list of some cool packages and an explanation of what they do - http://ipestov.com/essential-plugins-for-grunt/. The packages.json file is placed in the root of your project folder - e.g. Desktop/my-super-project/package.jason
+  In this file you identify your project essentials - project name, description, version etc. It also lists your dependencies once you have installed them. These dependencies are the packages that you install via npm. The packages.json file is placed in the root of your project folder - e.g. Desktop/my-super-project/package.jason
 
   If you wish to install individual packages then run the following command from the root of your project folder
 
