@@ -5,7 +5,7 @@ subtitle: If you are reading this the it's likely that you already know what Gru
 category: posts
 published: true
 ---
-# Basic Grunt Setup - a noobs guide
+# Basic Grunt Setup - a noob's guide
 
 If you are reading this then it's likely that you already have some idea what Grunt does for a developer. (I'm still trying to figure it out ;)) On the off chance you don't really know what Grunt is then think of it like [Mojo, your very own helper monkey](https://www.youtube.com/watch?v=BFts5ISnaxQ). It performs all the tedious tasks that you don't want to do.
 
