@@ -30,7 +30,7 @@ baseurl: ""
 #
 
 #markdown: redcarpet
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 permalink: /:title/
 
