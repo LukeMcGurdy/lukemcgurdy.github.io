@@ -8,7 +8,7 @@ published: true
 
 # Basic Grunt Setup - a noob's guide
 
-![Grunt logo](http://lukemcgurdy.github.io/assets/images/post-images/grunt-logo.png)
+![Grunt logo](http://lukemcgurdy.github.io/assets/images/post-images/grunt-logo.jpg)
 
 
 If you are reading this then it's likely that you already have some idea what Grunt does for a developer. (I'm still trying to figure it out ;)) On the off chance you don't really know what Grunt is then think of it like [Mojo, your very own helper monkey](https://www.youtube.com/watch?v=BFts5ISnaxQ){:target="_blank"}. It performs all the tedious tasks that you don't want to do.
