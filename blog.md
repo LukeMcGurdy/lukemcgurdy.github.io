@@ -13,7 +13,7 @@ permalink: /blog/
   {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
   {% if year != nyear %}
   </ul>
-  <h2>{{ post.date | date: '%Y' }}</h2>
+  <h2>{{ post.date | date: '%Y' }} Archives</h2>
   <ul class="past">
   {% endif %}
   {% endunless %}
@@ -21,7 +21,7 @@ permalink: /blog/
        <li>
             <h2>{{ post.title }}</h2>
 
-            <div class="bottom-half"><time>&nbsp;{{ post.date | date:"%d %b" }}</time></div>
+            <div class="bottom-half"><time>&nbsp;{{ post.date | date:"%d %b %Y" }}</time></div>
         </li>
     </a>
 {% endfor %}

@@ -457,10 +457,11 @@ html {
 ======================
 */
 code {
+  font: 400 2.1rem "Lato",sans-serif;
   clear: both;
   background: #6F777B;
   color: #fff;
-  padding: 0 10px;
+  padding: 5px 10px;
   margin: 0px 5px 0 0; }
 
 /*
@@ -480,8 +481,6 @@ h2 {
   margin: 10px 0 30px 0;
   padding-bottom: 20px;
   border-bottom: 2px solid #d2dbe2; }
-  h2:first-of-type {
-    font-size: 6rem; }
 
 h3 {
   font: 700 3.5rem "Alegreya Sans SC", sans-serif;
@@ -515,6 +514,18 @@ time {
 
 strong {
   font-weight: 700; }
+
+ol {
+  padding-left: 30px; }
+
+ul li,
+ol li {
+  font: 700 2.1rem/3.5rem "Lato", sans-serif;
+  color: #606666;
+  margin: 0 0 20px; }
+
+ol > li p:first-of-type {
+  font-weight: bold; }
 
 /* Specific font styles */
 /* Home page */
@@ -653,7 +664,7 @@ img {
   max-width: 850px; }
 
 .banner-wrap .banner-image {
-  background-image: url("../images/tokyo3.jpg");
+  background-image: url("../images/tokyo1.jpg");
   background-attachment: fixed;
   background-position: center bottom;
   background-size: cover;
@@ -696,11 +707,11 @@ body {
 
 main {
   background: #fff;
-  margin-bottom: 180px; }
+  margin-bottom: 200px; }
 
 footer {
   position: absolute;
-  bottom: -180px;
+  bottom: -200px;
   height: 140px; }
 
 /*
@@ -814,12 +825,20 @@ footer {
       margin-bottom: 20px; } }
 /*
 ======================
+    Defaultg page
+======================
+*/
+.default h2 {
+  margin-top: 40px; }
+
+/*
+======================
     Blog landing page
 ======================
 */
 .archive-container {
   padding: 0;
-  margin: 0;
+  margin: 0 0 50px;
   list-style: none;
   -webkit-display: flex;
   -moz-display: flex;
@@ -873,6 +892,25 @@ footer {
 
 .archive-container .bottom-half {
   width: 100%; }
+
+.past {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .past a {
+    text-decoration: none; }
+    .past a:hover li {
+      background: #D2DBE2; }
+    .past a li {
+      padding: 10px 20px;
+      margin-bottom: 0; }
+  .past h2 {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0; }
+  .past time {
+    color: #009FC3; }
 
 /*
 ======================
@@ -959,7 +997,7 @@ footer {
     line-height: 3rem; } }
 @media all and (min-width: 641px) {
   .content {
-    margin: 50px auto; } }
+    margin: 0 auto 50px; } }
 @media all and (max-width: 640px) {
   .menu-wrap {
     height: 120px; }

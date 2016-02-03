@@ -9,6 +9,6 @@ sass_dir = "assets/sass"           #where our .scss files are
 output_style = :expanded # After dev :compressed
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = true
+line_comments = false
 
 preferred_syntax = :scss

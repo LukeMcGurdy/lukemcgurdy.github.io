@@ -1,9 +1,5 @@
 module.exports = function (grunt) {
 
-
-	// Default port
-	//var LIVERELOAD_PORT = 35729;
-
 	grunt.initConfig({
 		// Set Grunt to watch our files and run tasks on them
 		watch: {
@@ -48,30 +44,8 @@ module.exports = function (grunt) {
 				src: 'assets/css/styles.css'
 			}
 		},
-
-		// Autorefresh browser - http://localhost:3000/yourpage.html
-//		browserSync: {
-//			default_options: {
-//				bsFiles: {
-//					src: "css/*.css"
-//				},
-//				options: {
-//					//watchTask: true,
-//					server: {
-//						baseDir: "./"
-//					}
-//				}
-//			}
-//		},
-//		bsReload: {
-//			css: "*.css"
-//		}
-
-		//		htmllint: {
-		//			all: ["*.html"]
-		//		},
         
-		// Create a OS notification to tell us when tasks have been completed or if there are errors
+		// Create an OS notification to tell us when tasks have been completed or if there are errors
 		notify_hooks: {
 			options: {
 				enabled: true,
@@ -100,7 +74,7 @@ module.exports = function (grunt) {
 	/* Run above tasks */
 
 	//grunt.registerTask('default', ['browserSync', 'watch']);
-	grunt.registerTask('default', ['postcss', 'watch']);
+	grunt.registerTask('default', ['watch']);
 	//grunt.registerTask('postcss', ['postcss', 'watch']);
 
 	grunt.task.run('notify_hooks');

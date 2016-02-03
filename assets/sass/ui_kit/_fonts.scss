@@ -141,10 +141,11 @@ $text-bg-four:#59853D;
 */
 
 code {
+    font: 400 2.1rem "Lato",sans-serif;
     clear: both;
     background: $grey;
     color: $white;
-    padding: 0 10px;
+    padding: 5px 10px;
     margin: 0px 5px 0 0;
 }
 
@@ -170,9 +171,10 @@ h2 {
     margin: 10px 0 30px 0;
     padding-bottom: 20px;
     border-bottom: 2px solid #d2dbe2;
-    &:first-of-type {
-        font-size: 6rem;
-    }
+//    &:first-of-type {
+//        font-size: 6rem;
+//    }
+    
 }
 
 h3 {
@@ -214,6 +216,21 @@ time {
 strong {
     font-weight: 700;
 }
+
+ol{
+    padding-left: 30px;
+}
+
+ul li,
+ol li{
+    font: 700 2.1rem/3.5rem $text-font;
+    color: $darkGrey;
+    margin: 0 0 20px;
+}
+ol > li p:first-of-type{
+    font-weight: bold;
+}
+
 
 
 /* Specific font styles */
