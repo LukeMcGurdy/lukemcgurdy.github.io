@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>First Things</title>
+    <description>A front-end development playground</description>
+    <link>http://lukemcgurdy.github.io/</link>
+    <atom:link href="http://lukemcgurdy.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Basic Grunt Setup</title>
+        <description>&lt;h1 id=&quot;basic-grunt-setup---a-noobs-guide&quot;&gt;Basic Grunt Setup - a noob’s guide&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lukemcgurdy.github.io/assets/images/post-images/grunt-logo.jpg&quot; alt=&quot;Grunt logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are reading this then it’s likely that you already have some idea what Grunt does for a developer. (I’m still trying to figure it out ;)) On the off chance you don’t really know what Grunt is then think of it like &lt;a href=&quot;https://www.youtube.com/watch?v=BFts5ISnaxQ&quot; target=&quot;_blank&quot;&gt;Mojo, your very own helper monkey&lt;/a&gt;. It performs all the tedious tasks that you don’t want to do.&lt;/p&gt;
+
+&lt;p&gt;Can’t be bothered pressing F5 to refresh your browser? Well, never fear for Grunt is here. After a little bit of configuration Grunt will automatically do it for you each time you save a file. Congratulations! You have saved 0.3 seconds.&lt;/p&gt;
+
+&lt;p&gt;At the end of this tutorial you will find a link to two grunt file that watch for any changes you make to file and then compile Sass, run the autoprefix processor to add/ remove vendor prefixes as required, run cssnano which is a very powerful modular minifier, reload your browser on save and notify you when the above tasks are complete. There are many more packages available but see &lt;a href=&quot;http://ipestov.com/essential-plugins-for-grunt/ target=&amp;quot;_blank&amp;quot;&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; for list of some interesting ones.&lt;/p&gt;
+
+&lt;p&gt;Though all of what follows assumes a Windows 10 environment, I think that much of it isn’t exclusive to it. I should add that I’m very new to Grunt so any correction is appreciated.&lt;/p&gt;
+
+&lt;h2 id=&quot;setup-overview&quot;&gt;Setup Overview&lt;/h2&gt;
+
+&lt;p&gt;To get Grunt up and running you need to do the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install Ruby&lt;/li&gt;
+  &lt;li&gt;Install node.js &amp;amp; npm (node package manager)&lt;/li&gt;
+  &lt;li&gt;Install Grunt cli&lt;/li&gt;
+  &lt;li&gt;Create your project folder&lt;/li&gt;
+  &lt;li&gt;Create a file called package.json&lt;/li&gt;
+  &lt;li&gt;Create a file called Gruntfile.js&lt;/li&gt;
+  &lt;li&gt;Run Grunt&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;See &lt;a href=&quot;http://blog.teamtreehouse.com/getting-started-with-grunt&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; for official docs.
+My own working examples can be found &lt;a href=&quot;https://github.com/LukeMcGurdy/Basic-Grunt-Setup&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
+To install npm and various Grunt packages you might consider using a fancy console emulator like &lt;a href=&quot;http://cmder.net/&quot; target=&quot;_blank&quot;&gt;cmder&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-more-detail&quot;&gt;In more detail&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install Ruby&lt;/p&gt;
+
+    &lt;p&gt;Vist the &lt;a href=&quot;http://rubyinstaller.org/downloads/&quot; target=&quot;_blank&quot;&gt;Ruby Installer download page&lt;/a&gt; and install the appropraiate version. Presumably this will be the latest stable 32-bit release (v2.3.0 at the time of writing)  because the 64 bit version is still relatively new on windows and therefre possibly not fully compatible with all packages.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install node.js &amp;amp; npm&lt;/p&gt;
+
+    &lt;p&gt;Visit the &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;node.js site&lt;/a&gt; and and install the “Mature and Dependable version” which was v4.2.2 LTS at time of writing. The good news is that you have also installed npm - which is what you use to install the packages that Grunt will run for you.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install Grunt&lt;/p&gt;
+
+    &lt;p&gt;Using the command line cd to the root of your project folder and run&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install -g grunt-cli&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;What this does is install the Grunt command line interface (cli) globally (hence the -g flag) meaning that Grunt can be run from where you want. You run this just the once from and from anywhere.&lt;/p&gt;
+
+    &lt;p&gt;If you are not comfortable using the command line (and mayny of us aren’t - myself included) then &lt;a href=&quot;http://leveluptuts.com/tutorials/command-line-basics&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; is a quick tutorial on the basics.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create your project folder&lt;/p&gt;
+
+    &lt;p&gt;A basic example follows below:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;
+
+    assets
+        ├── css/
+        │   ├── main.css
+        ├── sass/
+        │   ├── main.scss
+        │   ├── 
+        ├── js/
+        │   ├── main.js
+        ├── images/
+        │   ├── pic.jpg
+        ├── Gruntfile.js    
+        ├── package.json   
+    
+&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a file called package.json.&lt;/p&gt;
+
+    &lt;p&gt;In this file you identify your project essentials - project name, description, version etc. It also lists your dependencies once you have installed them. These dependencies are the packages that you install via npm. The packages.json file is placed in the root of your project folder - e.g. Desktop/my-super-project/packages.jason&lt;/p&gt;
+
+    &lt;p&gt;If you wish to install individual packages then run the following command from the root of your project folder&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install package-a --save-dev&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;Alternatively you can install multiple packages at once&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install package-a package-b package-c --save-dev&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;Grunt does its magic and downloads and installs these packages in a folder called node_modules located in the root. As long as you put &lt;code class=&quot;highlighter-rouge&quot;&gt;--save-dev&lt;/code&gt; at the end of the command then it also updates your package.json file.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a file called Gruntfile.js&lt;/p&gt;
+
+    &lt;p&gt;This is where you specify what packages are run and how they are configured. Each package has its own options so make sure to visit the relevant npm or github page for each package. Rather than me copying out snippets of code from both files it would be better to link directly to working examples that have some comments.&lt;/p&gt;
+
+    &lt;p&gt;Please see &lt;a href=&quot;https://github.com/LukeMcGurdy/Basic-Grunt-Setup&quot;&gt;here&lt;/a&gt; for a copy of packages.json and Gruntfile.js.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run Grunt&lt;/p&gt;
+
+    &lt;p&gt;To do this simply type the following into the command line making sure you are in the root of your project folder when doing so.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grunt&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;This will run all tasks that you have defined in the default task list in your Gruntfile. (When I say task list please look out for ‘registerTask’ in the Gruntfile.)&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grunt css&lt;/code&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nc&quot;&gt;.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;red&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Alternatively you can create task lists so only specific tasks are run. See the bottom of Gruntfile.js for more.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Enjoy&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+        <link>http://lukemcgurdy.github.io//Basic-Grunt_setup/</link>
+        <guid isPermaLink="true">http://lukemcgurdy.github.io//Basic-Grunt_setup/</guid>
+      </item>
+    
+      <item>
+        <title>Only the penitent man shall pass</title>
+        <description>&lt;p&gt;#Only the penitent man shall pass&lt;/p&gt;
+
+&lt;p&gt;I’ve just pushed all the incomplete work for this poor neglected site to Git. The result was that my previously boring but (some what) functioning site has been replaced by a broken site - at least if viewed in lte IE 11, Safari 8, iPhone and so on (the list is long). It’s a mess.&lt;/p&gt;
+
+&lt;p&gt;Why do this? Well, I’ve been busy procrasinating of late and this is my penance. I need a good kick up the arse and I figure that airing my dirty laundy in public is as good a motivation as any to get things in order. Expect updates right after I wake from my post Chrismas dinner food coma and/ or whatever time the uniquely grim Easternders Christmas omnibus comes on the TV.&lt;/p&gt;
+
+&lt;p&gt;For posterity here is the old abomination:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lukemcgurdy.github.io/assets/images/site-versions/site-v1.0.jpg&quot; alt=&quot;lukemcgurdy.github.io - Version 1&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
+        <link>http://lukemcgurdy.github.io//only-the-penitent-man-shall-pass/</link>
+        <guid isPermaLink="true">http://lukemcgurdy.github.io//only-the-penitent-man-shall-pass/</guid>
+      </item>
+    
+      <item>
+        <title>Slack - Don&#39;t believe the hype</title>
+        <description>&lt;h1 id=&quot;slack---dont-believe-the-hype&quot;&gt;Slack - Don’t believe the hype&lt;/h1&gt;
+
+&lt;p&gt;First a little background. Until about two months ago the company I work for, which is called &lt;a href=&quot;http://daracreative.ie&quot; target=&quot;_blank&quot;&gt;Dara Creative&lt;/a&gt;, was using Skype as its primary means of rapid internal communications. But as useful as Skype is it’s also quite limited and recently we began to feel those limits. Eventually we succumbed to hype surrounding Slack and so we have been using it ever since.&lt;/p&gt;
+
+&lt;p&gt;Yet after two months of daily use I think that I can safely conclude that I don’t - and probably never did - buy into the hype surrounding Slack. Please don’t pick me up wrong. Slack has some really excellent features. It’s great for sharing files, it supports the integration of many, many 3rd party services and I can’t recall ever having any technical problems with the Windows app or loss of service. All told it’s a smooth operator. So the reason I’m not sold on Slack isn’t necessarily due to some glaring issues with the product itself.&lt;/p&gt;
+
+&lt;p&gt;Instead, the problem I have with Slack boils down to their business model. As a company Dara Creative falls between the cracks of their free and paid plans. On one hand, there are enough staff in the company using Slack that we reach the 10,000 message history limit in a matter of days. (In the free plan messages get deleted after this limit is reached). On the other hand, Slack’s basic payment plan is too expensive for a service we primarily use as a way of instant messaging each other and file sharing. 2K a year to send animated gifs is a high price indeed. Even if it is quality stuff like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lukemcgurdy.github.io/assets/images/post-images/jcvd.gif&quot; alt=&quot;JCVD in Action&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So we started searching around the interwebs for something that was better than the slightly jaded Skype and also better priced than Skype. Happily we came across &lt;a href=&quot;https://glip.com/&quot; target=&quot;_blank&quot;&gt;Glip&lt;/a&gt;. Admittedly it’s very early days in our trial period (as in it’s the second day of the trial) but it seems to do nearly everything Slack does and so far I think it largely does it (nearly) as well or even better in some cases. There are exceptions of course. For instance, Glip has fewer 3rd party integrations available and the Windows desktop app crashed three times in two days. Nevertheless, the interface is very clean, it has a native calendar, tasks, notes (with version control), integrated video conferencing using Zoom (which I have to say is great fun), easily searchable conversations, files and links. It’s also free. (It has recently been acquired by &lt;a href=&quot;http://recode.net/2015/06/19/ringcentral-expands-beyond-phone-service-with-glip-acquisition/&quot; target=&quot;_blank&quot;&gt;some other company&lt;/a&gt; so I hope that doesn’t mean a change in business model.)&lt;/p&gt;
+
+&lt;p&gt;Despite my shameful click bait title Slack remains a very good service that many people will be happy with. However, if Slack doesn’t quite scratch that itch then try Glip instead.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 Jul 2015 00:00:00 +0100</pubDate>
+        <link>http://lukemcgurdy.github.io//slack-comparison-glip/</link>
+        <guid isPermaLink="true">http://lukemcgurdy.github.io//slack-comparison-glip/</guid>
+      </item>
+    
+      <item>
+        <title>Flexbox</title>
+        <description>&lt;p&gt;One thing on my give-it-a-go list is flexbox. With browser support limited to the &lt;a href=&quot;http://caniuse.com/#feat=flexbox&quot; target=&quot;_blank&quot;&gt;latest browsers&lt;/a&gt; there has been no reason for me to use it professionally. And on a personal level I’ve had bigger fish to fry of late with the birth of my beautiful little daughter. Besides all this, I still enjoy using floats. It might technically be a weird and hackish technique - at least according to Eric &lt;a href=&quot;http://shoptalkshow.com/episodes/161-with-eric-meyer/&quot; target=&quot;_blank&quot;&gt;Meyer&lt;/a&gt; - but it’s something I’m pretty comfortable with.&lt;/p&gt;
+
+&lt;p&gt;As I continue to develop this site flexbox will be used on a limited basis - at least initially. So far the plan is to use it for the layout of the blog landing page. My initial thoughts are that it will look something a little like &lt;a href=&quot;http://codepen.io/anon/pen/QbwVor&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For anyone interested in finding out about flexbox (e.g. what it is and how to use it) then CSS-Tricks has a fantastic &lt;a href=&quot;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&quot;&gt;guide&lt;/a&gt; on all things flex.&lt;/p&gt;
+
+&lt;p&gt;Long and short - flexbox is a layout module that will become increasingly relevant, just as floats will become less relevant. This said, I don’t think floats are going away entirely any time soon. So if you are looking at what is coming down the pike in the near future then flexbox is it. Actually, if you aren’t concerned with IE before 10 then the future is now!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Apr 2015 00:00:00 +0100</pubDate>
+        <link>http://lukemcgurdy.github.io//flexbox/</link>
+        <guid isPermaLink="true">http://lukemcgurdy.github.io//flexbox/</guid>
+      </item>
+    
+      <item>
+        <title>Development Woes - A short tail of running Jekyll in Windows 7</title>
+        <description>&lt;h1 id=&quot;development-woes---a-short-tail-of-running-jekyll-in-windows-7&quot;&gt;Development Woes - A short tail of running Jekyll in Windows 7&lt;/h1&gt;
+
+&lt;p&gt;After a lot of teething problems with tech I don’t understand - namely Ruby and something called Hitimes - I was finally able to get Sass, Compass and Jekyll running together locally on Windows 7. Apparently Ruby had very recently updated to version 2.2 and the maintainers of Hitimes (whatever that is) had not released a corresponding fat-binary gem update (again, whatever that is). So it was this that was causing me trouble.&lt;/p&gt;
+
+&lt;p&gt;The fix was to run the following command from within Git Bash: &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install hitimes -v 1.2.1 --platform ruby&lt;/code&gt;. My assumption is that something equivalent to this command would have been automatically run during my initial setup of Ruby etc: &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install hitimes -v 1.2.2 --platform ruby&lt;/code&gt;. I’m also assuming that at some point down the line I should replace hitime -v 1.2.1 with the latest version. It’s probably quite apparent that I’m completely out of my depth here. Nevertheless, I’m happy that I had the knowledge and skill to do a Google search and then copy and paste the solution from &lt;a href=&quot;http://stackoverflow.com/questions/28985481/hitimes-require-error-when-running-jekyll-serve-on-windows-8-1/&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt; post.&lt;/p&gt;
+
+&lt;p&gt;For those who are interested in getting Jekyll up and running then I would recommend &lt;a href=&quot;http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt; post as essential reading.&lt;/p&gt;
+
+&lt;p&gt;Ok, that’s it for now.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
+        <link>http://lukemcgurdy.github.io//jekyll-hitimes-windows-7/</link>
+        <guid isPermaLink="true">http://lukemcgurdy.github.io//jekyll-hitimes-windows-7/</guid>
+      </item>
+    
+  </channel>
+</rss>

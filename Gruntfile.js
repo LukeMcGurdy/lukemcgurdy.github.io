@@ -1,81 +1,62 @@
+
+
 module.exports = function (grunt) {
 
-	grunt.initConfig({
-		// Set Grunt to watch our files and run tasks on them
-		watch: {
-			sass: {
-				files: '**/*.scss',
-				//tasks: ['sass', 'bsReload:css'],
-				tasks: ['sass']
-			},
-			css: {
-				files: 'assets/css/styles.css',
-				tasks: ['postcss']
-			},
-		},    
+require('es6-promise').polyfill();
 
-		// Run Sass on the listed files
-		sass: {
-			options: {
-				sourceMap: true
-			},
-			dist: {
-				files: {
-					'assets/css/styles.css' : 'assets/sass/styles.scss',
-				}
-			}
-		},
+    grunt.initConfig({
+        // Set Grunt to watch our files and run tasks on them
+        watch: {
+            sass: {
+                files: 'sass/**/*.scss',
+                tasks: ['sass']
+            },
+            css: {
+                files: 'css/*.css',
+                tasks: ['postcss'],
+            },
+        },
 
-		// Use Postcss to create sourcemaps for Sass, autoprefixer and cssnano
-		postcss: {
-			options: {
-//				map: {
-//					inline: false,
-//					annotation: 'assets/css/maps/'
-//				},
-				processors: [
+        // Run Sass on the listed files
+        sass: {
+            options: {
+                sourceMap: true
+            },
+            dist: {
+                files: {
+                    'css/main.css': 'sass/main.scss',
+                }
+            }
+        },
+
+        // Use Postcss cssnano inc autoprefixer and a bunch of other optimizations
+        postcss: {
+            options: {
+                processors: [
 					require('autoprefixer')({
-						browsers: 'last 3 versions'
-					}),
-					require('cssnano')()
+                        browsers: 'last 2 versions'
+                    }),
+					require('cssnano')({
+                        zindex: false
+                    })
 				]
-			},
-			dist: {
-				src: 'assets/css/styles.css'
-			}
-		},
-        
-		// Create an OS notification to tell us when tasks have been completed or if there are errors
-		notify_hooks: {
-			options: {
-				enabled: true,
-				success: true,
-				duration: 3
-			}
-		},        
+            },
+            dist: {
+                src: 'css/main.css'
+            }
+        },
+    });
 
-	});
+    /* Load tasks */
+
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-postcss');
 
 
-	/* Load tasks */
+    /* Run above tasks */
 
-	grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-sass-globbing');
-	grunt.loadNpmTasks('grunt-sass');
-    //grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-postcss');
-	grunt.loadNpmTasks('grunt-notify');
-	//grunt.loadNpmTasks('grunt-browser-sync');
-	//grunt.loadNpmTasks('grunt-contrib-csslint');
-	//grunt.loadNpmTasks('grunt-html');
-	//grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('dist', ['postcss', 'watch']);
 
-
-	/* Run above tasks */
-
-	//grunt.registerTask('default', ['browserSync', 'watch']);
-	grunt.registerTask('default', ['watch']);
-	//grunt.registerTask('postcss', ['postcss', 'watch']);
-
-	grunt.task.run('notify_hooks');
 };

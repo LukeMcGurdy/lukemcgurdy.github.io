@@ -39,7 +39,7 @@ To install npm and various Grunt packages you might consider using a fancy conso
 ## In more detail
 1. Install Ruby
 
-    Vist the [Ruby Installer download page](http://rubyinstaller.org/downloads/){:target="_blank"} and install the appropraiate version. Presumably this will be the latest stable 64bit release (which might be a version behind the latest version)
+    Vist the [Ruby Installer download page](http://rubyinstaller.org/downloads/){:target="_blank"} and install the appropraiate version. Presumably this will be the latest stable 32-bit release (v2.3.0 at the time of writing)  because the 64 bit version is still relatively new on windows and therefre possibly not fully compatible with all packages. 
 
 2. Install node.js & npm
 
@@ -58,19 +58,22 @@ To install npm and various Grunt packages you might consider using a fancy conso
 4. Create your project folder
 
     A basic example follows below:
+<pre>
 
     assets
-    --css
-    ----main.css
-    --sass
-    ----main.scss
-    --js
-    ----main.js
-    --images
-    ----pic.jpg
-    Gruntfile.js    
-    package.json
-       
+        ├── css/
+        │   ├── main.css
+        ├── sass/
+        │   ├── main.scss
+        │   ├── 
+        ├── js/
+        │   ├── main.js
+        ├── images/
+        │   ├── pic.jpg
+        ├── Gruntfile.js    
+        ├── package.json   
+    
+</pre>      
 
 5. Create a file called package.json.
     
@@ -102,7 +105,12 @@ To install npm and various Grunt packages you might consider using a fancy conso
     This will run all tasks that you have defined in the default task list in your Gruntfile. (When I say task list please look out for 'registerTask' in the Gruntfile.) 
    
     `grunt css`
-   
-    Alternatively you can create task lists so only specific tasks are run. See the bottom of Gruntfile.js for more.
+    
+   ```css
+    .test{
+        background: red
+    }
+   ```
+   Alternatively you can create task lists so only specific tasks are run. See the bottom of Gruntfile.js for more.
 
 Enjoy

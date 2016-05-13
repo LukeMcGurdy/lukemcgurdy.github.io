@@ -4,7 +4,16 @@
 ==============================================
 */
 
-@media all and (max-width: 1024px) {
+@media (max-width: 1199px) {
+    .front .banner-wrap svg {
+        width: 270px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .front .content {
+        margin-top: 40px;
+    }
     .main .slider-wrap .slide {
         height: auto;
     }
@@ -18,6 +27,7 @@
         padding: 0 20px;
     }
     h1 {
+        font-size: 4.5rem;
         margin: 0 0 20px;
     }
     .read-more {
@@ -25,13 +35,9 @@
     }
 }
 
-@media all and (max-width: 768px) {
+@media (max-width: 768px) {
     .intro {
         margin-bottom: 50px;
-    }
-    .archive-container a:nth-child(1) li h2 {
-        //            font-size: 2.5rem;
-        //            padding: 0 20px;
     }
     .archive-container a {
         width: 100%;
@@ -43,13 +49,13 @@
     }
 }
 
-@media all and (min-width: 641px) {
+@media (min-width: 641px) {
     .content {
         margin: 0 auto 50px;
     }
 }
 
-@media all and (max-width: 640px) {
+@media (max-width: 640px) {
     .menu-wrap {
         height: 120px;
         .main-nav {
@@ -69,7 +75,16 @@
     }
 }
 
-@media all and (max-width: 340px) {
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 340px) {
     header .main-nav a {
         float: left;
         padding-left: 35px;
@@ -80,4 +95,4 @@
     }
 }
 
-@media all and (max-width: 320px) {}
+@media (max-width: 320px) {}
