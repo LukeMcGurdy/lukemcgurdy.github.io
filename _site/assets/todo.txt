@@ -1,3 +1,0 @@
-- Figure out categories - how to display post and project categories  on home page and then on two landing pages
-- add wrapping element to animated gif and then jquery toggle 
-

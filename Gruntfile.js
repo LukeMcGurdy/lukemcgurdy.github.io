@@ -1,20 +1,18 @@
+module.exports = function(grunt) {
 
-
-module.exports = function (grunt) {
-
-require('es6-promise').polyfill();
+    require('es6-promise').polyfill();
 
     grunt.initConfig({
         // Set Grunt to watch our files and run tasks on them
         watch: {
             sass: {
-                files: 'sass/**/*.scss',
+                files: 'assets/sass/**/*.scss',
                 tasks: ['sass']
             },
             css: {
-                files: 'css/*.css',
+                files: 'assets/css/styles.css',
                 tasks: ['postcss'],
-            },
+            }
         },
 
         // Run Sass on the listed files
@@ -24,7 +22,7 @@ require('es6-promise').polyfill();
             },
             dist: {
                 files: {
-                    'css/main.css': 'sass/main.scss',
+                    'assets/css/styles.css': 'assets/sass/styles.scss',
                 }
             }
         },
@@ -33,24 +31,38 @@ require('es6-promise').polyfill();
         postcss: {
             options: {
                 processors: [
-					require('autoprefixer')({
+                    require('autoprefixer')({
                         browsers: 'last 2 versions'
                     }),
-					require('cssnano')({
+                    require('cssnano')({
                         zindex: false
                     })
-				]
+                ]
             },
             dist: {
-                src: 'css/main.css'
+                src: 'assets/css/styles.css'
             }
         },
+
+        // sass_globbing: {
+        //     your_target: {
+        //         files: {
+        //             'src/_importMap.scss': 'src/partials/**/*.scss',
+        //             'src/_variablesMap.scss': ['src/variables/**/*.scss', '!src/variables/foo.css'],
+        //         },
+        //         options: {
+        //             useSingleQuotes: false,
+        //             signature: '// Hello, World!'
+        //         }
+        //     }
+        // }
     });
 
     /* Load tasks */
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-sass-globbing');
     grunt.loadNpmTasks('grunt-postcss');
 
 

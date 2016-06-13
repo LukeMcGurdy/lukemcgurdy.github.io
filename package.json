@@ -9,6 +9,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^1.1.0",
+    "grunt-sass-globbing": "^1.5.1",
     "install": "^0.7.3",
     "npm": "^3.8.8"
   }

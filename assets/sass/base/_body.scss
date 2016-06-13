@@ -3,292 +3,55 @@
 Body styles
 ==============================================
 */
-
 body {
     min-height: 100vh;
     position: relative;
 }
-
 main {
     background: #fff;
     margin-bottom: 200px;
 }
-
 footer {
     position: absolute;
     bottom: -200px;
     height: 140px;
 }
-
-
-/*
-======================
-Menu
-======================
-*/
-
-.menu-wrap {
-    position: relative;
-    width: 100%;
-    height: 65px;
-}
-
-.menu-button {
-    display: inline-block;
-    background: #E55EA2;
-    color: #FFF;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 15px 30px;
-    border: 0px none;
-    text-transform: capitalize;
-    right: 0;
-    top: 5px;
-    position: absolute;
-    z-index: 9;
-    -webkit-transition: all 0.55s ease;
-    -o-transition: all 0.55s ease;
-    transition: all 0.55s ease;
-    z-index: 999;
-}
-
-.menu-button:hover,
-.menu-active {
-    -webkit-box-shadow: -5px 5px 0px 0px rgba(204, 204, 204, 1);
-    -moz-box-shadow: -5px 5px 0px 0px rgba(204, 204, 204, 1);
-    box-shadow: -5px 5px 0px 0px rgba(204, 204, 204, 1);
-}
-
-.main-nav {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 0;
-    width: 0;
-    text-align: center;
-    z-index: 99;
-    height: 100%;
-    overflow: hidden;
-    background-color: #fff;
-    background-color: rgba(204, 204, 204, 0.3);
-    white-space: nowrap;
-    a {
-        font-size: 2.5rem;
-        margin-right: 35px;
-        display: inline-block;
-        &:last-of-type {
-            margin-right: 0;
-        }
-    }
-}
-
-
-/*
-======================
-Content area
-======================
-*/
-
-.front .content {
-    margin-top: 60px;
-}
-
-.content {
-    max-width: 960px;
-}
-
-.intro {
-    margin-bottom: 50px;
-}
-
-
 /*
 ======================
 Home page
 ======================
 */
-
-.posts-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    .teaser {
-        width: 45%;
-        display: flex;
-        position: relative;
-        padding: 20px 0;
-        -webkit-transition: all .5s ease;
-        -o-transition: all .5s ease;
-        transition: all .5s ease;
-        &:hover {
-            background: #D2DBE2;
-        }
-        h2 {
-            font-size: 3.5rem;
-            padding-left: 20px;
-            padding-right: 20px;
-            &:hover {
-                border-bottom: 2px solid #fff;
-            }
-        }
-        article {
-            padding: 0 20px;
-            h3 {
-                font: 700 2.2rem Lato, sans-serif;
-                color: #606666;
-                margin: 0 0 15px;
-                border-bottom: 0;
-            }
-        }
-    }
-}
-
-@media all and (max-width:768px) {
-    .posts-projects .teaser {
-        width: 100%;
-        &:nth-child(1) {
-            margin-bottom: 20px;
-        }
-    }
-}
-
-
-/*
-======================
-Defaultg page
-======================
-*/
-
-.default h2 {
-    margin-top: 40px;
-}
-
-
-/*
-======================
-Blog landing page
-======================
-*/
-
-.archive-container {
-    padding: 0;
-    margin: 0 0 50px;
-    list-style: none;
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.archive-container a {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 141, 71, 1);
-    height: 200px;
-    width: 49.5%;
-    margin-bottom: 10px;
-    text-align: center;
-    -webkit-transition: all 0.55s ease;
-    -o-transition: all 0.55s ease;
-    transition: all 0.55s ease;
-    text-decoration: none;
-    &:hover {
-        background: rgba(255, 141, 71, 0.9);
-        text-decoration: none;
-        -webkit-box-shadow: -5px 5px 0px 0px rgba(204, 204, 204, 1);
-        -moz-box-shadow: -5px 5px 0px 0px rgba(204, 204, 204, 1);
-        box-shadow: -5px 5px 0px 0px rgba(204, 204, 204, 1);
-        cursor: pointer;
-    }
-    //    &:after{
-    //        position: absolute;
-    //        content: '';
-    //        bottom: 0;
-    //        right: 0;
-    //	width: 0; 
-    //	height: 0; 
-    //	border-left: 80px solid transparent;
-    //	border-right: 80px solid transparent;
-    //	border-top: 80px solid #f00;
-    //	
-    //    }
-}
-
-.archive-container a:nth-child(1) {
-    width: 100%;
-    height: 300px;
-    background: rgba(255, 99, 71, 1);
-    &:hover {
-        background: rgba(255, 99, 71, 0.9);
-    }
-}
-
-.archive-container li {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
-    flex-direction: column;
-    color: $white;
-}
-
-.archive-container .bottom-half {
-    width: 100%;
-}
-
-.past {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    a {
-        text-decoration: none;
-        &:hover li {
-            background: #D2DBE2;
-        }
-        li {
-            padding: 10px 20px;
-            margin-bottom: 0;
-        }
-    }
-    h2 {
-        font-size: 2.5rem;
-        padding: 0;
-        margin: 0;
-        border-bottom: 0;
-    }
-    time {
-        color: $aqua;
-    }
-}
-
-
-/*
-======================
-Individual Blog
-======================
-*/
-
-.date {
-    font: 400 1.6rem 'Roboto', sans-serif;
-    color: $darkGrey;
-    margin: 50px 0 20px;
-}
+// .posts-projects {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     .teaser {
+//         width: 45%;
+//         display: flex;
+//         position: relative;
+//         padding: 20px 0;
+//         -webkit-transition: all 0.5s ease;
+//         -o-transition: all 0.5s ease;
+//         transition: all 0.5s ease;
+//         &:hover {
+//             background: #D2DBE2;
+//         }
+//         h2 {
+//             font-size: 3.5rem;
+//             padding-left: 20px;
+//             padding-right: 20px;
+//             &:hover {
+//                 border-bottom: 2px solid #fff;
+//             }
+//         }
+//         article {
+//             padding: 0 20px;
+//             h3 {
+//                 font: 700 2.2rem Lato, sans-serif;
+//                 color: #606666;
+//                 margin: 0 0 15px;
+//                 border-bottom: 0;
+//             }
+//         }
+//     }
+// }
