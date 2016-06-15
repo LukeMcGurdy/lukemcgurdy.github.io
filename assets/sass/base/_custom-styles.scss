@@ -17,11 +17,12 @@ main {
         padding: 0;
         background: url('../../assets/images/tokyo.jpg') center/cover no-repeat;
         overflow: hidden;
+        margin-bottom: 0;
     }
 }
 #logo {
     fill: $pink1;
-    width: 100vw;
+    height: 100%;
     transition: all 0.4s cubic-bezier(.05,.94,.54,.91);
     z-index: 9;
 }
@@ -31,6 +32,7 @@ main {
         top: 0;
         left: 0;
         width: 250px;
+        height: auto;
     }
 }
 // Top nav
@@ -74,38 +76,54 @@ main {
         }
     }
 }
-// Home teasers
-.teasers {
-    .col-md-6 .teaser {
-        max-width: 500px;
-    }
-    .col-md-6:first-of-type {
-        background: $blue1;
-        align-items: flex-end;
-        .teaser {
-            padding-right: 50px;
+/* Home page */
+.front {
+    .intro {
+        text-align: center;
+        margin: 100px 0 70px;
+        h1 {
+            font-size: 14rem;
+            font-weight: 900;
+            line-height: 11rem;
+            margin: 0 0 30px;
+            text-transform: uppercase;
+        }
+        h6 {
+            display: inline-block;
+            color: $pink1;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 70px;
+            border-bottom: 1px solid $pink1;
+            line-height: normal;
+            text-transform: none;
+        }
+        p {
+            text-align: left;
         }
     }
-    .col-md-6:last-of-type {
-        background: $blue2;
-        .teaser {
-            align-items: center;
-            padding-left: 50px;
+    .teasers {
+        .col-md-6 {
+            background: $blue1;
         }
-    }
-    .card{
-        max-width: 500px;
-        width: 100%;
-    }
-    .card,
-    .card-header {
-        background-color: transparent;
-        border: 0;
-    }
-    .card-header,
-    .card-text,
-    .card-title {
-        color: #fff;
+        .col-md-6:last-of-type {
+            background: $blue2;
+        }
+        .card {
+            max-width: 700px;
+            width: 100%;
+            padding: 40px;
+        }
+        .card,
+        .card-header {
+            background-color: transparent;
+            border: 0;
+        }
+        .card-header,
+        .card-text,
+        .card-title {
+            color: #fff;
+        }
     }
 }
 footer {
