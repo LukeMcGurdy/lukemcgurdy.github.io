@@ -111,6 +111,7 @@
         }
     }
     .teasers {
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
         .col-md-6 {
             position: relative;
             background: $blue1;
@@ -128,7 +129,7 @@
                 transition: all 0.5s cubic-bezier(0.70,-0.80,0.280,1.50);
             }
             &:hover {
-                background: $gray1!important;
+                background: $pink1!important;
                 svg {
                     transform: translateY(-100%);
                 }
@@ -181,7 +182,7 @@ footer {
     z-index: 0;
     width: 100%;
     padding: 40px 0;
-    background: $gray1;
+    background: $gray3;
     a,
     small {
         color: #fff;

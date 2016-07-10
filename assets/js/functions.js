@@ -21,3 +21,11 @@ $(document).ready(function() {
     });
 
 });
+
+
+// Add copyright date to footer
+function addDate(){
+    var copyrightDate = new Date().getFullYear();
+    document.getElementById('copyright').innerHTML = copyrightDate;
+}
+addDate();
