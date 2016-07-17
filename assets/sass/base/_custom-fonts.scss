@@ -62,11 +62,6 @@ p {
     Code block styles
 ======================
 */
-code {
-    font: 400 2.1rem "Lato", sans-serif;
-    clear: both;
-    margin: 0 5px 0 0;
-}
 
 time {
     font: 400 1.6rem $text-font-family;
@@ -88,16 +83,7 @@ ol > li p:first-of-type {
 }
 
 /* Post links */
-.read-more {
-    display: block;
-    margin-top: 20px;
-    font-size: 2.1rem;
-    color: #4C90C1;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
+
 
 
 /*

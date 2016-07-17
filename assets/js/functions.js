@@ -25,7 +25,6 @@ $(document).ready(function() {
             $('body').addClass('scrolled');
         }
     });
-
 });
 
 

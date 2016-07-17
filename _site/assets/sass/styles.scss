@@ -58,21 +58,11 @@
 
 
 // Custom
-// UI Kit
-// @import "ui_kit/reset";
-// @import "ui_kit/fonts";
-// @import "ui_kit/grids";
-// @import "ui_kit/syntax-highlighting";
-
-// Base
-// @import "base/common";
-// @import "base/header";
-// @import "base/body";
-// @import "base/footer";
-// @import "base/animations";
 
 // Responsive
 //@import "ui_kit/responsive";
-
-@import "base/jumbotron";
+@import "base/variables";
+@import "base/mixins";
 @import "base/bs-overrides";
+@import "base/custom-fonts";
+@import "base/custom-styles";
