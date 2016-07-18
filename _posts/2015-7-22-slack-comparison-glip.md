@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: basic
 title: Slack - Don't believe the hype
 subtitle: First a little background. Until about two months ago the company I work for, which is called <a href="http://daracreative.ie" target="_blank">Dara Creative</a>, was using Skype as its primary means of rapid internal communications. But as useful as Skype is it's also quite limited and recently we began to feel those limits. Eventually we succumbed to hype surrounding Slack and so we have been using it ever since.
 category: posts

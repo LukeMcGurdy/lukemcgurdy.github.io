@@ -1,28 +1,24 @@
-
-
-
-.front {
-    .jumbotron {
-        height: 50vh;
-        padding: 0;
-        background: url('../../assets/images/tokyo.jpg') center/cover no-repeat;
-        overflow: hidden;
-        margin-bottom: 0;
-    }
+// Site wide basics
+main {
+    display: flex;
+    z-index: 9;
+    position: relative;
+    margin-bottom: 148px;
+    display: block;
+    background: #fff;
 }
+// Header
 #logo {
     fill: $pink1;
     height: 100%;
     transition: all 0.3s cubic-bezier(.05,.94,.54,.91);
     z-index: 99;
 }
-.front {
-    &.scrolled #logo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 120px;
-    }
+.scrolled #logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120px;
 }
 // Top nav
 .navbar {
@@ -30,6 +26,7 @@
     top: 30px;
     right: 30px;
     width: 150px;
+    z-index: 10;
     .navbar-toggle {
         width: 70px;
         background: $navy1;
@@ -51,71 +48,66 @@
         }
     }
 }
-.navbar {
-    z-index: 10;
-    .navbar-collapse{
-        width: 145px;
-    }
-    .navbar-toggle {
-        height: 70px;
-        .icon-bar {
-            position: relative;
-            @include transition(0.3s);
-        }
-    }
-    // Fire nav animation on open
-    .navbar-toggle.triggered {
-        .icon-bar {
-            margin: 0;
-        }
-        .icon-bar:nth-child(1) {
-            transform: rotate(225deg) translate(-3px,-3px);
-        }
-        .icon-bar:nth-child(2) {
-            display: none;
-        }
-        .icon-bar:nth-child(3) {
-            transform: rotate(-225deg) translate(-2px, 2px);
-        }
-        .icon-bar:last-of-type {
-            margin-bottom: 0;
-        }
-    }
-    //
-    .navbar-nav{
-        margin-top: 10px;
-        padding: 0;
-        background: $gray2;
-        li {
-            margin-bottom: 0;
-            padding: 10px 20px;
-            &:hover{
-                display: block;
-                background: $gray1;
-            }
-            a{
-                font-size: 2rem;
-                color: #fff;
-                &:hover{
-                    border-bottom: 0;
-                }
-            }
-        }
-
-        li:last-of-type{
-            margin-bottom: 0;
-        }
+.navbar-collapse {
+    width: 145px;
+}
+.navbar-toggle {
+    height: 70px;
+    .icon-bar {
+        position: relative;
+        @include transition(0.3s);
     }
 }
-/* Home page */
+// Fire nav animation on open
+.navbar-toggle.triggered {
+    .icon-bar {
+        margin: 0;
+    }
+    .icon-bar:nth-child(1) {
+        transform: rotate(225deg) translate(-3px,-3px);
+    }
+    .icon-bar:nth-child(2) {
+        display: none;
+    }
+    .icon-bar:nth-child(3) {
+        transform: rotate(-225deg) translate(-2px, 2px);
+    }
+    .icon-bar:last-of-type {
+        margin-bottom: 0;
+    }
+}
+//
+.navbar-nav {
+    margin-top: 10px;
+    padding: 0;
+    background: $gray2;
+    li {
+        margin-bottom: 0;
+        padding: 10px 20px;
+        &:hover {
+            display: block;
+            background: $gray1;
+        }
+        a {
+            font-size: 2rem;
+            color: #fff;
+            &:hover {
+                border-bottom: 0;
+            }
+        }
+    }
+    li:last-of-type {
+        margin-bottom: 0;
+    }
+}
+// Front page
 .front {
-    main {
-        display: flex;
-        z-index: 9;
-        position: relative;
-        margin-bottom: 148px;
-        display: block;
-        background: #fff;
+    .jumbotron {
+        height: 50vh;
+        padding: 0;
+        background: url('../../assets/images/tokyo.jpg') center/cover no-repeat;
+        overflow: hidden;
+        margin-bottom: 0;
     }
     .intro {
         text-align: center;
@@ -180,10 +172,10 @@
             background-color: transparent;
             border: 0;
         }
-        .card-header{
+        .card-header {
             font-size: 3.5rem;
         }
-        .card-title{
+        .card-title {
             font-size: 2.5rem;
             font-weight: bold;
         }
@@ -219,11 +211,11 @@ footer {
     small {
         color: #fff;
     }
-    a:hover{
+    a:hover {
         color: $pink1;
         border-bottom: 0;
     }
-    small{
+    small {
         margin-top: 20px;
     }
     //background: $gray2;

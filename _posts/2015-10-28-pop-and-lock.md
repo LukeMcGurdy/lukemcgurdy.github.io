@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: basic
 title: Pop and lock header
 category: projects
 published: false
