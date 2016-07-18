@@ -60,5 +60,3 @@ exclude:
     - LICENSE
     - README.md
     - node_modules
-    - Gruntfile.js
-    - package.json

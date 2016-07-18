@@ -1,0 +1,16 @@
+// Mixins
+
+//Transition
+@mixin transition($duration) {
+    -webkit-transition: all $duration ease 0s;
+    -o-transition: all $duration ease 0s;
+    transition: all $duration ease 0s;
+}
+// Transform
+// Rotate
+@mixin transform($degree){
+    -webkit-transform: rotate($degree);
+    -ms-transform: rotate($degree);
+    -o-transform: rotate($degree);
+    transform: rotate($degree);
+}

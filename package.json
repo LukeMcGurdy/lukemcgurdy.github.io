@@ -1,0 +1,16 @@
+{
+  "name": "lukemcgurdy.com",
+  "version": "2.0.0",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.5.2",
+    "es6-promise": "^3.1.2",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.1.0",
+    "grunt-sass-globbing": "^1.5.1",
+    "install": "^0.7.3",
+    "npm": "^3.8.8"
+  }
+}
