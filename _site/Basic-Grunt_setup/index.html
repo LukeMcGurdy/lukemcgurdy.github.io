@@ -67,27 +67,28 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-8 col-md-offset-2">
                         <h1 id="basic-grunt-setup---a-noobs-guide">Basic Grunt Setup - a noob’s guide</h1>
 
 <p><img src="http://lukemcgurdy.github.io/assets/images/post-images/grunt-logo.jpg" alt="Grunt logo" /></p>
 
-<p>If you are reading this then it’s likely that you already have some idea what Grunt does for a developer. (I’m still trying to figure it out ;)) On the off chance you don’t really know what Grunt is then think of it like <a href="https://www.youtube.com/watch?v=BFts5ISnaxQ" target="_blank">Mojo, your very own helper monkey</a>. It performs all the tedious tasks that you don’t want to do.</p>
+<p>If you are reading this then it’s likely that you already have some idea what Grunt does for a developer. On the off chance you don’t really know what Grunt is then think of it like <a href="https://www.youtube.com/watch?v=BFts5ISnaxQ" target="_blank">your very own helper monkey</a>. It performs many of the tedious tasks that you as a front-end developer don’t want to do.</p>
 
-<p>Can’t be bothered pressing F5 to refresh your browser? Well, never fear for Grunt is here. After a little bit of configuration Grunt will automatically do it for you each time you save a file. Congratulations! You have saved 0.3 seconds.</p>
+<p>For example, can’t be bothered pressing F5 to refresh your browser? Well, never fear. After a little bit of configuration Grunt will automatically do it for you each time you save a file.</p>
 
-<p>At the end of this tutorial you will find a link to two grunt file that watch for any changes you make to file and then compile Sass, run the autoprefix processor to add/ remove vendor prefixes as required, run cssnano which is a very powerful modular minifier, reload your browser on save and notify you when the above tasks are complete. There are many more packages available but see <a href="http://ipestov.com/essential-plugins-for-grunt/ target=&quot;_blank&quot;" target="_blank">here</a> for list of some interesting ones.</p>
+<p>At the end of this tutorial you will find a link to a basic grunt setup. This will watch for any changes you make to your files (Sass in this case) and then compile Sass, run the autoprefix processor to add/ remove vendor prefixes as required, run cssnano which is a very powerful modular minifier, reload your browser on save and notify you when the above tasks are complete. There are many more packages available but see <a href="http://ipestov.com/essential-plugins-for-grunt/ target=&quot;_blank&quot;" target="_blank">here</a> for list of some interesting ones.</p>
 
-<p>Though all of what follows assumes a Windows 10 environment, I think that much of it isn’t exclusive to it. I should add that I’m very new to Grunt so any correction is appreciated.</p>
+<p>All of what follows assumes a Windows 10 environment. However, I think that the steps outlined herecan be applied to other environments. I should add that I’m very new to Grunt so any correction is appreciated.</p>
 
-<h2 id="setup-overview">Setup Overview</h2>
+<h2 id="general-overview">General Overview</h2>
 
 <p>To get Grunt up and running you need to do the following:</p>
 
 <ol>
+  <li>Install Git for Windows</li>
   <li>Install Ruby</li>
   <li>Install node.js &amp; npm (node package manager)</li>
   <li>Install Grunt cli</li>
@@ -103,6 +104,10 @@ To install npm and various Grunt packages you might consider using a fancy conso
 
 <h2 id="in-more-detail">In more detail</h2>
 <ol>
+  <li>
+    <p>Install Git for Windows
+ [Git for Windows] (https://git-scm.com/download/win){:target=”_blank”}</p>
+  </li>
   <li>
     <p>Install Ruby</p>
 
@@ -181,12 +186,12 @@ To install npm and various Grunt packages you might consider using a fancy conso
 
     <p><code class="highlighter-rouge">grunt css</code></p>
 
-    <p><code class="highlighter-rouge">css
- .test{
-     background: red
- }
-</code>
-Alternatively you can create task lists so only specific tasks are run. See the bottom of Gruntfile.js for more.</p>
+    <div class="language-css highlighter-rouge"><pre class="highlight"><code> <span class="nc">.test</span><span class="p">{</span>
+     <span class="nl">background</span><span class="p">:</span> <span class="no">red</span>
+ <span class="p">}</span>
+</code></pre>
+    </div>
+    <p>Alternatively you can create task lists so only specific tasks are run. See the bottom of Gruntfile.js for more.</p>
   </li>
 </ol>
 
@@ -196,7 +201,6 @@ Alternatively you can create task lists so only specific tasks are run. See the 
                 </div>
             </div>
         </section>
-
     </main>
     <footer>
     <div>

@@ -1,12 +1,8 @@
-// Site wide basics
-main {
-    display: flex;
-    z-index: 9;
-    position: relative;
-    margin-bottom: 143px;
-    display: block;
-    background: #fff;
-}
+/*
+==============================================
+    Sitewide Styles
+==============================================
+*/
 // Header
 #logo {
     fill: $pink1;
@@ -28,11 +24,12 @@ main {
     width: 150px;
     padding: 0;
     z-index: 10;
-    .navbar-header{
+    .navbar-header {
         height: 70px;
     }
     .navbar-toggle {
         float: right;
+        height: 70px;
         width: 70px;
         background: $navy1;
         padding: 10px;
@@ -42,6 +39,8 @@ main {
             outline: 0;
         }
         .icon-bar {
+            position: relative;
+            @include transition(0.3s);
             width: 100%;
             height: 7px;
             margin-bottom: 10px;
@@ -53,14 +52,7 @@ main {
         }
     }
 }
-.navbar-toggle {
-    height: 70px;
-    .icon-bar {
-        position: relative;
-        @include transition(0.3s);
-    }
-}
-// Fire nav animation on open
+// When dropdown is triggerd add animation to menu
 .navbar-toggle.triggered {
     .icon-bar {
         margin: 0;
@@ -78,11 +70,10 @@ main {
         margin-bottom: 0;
     }
 }
-//
 .navbar-nav {
     margin-top: 10px;
     padding: 0;
-    background: $gray2;
+    background: $gray3;
     li {
         margin-bottom: 0;
         padding: 10px 20px;
@@ -102,6 +93,45 @@ main {
         margin-bottom: 0;
     }
 }
+main {
+    display: flex;
+    z-index: 9;
+    position: relative;
+    margin-bottom: 143px;
+    display: block;
+    background: #fff;
+}
+// Footer
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: $gray3;
+    a,
+    small {
+        color: #fff;
+    }
+    a {
+        font-size: 2.1rem;
+        &:hover {
+            color: $pink1;
+            border-bottom: 0;
+        }
+    }
+    small {
+        margin-top: 20px;
+    }
+}
+/*
+==============================================
+    Page Specific Styles
+==============================================
+*/
 // Front page
 .front {
     .jumbotron {
@@ -199,26 +229,7 @@ main {
         }
     }
 }
-// Footer
-footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: fixed;
-    bottom: 0;
-    z-index: 0;
-    width: 100%;
-    padding: 40px 0;
-    background: $gray3;
-    a,
-    small {
-        color: #fff;
-    }
-    a:hover {
-        color: $pink1;
-        border-bottom: 0;
-    }
-    small {
-        margin-top: 20px;
-    }
+// Basic page
+.basic header {
+    height: 150px;
 }

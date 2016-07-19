@@ -17,10 +17,10 @@ permalink: /blog/
   <ul class="past">
   {% endif %}
   {% endunless %}
+
     <a href="{{ post.url }}">
        <li>
             <h2>{{ post.title }}</h2>
-
             <div class="bottom-half"><time>&nbsp;{{ post.date | date:"%d %b %Y" }}</time></div>
         </li>
     </a>
