@@ -59,10 +59,10 @@
 // Custom
 
 // Responsive
-//@import "ui_kit/responsive";
 @import "base/variables";
 @import "base/mixins";
 @import "base/bs-overrides";
 @import "base/custom-fonts";
 @import "base/custom-styles";
-@import "base/_syntax-highlighting";
+@import "base/custom-responsive";
+@import "base/syntax-highlighting";

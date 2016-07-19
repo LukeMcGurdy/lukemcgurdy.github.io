@@ -118,12 +118,12 @@ To install npm and various Grunt packages you might consider using a fancy conso
 
     &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grunt css&lt;/code&gt;&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nc&quot;&gt;.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-     &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;red&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;p&gt;Alternatively you can create task lists so only specific tasks are run. See the bottom of Gruntfile.js for more.&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;css
+ .test{
+     background: red
+ }
+&lt;/code&gt;
+Alternatively you can create task lists so only specific tasks are run. See the bottom of Gruntfile.js for more.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -136,7 +136,7 @@ To install npm and various Grunt packages you might consider using a fancy conso
     
       <item>
         <title>Only the penitent man shall pass</title>
-        <description>&lt;p&gt;#Only the penitent man shall pass&lt;/p&gt;
+        <description>&lt;h1 id=&quot;only-the-penitent-man-shall-pass&quot;&gt;Only the penitent man shall pass&lt;/h1&gt;
 
 &lt;p&gt;I’ve just pushed all the incomplete work for this poor neglected site to Git. The result was that my previously boring but (some what) functioning site has been replaced by a broken site - at least if viewed in lte IE 11, Safari 8, iPhone and so on (the list is long). It’s a mess.&lt;/p&gt;
 
