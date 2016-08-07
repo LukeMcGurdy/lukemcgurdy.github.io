@@ -1,6 +1,6 @@
 ---
 layout: basic
-title: Basic Grunt Setup
+title: Basic Grunt Setup - a noob's guide (written by a noob)
 subtitle: If you are reading this the it's likely that you already know what Grunt does for a developer. However, on the off chance you don't really know what Grunt is then think of it like...
 category: posts
 published: false
@@ -8,20 +8,19 @@ published: false
 
 # Basic Grunt Setup - a noob's guide
 
+<span class="break-out">
 ![Grunt logo](http://lukemcgurdy.github.io/assets/images/post-images/grunt-logo.jpg)
+</span>
 
+If you are reading this then it's likely that you already have some idea what Grunt is and what it does for a developer. But if like me you are a little late to the party and you don't know anything about Grunt beyond the name then think of it as [your very own helper monkey](https://www.youtube.com/watch?v=BFts5ISnaxQ). The plugins that run in Grunt perform many of the tedious tasks that you as a front-end developer don't want to do.
 
-If you are reading this then it's likely that you already have some idea what Grunt does for a developer. On the off chance you don't really know what Grunt is then think of it like [your very own helper monkey](https://www.youtube.com/watch?v=BFts5ISnaxQ){:target="_blank"}. It performs many of the tedious tasks that you as a front-end developer don't want to do.
+For example, can't be bothered pressing F5 to refresh your browser? Well, never fear. After a installing plugin like livereload and doing a little bit of configuration Grunt will automatically refresh your browser for you each time you save a file. You have saved yourself 0.3 seconds. There are many packages available and you can have a read of [here](http://ipestov.com/essential-plugins-for-grunt/ target="_blank") for list of some interesting ones.
 
-For example, can't be bothered pressing F5 to refresh your browser? Well, never fear. After a little bit of configuration Grunt will automatically do it for you each time you save a file.
-
-At the end of this tutorial you will find a link to a basic grunt setup. This will watch for any changes you make to your files (Sass in this case) and then compile Sass, run the autoprefix processor to add/ remove vendor prefixes as required, run cssnano which is a very powerful modular minifier, reload your browser on save and notify you when the above tasks are complete. There are many more packages available but see [here](http://ipestov.com/essential-plugins-for-grunt/ target="_blank"){:target="_blank"} for list of some interesting ones.
-
-All of what follows assumes a Windows 10 environment. However, I think that the steps outlined herecan be applied to other environments. I should add that I'm very new to Grunt so any correction is appreciated.
+ I should add that I'm very new to Grunt so any correction is appreciated (once I set up a comments section ;) ).
 
 ## General Overview
 
-To get Grunt up and running you need to do the following:
+All of what follows assumes a Windows 10 environment. To get Grunt up and running you need to do the following:
 
 1. Install Git for Windows
 2. Install Ruby
@@ -32,87 +31,85 @@ To get Grunt up and running you need to do the following:
 5. Create a file called Gruntfile.js
 6. Run Grunt
 
-For more information see [here](http://blog.teamtreehouse.com/getting-started-with-grunt){:target="_blank"} for official docs.
-My own working examples can be found [here](https://github.com/LukeMcGurdy/Basic-Grunt-Setup){:target="_blank"}.
+For more information see [here](http://blog.teamtreehouse.com/getting-started-with-grunt) for official docs.
+My own working examples can be found [here](https://github.com/LukeMcGurdy/Basic-Grunt-Setup).
 
 ## In more detail
 1. Install Git for Windows
-    [Git for Windows] (https://git-scm.com/download/win){:target="_blank"} (AKA Git Bash) will allow you to install modules and run Grunt.
 
-1. Install Ruby
+    [Git for Windows] (https://git-scm.com/download/win) (AKA Git Bash) will allow you to install modules and run Grunt. I run Git Bash through [ConEmu] (https://conemu.github.io/) which is a console that allows you to run just about any shell. It has quite a few nice features like support for themes, customizable fonts, and the ability to run all your multiple shells in one window.
 
-    Vist the [Ruby Installer download page](http://rubyinstaller.org/downloads/){:target="_blank"} and install the appropriate version. Presumably this will be the latest stable 32-bit release (v2.3.0 at the time of writing). Because the 64-bit version is still relatively new on Windows and possibly not fully Stable I'd give it a miss.
+2. Install Ruby
 
-2. Install node.js & npm
+    Vist the [Ruby Installer download page](http://rubyinstaller.org/downloads/) and install the appropriate version. Presumably this will be the latest stable 32-bit release (v2.3.0 at the time of writing). Because the 64-bit version is still relatively new on Windows and possibly not fully Stable I'd give it a miss.
 
-    Visit the [node.js site](https://nodejs.org/en/){:target="_blank"} and and install the "Mature and Dependable version" which was v4.2.2 LTS at time of writing. The good news is that you have also installed npm - which is what you use to install the modules that Grunt will run for you.
+3. Install node.js & npm
 
-3. Install Grunt CLI
+    Visit the [node.js site](https://nodejs.org/en/) and and install the "Mature and Dependable version" which was v4.2.2 LTS at time of writing. The good news is that you have also installed npm - which is what you use to install the modules that Grunt will run for you.
 
-    Using Git Bash cd to the root of your project folder and run
+4. Install Grunt CLI
 
-    `npm install -g grunt-cli`
+    Using Git Bash run the following from anywhere on Windows
 
-    What this does is install the Grunt command line interface (cli) globally (hence the -g). Meaning that Grunt can now be run from wherever you want. This s is You run this just the once from and from anywhere.
+   `npm install -g grunt-cli`
 
-    If you are not comfortable using the command line (and mayny of us aren't - myself included) then [here](http://leveluptuts.com/tutorials/command-line-basics){:target="_blank"} is a quick tutorial on the basics.  
+    What this command does is install the Grunt command line interface (cli) globally (hence the -g). Meaning that Grunt can now be run from wherever you want. You run this just the once from .
 
-4. Create your project folder
+    If you are not comfortable using the command line (and many of us aren't - myself included) then [here](http://leveluptuts.com/tutorials/command-line-basics) is a quick tutorial on the basics.  
 
-    A basic example follows below:
+5. Create your project folder
+
+    A basic example looks something like this:
 <pre>
-
-    assets
+        assets
+        ├── Gruntfile.js
+        ├── package.json (see below for more on creating Gruntfile.js and package.json)
         ├── css/
-        │   ├── main.css
+            ├── main.css
         ├── sass/
-        │   ├── main.scss
-        │   ├──
+            ├── main.scss
         ├── js/
-        │   ├── main.js
+            ├── main.js
         ├── images/
-        │   ├── pic.jpg
-        ├── Gruntfile.js    
-        ├── package.json   
+            ├── pic.jpg  
+</pre>  
 
-</pre>      
+6. Create a file called package.json.
 
-5. Create a file called package.json.
+    In this file you identify your project essentials such as project name, description, version etc. Most importantly it lists the plugins (also known as dependencies) that you wish to run. (To my mind the terms plugin, dependency and package are all interchangable.)
 
-    In this file you identify your project essentials - project name, description, version etc. It also lists your dependencies once you have installed them. These dependencies are the packages that you install via npm. The packages.json file is placed in the root of your project folder - e.g. Desktop/my-super-project/packages.jason
+    If you have a pre-configured package.json file you simply run the following command from the root of your project folder. Sit back and watch your specified plugins and their dependencies automatically install.
 
-    If you wish to install individual packages then run the following command from the root of your project folder
+    `npm install`
+
+    If you wish to install individual packages then run
 
     `npm install package-a --save-dev`
 
-    Alternatively you can install multiple packages at once
+    Alternatively, you can install multiple packages at once
 
     `npm install package-a package-b package-c --save-dev`
 
-    Grunt does its magic and downloads and installs these packages in a folder called node_modules located in the root. As long as you put `--save-dev` at the end of the command then it also updates your package.json file.
+    As long as you put `--save-dev` at the end of the command then it also updates your package.json file.
 
+    Once you run any of the above commands a new folder called node_modules will be created in the project folder root. Ultimately, this is not a folder you will want to transfer to another environment primarily because it's huge. You have all you need from your package.json and Gruntfile.js files.  
 
-6. Create a file called Gruntfile.js
+7. Create a file called Gruntfile.js
 
-    This is where you specify what packages are run and how they are configured. Each package has its own options so make sure to visit the relevant npm or github page for each package. Rather than me copying out snippets of code from both files it would be better to link directly to working examples that have some comments.
+    In the previous step you installed plugins and now you need to configure them to run in Grunt. This is the most time consuming step in setting up Grunt. Each plugin has its own options so make sure to visit the relevant npm or github page for each package and read the docs.
 
     Please see [here](https://github.com/LukeMcGurdy/Basic-Grunt-Setup) for a copy of packages.json and Gruntfile.js.
 
-7. Run Grunt
+8. Run Grunt
 
-    To do this simply type the following into the command line making sure you are in the root of your project folder when doing so.
+    To run grunt you simply navigate to the root of your project (your Gruntfile.js and package.json files should be here as well) and type type command line making sure you are in the root of your project folder when doing so.
 
-    `grunt`
+    `grunt`  
 
     This will run all tasks that you have defined in the default task list in your Gruntfile. (When I say task list please look out for 'registerTask' in the Gruntfile.)
 
-    `grunt css`
+    `grunt dist`
 
-   ```css
-    .test{
-        background: red
-    }
-   ```
    Alternatively you can create task lists so only specific tasks are run. See the bottom of Gruntfile.js for more.
 
 Enjoy

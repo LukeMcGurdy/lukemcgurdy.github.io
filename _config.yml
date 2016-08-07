@@ -26,7 +26,6 @@ url: http://lukemcgurdy.github.io/
 baseurl: ""
 
 # Markdown and Highlighter
-
 kramdown:
   input: GFM
 

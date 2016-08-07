@@ -3,10 +3,10 @@ layout: basic
 title: Only the penitent man shall pass
 subtitle: I've just push all the incomplete work for this site to Git. The result was that my previously boring but (some what) functioning site has been replaced by a broken site...
 category: posts
-published: true
+published: false
 ---
 
-#Only the penitent man shall pass
+# Only the penitent man shall pass
 
 I've just pushed all the incomplete work for this poor neglected site to my gihub repo. The result was that my previously boring but (somewhat) functioning site has been replaced by a broken site - at least if viewed in lte IE 11, Safari 8, iPhone and so on. It's a long list.
 

@@ -1,31 +1,37 @@
-/* Fonts */
-
-html{
+/* Base Fonts */
+html {
     font-size: 62.5%;
 }
-
-
 // Font Family
 $header-font-family: 'Source Sans Pro', sans-serif;
 $text-font-family: 'Open Sans', sans-serif;
-
-/*
-======================
-    Font Elements
-======================
-*/
+// Font colour
+$primary-font-colour: $gray4;
+$secondary-font-colour: $gray2;
 /* General font styles */
-h1, h2, h3, h4{
-    font-family: $header-font-family
+h1,
+h2,
+h3,
+h4 {
+    font-family: $header-font-family;
 }
 
+h1,
+h2,
+h3,
+h4,
+li,
+p,
+a {
+    color: $primary-font-colour;
+}
 h1 {
     font-size: 6rem;
     font-weight: 900;
     line-height: 6rem;
-    margin: 0 0 35px;
+    margin: 0 0 60px;
     text-transform: uppercase;
-    span{
+    span {
         color: $pink1;
         font-size: 2.5rem;
         font-weight: 400;
@@ -33,58 +39,44 @@ h1 {
         text-transform: none;
     }
 }
-
 h2 {
-
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin: 0 0 35px;
+    text-transform: uppercase;
 }
-h3 {
-
-}
-h4 {
-
-}
-a {
-    &:hover {
-        text-decoration: none;
-        border-bottom: 2px solid #fff;
-    }
-}
+h3 {}
+h4 {}
 p {
-    font: 300 3rem/5.5rem $text-font-family;
+    font: 300 3rem/5rem $text-font-family;
     margin: 0 0 30px;
 }
-
-
-
-/*
-======================
-    Code block styles
-======================
-*/
-
+a,a:focus, a:hover{
+    font: 300 3rem/5rem $text-font-family;
+}
 time {
-    font: 400 1.6rem $text-font-family;
-    color: #fff;
+    font: 400 1.5rem $text-font-family;
+    color: $secondary-font-colour;
 }
 strong {
     font-weight: 700;
 }
-ol {
-    padding-left: 30px;
-}
-ol li,
-ul li {
-    font: 700 2.1rem/3.5rem $text-font-family;
-    margin: 0 0 20px;
+ol,
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    li {
+        font: 700 2.1rem/3.5rem $text-font-family;
+        margin: 0 0 50px;
+    }
 }
 ol > li p:first-of-type {
     font-weight: bold;
 }
-
-/* Post links */
-
-
-
+code{
+    color: #fff;
+}
 /*
 ======================
     Font Icons

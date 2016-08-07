@@ -7,35 +7,18 @@
     <atom:link href="http://lukemcgurdy.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Only the penitent man shall pass</title>
-        <description>&lt;p&gt;#Only the penitent man shall pass&lt;/p&gt;
-
-&lt;p&gt;I’ve just pushed all the incomplete work for this poor neglected site to my gihub repo. The result was that my previously boring but (somewhat) functioning site has been replaced by a broken site - at least if viewed in lte IE 11, Safari 8, iPhone and so on. It’s a long list.&lt;/p&gt;
-
-&lt;p&gt;Why do this? Well, I’ve been busy procrastinating of late and this is my penance. I need a good kick up the arse and I figure that airing my dirty laundry in public is as good a motivation as any to get things in order. Expect updates right after I wake from my Christmas dinner food coma or whatever time the unrelentingly grim Easternders Christmas omnibus comes on the TV. And now back to watching Indiana Jones.&lt;/p&gt;
-
-&lt;p&gt;For posterity here is the old abomination:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lukemcgurdy.github.io/assets/images/site-versions/site-v1.0.jpg&quot; alt=&quot;lukemcgurdy.github.io - Version 1&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
-        <link>http://lukemcgurdy.github.io//only-the-penitent-man-shall-pass/</link>
-        <guid isPermaLink="true">http://lukemcgurdy.github.io//only-the-penitent-man-shall-pass/</guid>
-      </item>
-    
-      <item>
         <title>Slack - Don&#39;t believe the hype</title>
         <description>&lt;h1 id=&quot;slack---dont-believe-the-hype&quot;&gt;Slack - Don’t believe the hype&lt;/h1&gt;
 
-&lt;p&gt;First a little background. Until about two months ago the company I work for, which is called &lt;a href=&quot;http://daracreative.ie&quot; target=&quot;_blank&quot;&gt;Dara Creative&lt;/a&gt;, was using Skype as its primary means of rapid internal communications. But as useful as Skype is it’s also quite limited and recently we began to feel those limits. Eventually we succumbed to hype surrounding Slack and so we have been using it ever since.&lt;/p&gt;
+&lt;p&gt;First a little background. Until about two months ago the company I work for, which is called &lt;a href=&quot;http://daracreative.ie&quot; target=&quot;_blank&quot;&gt;Dara Creative&lt;/a&gt;, was using Skype as its primary means of rapid internal communications. But as useful as Skype is it’s also quite limited and recently we began to feel those limits. Eventually we succumbed to hype surrounding Slack and we have been using it ever since.&lt;/p&gt;
 
-&lt;p&gt;Yet after two months of daily use I think that I can safely conclude that I don’t - and probably never did - buy into the hype surrounding Slack. Please don’t pick me up wrong. Slack has some really excellent features. It’s great for sharing files, it supports the integration of many, many 3rd party services and I can’t recall ever having any technical problems with the Windows app or loss of service. All told it’s a smooth operator. So the reason I’m not sold on Slack isn’t necessarily due to some glaring issues with the product itself.&lt;/p&gt;
+&lt;p&gt;Yet after two months of daily use I think that I can safely conclude that I don’t - and probably never did - buy into the hype surrounding Slack. Please don’t get me wrong. Slack has some really excellent features. It’s great for sharing files, it supports the integration of many, many 3rd party services and I can’t recall ever having any technical problems with the Windows app or loss of service. All told it’s a smooth operator. So the reason I’m not sold on Slack isn’t due to some glaring issues with the product itself. Instead, the problem I have with Slack boils down to their business model.&lt;/p&gt;
 
-&lt;p&gt;Instead, the problem I have with Slack boils down to their business model. As a company Dara Creative falls between the cracks of their free and paid plans. On one hand, there are enough staff in the company using Slack that we reach the 10,000 message history limit in a matter of days. (In the free plan messages get deleted after this limit is reached). On the other hand, Slack’s basic payment plan is too expensive for a service we primarily use as a way of instant messaging each other and file sharing. 2K a year to send animated gifs is a high price indeed. Even if it is quality stuff like this:&lt;/p&gt;
+&lt;p&gt;As a company Dara Creative falls between the cracks of their free and paid plans. On one hand, there are enough staff in the company using Slack that we reach the 10,000 message history limit in a matter of days. (In the free plan messages get deleted after this limit is reached). On the other hand, Slack’s basic payment plan is too expensive for a service we primarily use as a way of instant messaging each other and file sharing. 2K a year to send animated gifs is a high price indeed. Even if it is quality stuff like this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://lukemcgurdy.github.io/assets/images/post-images/jcvd.gif&quot; alt=&quot;JCVD in Action&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;So we started searching around the interwebs for something that was better than the slightly jaded Skype and also better priced than Skype. Happily we came across &lt;a href=&quot;https://glip.com/&quot; target=&quot;_blank&quot;&gt;Glip&lt;/a&gt;. Admittedly it’s very early days in our trial period (as in it’s the second day of the trial) but it seems to do nearly everything Slack does and so far I think it largely does it (nearly) as well or even better in some cases. There are exceptions of course. For instance, Glip has fewer 3rd party integrations available and the Windows desktop app crashed three times in two days. Nevertheless, the interface is very clean, it has a native calendar, tasks, notes (with version control), integrated video conferencing using Zoom (which I have to say is great fun), easily searchable conversations, files and links. It’s also free. (It has recently been acquired by &lt;a href=&quot;http://recode.net/2015/06/19/ringcentral-expands-beyond-phone-service-with-glip-acquisition/&quot; target=&quot;_blank&quot;&gt;some other company&lt;/a&gt; so I hope that doesn’t mean a change in business model.)&lt;/p&gt;
+&lt;p&gt;So we started searching around the interwebs for something that was better than the jaded Skype but also better priced than Slack. Happily we came across &lt;a href=&quot;https://glip.com/&quot; target=&quot;_blank&quot;&gt;Glip&lt;/a&gt;. Admittedly it’s very early days in our trial period (as in it’s the second day of the trial) but it seems to do nearly everything Slack does and so far I think it does these things nearly as well or maybe even better even better. There are exceptions of course. For instance, Glip has fewer 3rd party integrations available and the Windows desktop app crashed three times in two days. Nevertheless, the interface is very clean, it has a native calendar, tasks, notes (with version control), integrated video conferencing using Zoom (which I have to say is great fun), easily searchable conversations, files and links. It’s also free. (Note: It has recently been acquired by &lt;a href=&quot;http://recode.net/2015/06/19/ringcentral-expands-beyond-phone-service-with-glip-acquisition/&quot; target=&quot;_blank&quot;&gt;another other company&lt;/a&gt; so I hope that doesn’t mean a change in business model.)&lt;/p&gt;
 
 &lt;p&gt;Despite my shameful click bait title Slack remains a very good service that many people will be happy with. However, if Slack doesn’t quite scratch that itch then try Glip instead.&lt;/p&gt;
 </description>
@@ -46,13 +29,19 @@
     
       <item>
         <title>Flexbox</title>
-        <description>&lt;p&gt;One thing on my give-it-a-go list is flexbox. With browser support limited to the &lt;a href=&quot;http://caniuse.com/#feat=flexbox&quot; target=&quot;_blank&quot;&gt;latest browsers&lt;/a&gt; there has been no reason for me to use it professionally. And on a personal level I’ve had bigger fish to fry of late with the birth of my beautiful little daughter. Besides all this, I still enjoy using floats. It might technically be a weird and hackish technique - at least according to Eric &lt;a href=&quot;http://shoptalkshow.com/episodes/161-with-eric-meyer/&quot; target=&quot;_blank&quot;&gt;Meyer&lt;/a&gt; - but it’s something I’m pretty comfortable with.&lt;/p&gt;
+        <description>&lt;h1 id=&quot;flexbox&quot;&gt;Flexbox&lt;/h1&gt;
 
-&lt;p&gt;As I continue to develop this site flexbox will be used on a limited basis - at least initially. So far the plan is to use it for the layout of the blog landing page. My initial thoughts are that it will look something a little like &lt;a href=&quot;http://codepen.io/anon/pen/QbwVor&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One thing on my give-it-a-go list is flexbox. It’s a layout module that will become increasingly relevant, just as floats will become less relevant. This said, I don’t think floats are going away entirely any time soon. So if you are looking at what is coming down the pike in the near future then flexbox is it. Actually, if you aren’t concerned with IE before 10 then the future is now!&lt;/p&gt;
 
-&lt;p&gt;For anyone interested in finding out about flexbox (e.g. what it is and how to use it) then CSS-Tricks has a fantastic &lt;a href=&quot;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&quot;&gt;guide&lt;/a&gt; on all things flex.&lt;/p&gt;
+&lt;p&gt;Still, the reality is that with browser support limited to the &lt;a href=&quot;http://caniuse.com/#feat=flexbox&quot;&gt;latest browsers&lt;/a&gt; there has been no reason for me to use it professionally. And on a personal level I’ve had bigger fish to fry of late with the birth of my beautiful little daughter. Besides all this, I still enjoy using floats. It might technically be a weird and hackish technique - at least according to Eric &lt;a href=&quot;http://shoptalkshow.com/episodes/161-with-eric-meyer/&quot;&gt;Meyer&lt;/a&gt; - but it’s a technique that I’m pretty comfortable with.&lt;/p&gt;
 
-&lt;p&gt;Long and short - flexbox is a layout module that will become increasingly relevant, just as floats will become less relevant. This said, I don’t think floats are going away entirely any time soon. So if you are looking at what is coming down the pike in the near future then flexbox is it. Actually, if you aren’t concerned with IE before 10 then the future is now!&lt;/p&gt;
+&lt;p&gt;As I continue to develop this site flexbox will be used on a limited basis - at least initially. So far the plan is to use it for the layout of the blog landing page. My initial thoughts are that it will look something a little like &lt;a href=&quot;http://codepen.io/anon/pen/QbwVor&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For anyone interested in finding out about flexbox then CSS-Tricks has a fantastic &lt;a href=&quot;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&quot;&gt;guide&lt;/a&gt; on all things flex.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;css    
+        .testP{color: red};
+  &lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 28 Apr 2015 00:00:00 +0100</pubDate>
         <link>http://lukemcgurdy.github.io//flexbox/</link>

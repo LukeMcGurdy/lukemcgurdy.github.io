@@ -19,12 +19,12 @@ $(document).ready(function() {
     sr.reveal('.posts-projects .col-md-6', reveal);
 
     // Do stuff to svg logo
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 5) {
-            $('body').addClass('scrolled');
-        }
-    });
+    // $(window).scroll(function() {
+    //     var scroll = $(window).scrollTop();
+    //     if (scroll >= 5) {
+    //         $('body').addClass('scrolled');
+    //     }
+    // });
 });
 
 

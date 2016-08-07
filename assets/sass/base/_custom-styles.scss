@@ -1,8 +1,14 @@
 /*
 ==============================================
-    Sitewide Styles
+    Site-wide Styles
 ==============================================
 */
+
+body,
+html {
+    // Added to stop horx menu appearing when child elements break out of container
+    overflow-x: hidden;
+}
 // Header
 #logo {
     fill: $pink1;
@@ -97,10 +103,14 @@ main {
     display: flex;
     z-index: 9;
     position: relative;
-    margin-bottom: 143px;
+    margin-bottom: 161px;
     display: block;
     background: #fff;
+    .content{
+        padding-bottom: 100px;
+    }
 }
+
 // Footer
 footer {
     display: flex;
@@ -116,17 +126,32 @@ footer {
     small {
         color: #fff;
     }
-    a {
+    a.icon {
+        display: inline;
         font-size: 2.1rem;
+        border-bottom: 0;
         &:hover {
+            background-color: transparent;
             color: $pink1;
             border-bottom: 0;
         }
+    }
+    .icon:first-of-type {
+        margin-right: 20px;
     }
     small {
         margin-top: 20px;
     }
 }
+// This breaks child element out of container
+// .break-out {
+//     margin-left: calc(-50vw + 50%);
+//     margin-right: calc(-50vw + 50%);
+//     img{
+//
+//         width:100%;
+//     }
+// }
 /*
 ==============================================
     Page Specific Styles
@@ -134,6 +159,9 @@ footer {
 */
 // Front page
 .front {
+    header {
+        height: auto;
+    }
     .jumbotron {
         height: 50vh;
         padding: 0;
@@ -220,16 +248,50 @@ footer {
             font-size: 2rem;
             line-height: 3.5rem;
         }
-        .read-more,
-        a {
+        .read-more {
+            font-size: 2rem;
             color: #fff;
+        }
+        .col-sm-6:hover .read-more {
+            text-decoration: none;
+            border-bottom: 2px solid $pink1;
         }
         a:hover {
             text-decoration: none;
         }
     }
 }
-// Basic page
-.basic header {
+// Internal header
+header {
     height: 150px;
+}
+// Basic page
+.basic {
+    .content a {
+        font: 300 3rem/5.5rem $text-font-family;
+        border-bottom: 2px solid $pink1;
+        padding: 0 5px;
+        @include transition(0.3s);
+        &:hover {
+            color: $primary-font-colour;
+            background: $pink1;
+            text-decoration: none;
+        }
+    }
+}
+// Blog landing
+.landing {
+    a {
+        display: block;
+        border-bottom: 0;
+        &:hover {
+            background: transparent;
+        }
+    }
+    li {}
+    .archive {
+        font-size: 4rem;
+        line-height: 4rem;
+        font-weight: 900;
+    }
 }
