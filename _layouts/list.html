@@ -9,34 +9,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>404 - Page not found – First Things – A front-end development playground</title>
-        <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <meta name="description" content="A front-end development playground">
-    <meta property="og:description" content="A front-end development playground" />
-    
-    <meta name="author" content="First Things" />
-    
-    <meta property="og:title" content="404 - Page not found" />
-    <meta property="twitter:title" content="404 - Page not found" />
-    
-    <!-- IE Shiv -->
-    <!--[if lt IE 9]>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
-    <!-- Feed -->
-    <link rel="alternate" type="application/rss+xml" title="First Things - A front-end development playground" href="/feed.xml" />
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% include meta.html %}
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
 </head>
 
-<body class="basic">
+<body class="list">
     <header>
         <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 500">
             <path d="M211.6 69.4c-1.9-1.5-5.1-2.4-9.6-2.4h-8v20h8c4.4 0 7.6-.7 9.6-2.3.9-.7 1.6-1.7 2.1-2.9s.8-2.8.8-4.8c-.1-3.5-1-6.1-2.9-7.6z" />
@@ -54,7 +33,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="{{ site.baseurl }}/">Home</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/blog">Blog</a></li>
                     </ul>
@@ -66,30 +45,16 @@
         <section class="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2 test">
-                        <p>Nothing to see here.</p>
-
-<p><a href="">Move Along</a>.</p>
-
+                    <div class="col-md-8 col-md-offset-2">
+                        {{ content }}
                     </div>
                 </div>
             </div>
+            </ul>
         </section>
     </main>
-    <footer>
-    <div>
-        <a class="icon icon-codepen" href="http://codepen.io/LMG/" target="_blank"></a>
-        <a class="icon icon-github" href="https://github.com/LukeMcGurdy" target="_blank"></a>
-    </div>
-    <small>&copy; <span id="copyright"></span></small>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-<script src="../assets/js/scrollreveal.min.js"></script>
-<script src="../assets/js/functions.js"></script>
-
-    
-
+    {% include footer.html %}
+    {% include analytics.html %}
 </body>
 
 </html>

@@ -25,6 +25,9 @@ $(document).ready(function() {
     //         $('body').addClass('scrolled');
     //     }
     // });
+
+    $('.full-width').parents('p').addClass('break-out');
+
 });
 
 

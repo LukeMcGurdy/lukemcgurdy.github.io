@@ -3,14 +3,12 @@ layout: basic
 title: Basic Grunt Setup - a noob's guide (written by a noob)
 subtitle: If you are reading this the it's likely that you already know what Grunt does for a developer. However, on the off chance you don't really know what Grunt is then think of it like...
 category: posts
-published: false
+published: true
 ---
 
 # Basic Grunt Setup - a noob's guide
 
-<span class="break-out">
-![Grunt logo](http://lukemcgurdy.github.io/assets/images/post-images/grunt-logo.jpg)
-</span>
+![Grunt logo](../assets/images/post-images/grunt.png){: .full-width}
 
 If you are reading this then it's likely that you already have some idea what Grunt is and what it does for a developer. But if like me you are a little late to the party and you don't know anything about Grunt beyond the name then think of it as [your very own helper monkey](https://www.youtube.com/watch?v=BFts5ISnaxQ). The plugins that run in Grunt perform many of the tedious tasks that you as a front-end developer don't want to do.
 
@@ -23,39 +21,40 @@ For example, can't be bothered pressing F5 to refresh your browser? Well, never 
 All of what follows assumes a Windows 10 environment. To get Grunt up and running you need to do the following:
 
 1. Install Git for Windows
-2. Install Ruby
-3. Install node.js & npm (node package manager)
+2. Install Ruby for Windows
+3. Install node.js & npm
 4. Install Grunt cli
-4. Create your project folder
-4. Create a file called package.json
-5. Create a file called Gruntfile.js
-6. Run Grunt
+(Steps 1 to 4 should only be required once. After that you will )
+5. Create your project folder
+6. Create and configure a file called package.json
+7. Create and configure a file called Gruntfile.js
+8. Run Grunt
 
-For more information see [here](http://blog.teamtreehouse.com/getting-started-with-grunt) for official docs.
-My own working examples can be found [here](https://github.com/LukeMcGurdy/Basic-Grunt-Setup).
+For more information see [here](http://gruntjs.com/getting-started) for official docs.
+My own working examples mentioned in this tutorial can be found [here](https://github.com/LukeMcGurdy/Basic-Grunt-Setup).
 
 ## In more detail
 1. Install Git for Windows
 
-    [Git for Windows] (https://git-scm.com/download/win) (AKA Git Bash) will allow you to install modules and run Grunt. I run Git Bash through [ConEmu] (https://conemu.github.io/) which is a console that allows you to run just about any shell. It has quite a few nice features like support for themes, customizable fonts, and the ability to run all your multiple shells in one window.
+    [Git for Windows](https://git-scm.com/download/win) (AKA Git Bash) will allow you to install modules and run Grunt. I've gotten a little fancy and I run Git Bash (and other shells) through [ConEmu](https://conemu.github.io/)>. It has a number of nice features like support for themes, customizable fonts, and the ability to run multiple shells in one window that I think make it worth your while taking the time to set up. It's not in any way necessary to get Grunt up and running though. You wont need this again until step 4.
+
+    If you are not comfortable using the command line (and many of us aren't, myself included) then [here](http://leveluptuts.com/tutorials/command-line-basics) is a quick tutorial on the basics.  
 
 2. Install Ruby
 
-    Vist the [Ruby Installer download page](http://rubyinstaller.org/downloads/) and install the appropriate version. Presumably this will be the latest stable 32-bit release (v2.3.0 at the time of writing). Because the 64-bit version is still relatively new on Windows and possibly not fully Stable I'd give it a miss.
+    Visit the [Ruby Installer download page](http://rubyinstaller.org/downloads/) and install the appropriate version. Presumably this will be the latest stable 32-bit release (v2.3.0 at the time of writing). I stand to be corrected but the 64-bit version is still relatively new on Windows and possibly not fully stable.
 
-3. Install node.js & npm
+3. Install node.js & npm (node package manager)
 
-    Visit the [node.js site](https://nodejs.org/en/) and and install the "Mature and Dependable version" which was v4.2.2 LTS at time of writing. The good news is that you have also installed npm - which is what you use to install the modules that Grunt will run for you.
+    Visit the [node.js site](https://nodejs.org/en/) and install the "Mature and Dependable version" which was v4.2.2 LTS at time of writing. This is the environment that Grunt will run in. The good news is that you have also installed npm - which is what you will use to install the plugins that Grunt runs to make your life that bit easier.
 
 4. Install Grunt CLI
 
-    Using Git Bash run the following from anywhere on Windows
+    OK, now the correct environment has been installed and you are ready to install Grunt. Open up Git Bash (you don't have to be in a particular directory) and run the following command.
 
    `npm install -g grunt-cli`
 
-    What this command does is install the Grunt command line interface (cli) globally (hence the -g). Meaning that Grunt can now be run from wherever you want. You run this just the once from .
-
-    If you are not comfortable using the command line (and many of us aren't - myself included) then [here](http://leveluptuts.com/tutorials/command-line-basics) is a quick tutorial on the basics.  
+    What this does is install the Grunt command line interface (cli) globally (hence the -g) and this allows you to run multiple versions of Grunt on your machine. You run the above command just the once and then forget about it. From here on in you will be set up and run Grunt on a per project basis
 
 5. Create your project folder
 
@@ -76,7 +75,7 @@ My own working examples can be found [here](https://github.com/LukeMcGurdy/Basic
 
 6. Create a file called package.json.
 
-    In this file you identify your project essentials such as project name, description, version etc. Most importantly it lists the plugins (also known as dependencies) that you wish to run. (To my mind the terms plugin, dependency and package are all interchangable.)
+    In this file you identify your project essentials such as project name, description, version etc. Most importantly it lists the plugins (also known as dependencies) that you wish to run. (To my mind the terms plugin, dependency and package are all interchangeable.)
 
     If you have a pre-configured package.json file you simply run the following command from the root of your project folder. Sit back and watch your specified plugins and their dependencies automatically install.
 

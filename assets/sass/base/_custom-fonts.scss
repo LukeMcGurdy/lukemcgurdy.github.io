@@ -40,20 +40,28 @@ h1 {
     }
 }
 h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 400;
+    line-height: 3.2rem;
+    margin: 0 0 35px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 2.8rem;
+    font-weight: 300;
     line-height: 3rem;
     margin: 0 0 35px;
     text-transform: uppercase;
 }
-h3 {}
-h4 {}
+h4 {
+
+}
 p {
-    font: 300 3rem/5rem $text-font-family;
+    font: 300 2.8rem/5rem $text-font-family;
     margin: 0 0 30px;
 }
 a,a:focus, a:hover{
-    font: 300 3rem/5rem $text-font-family;
+    font: 300 2.8rem/5rem $text-font-family;
 }
 time {
     font: 400 1.5rem $text-font-family;
