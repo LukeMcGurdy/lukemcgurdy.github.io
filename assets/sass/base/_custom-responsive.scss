@@ -1,12 +1,49 @@
+@media (max-width: 1199px) {
+    .front .banner-wrap svg {
+        width: 270px;
+    }
+}
+@media (max-width: 1024px) {
+    .front .content {
+        margin-top: 40px;
+    }
+
+    .main .slider-wrap .slide {
+        height: auto;
+    }
+
+    main .slider-wrap figure figcaption {
+        width: auto;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .center {
+        width: auto;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        margin: 0 0 20px;
+    }
+
+    .read-more {
+        margin: 30px 0 0;
+    }
+}
 @media (max-width: 992px) {
     .navbar {
         right: 10px;
+
         .navbar-header {
             height: 50px;
         }
+
         .navbar-toggle {
             width: 50px;
             height: 50px;
+
             .icon-bar {
                 height: 5px;
                 margin-bottom: 5px;
@@ -17,6 +54,7 @@
             .icon-bar:nth-child(1) {
                 transform: rotate(225deg) translate(-2px, -3px);
             }
+
             .icon-bar:nth-child(3) {
                 transform: rotate(-225deg) translate(-4px,4px);
             }
@@ -33,10 +71,12 @@
         .intro {
             padding: 50px 0;
             margin: 0;
+
             h1 {
                 font-size: 8rem;
                 line-height: 8rem;
             }
+
             h6 {
                 margin-bottom: 30px;
             }
@@ -54,44 +94,17 @@
         }
     }
 }
-@media (max-width: 1199px) {
-    .front .banner-wrap svg {
-        width: 270px;
-    }
-}
-@media (max-width: 1024px) {
-    .front .content {
-        margin-top: 40px;
-    }
-    .main .slider-wrap .slide {
-        height: auto;
-    }
-    main .slider-wrap figure figcaption {
-        width: auto;
-        padding: 20px;
-        margin: 0 auto;
-    }
-    .center {
-        width: auto;
-        padding: 0 20px;
-    }
-    h1 {
-        font-size: 4.5rem;
-        margin: 0 0 20px;
-    }
-    .read-more {
-        margin: 30px 0 0;
-    }
-}
 @media (max-width: 768px) {
     .intro {
         margin-bottom: 50px;
     }
+
     .archive-container a {
         width: 100%;
         height: 250px;
         padding: 0 20px;
     }
+
     .archive-container h2 {
         line-height: 3rem;
     }
@@ -102,20 +115,27 @@
     }
 }
 @media (max-width: 640px) {
+    #logo{
+        height: 200px;
+    }
     .menu-wrap {
         height: 120px;
+
         .main-nav {
             align-items: flex-end;
             padding-bottom: 20px;
+
             a {
                 font-size: 1.6rem;
             }
         }
     }
+
     .content {
         margin-top: 30px;
         padding-bottom: 50px;
     }
+
     h2:first-of-type {
         font-size: 3rem;
     }
@@ -124,6 +144,7 @@
     h1 {
         font-size: 3.5rem;
     }
+
     h2 {
         font-size: 2rem;
     }
@@ -133,6 +154,7 @@
         float: left;
         padding-left: 35px;
         font-size: 25px;
+
         &:nth-child(1) {
             margin-top: 200px;
         }

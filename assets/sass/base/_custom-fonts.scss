@@ -4,8 +4,7 @@ html {
 }
 // Font Family
 $header-font-family: 'Source Sans Pro', sans-serif;
-$text-font-family: 'Open Sans', sans-serif;
-// Font colour
+$text-font-family: 'Open Sans', sans-serif; // Font colour
 $primary-font-colour: $gray4;
 $secondary-font-colour: $gray2;
 /* General font styles */
@@ -16,21 +15,24 @@ h4 {
     font-family: $header-font-family;
 }
 
+a,
 h1,
 h2,
 h3,
 h4,
 li,
-p,
-a {
+p {
+    font-family: $text-font-family;
     color: $primary-font-colour;
 }
+
 h1 {
     font-size: 6rem;
     font-weight: 900;
     line-height: 6rem;
     margin: 0 0 60px;
     text-transform: uppercase;
+
     span {
         color: $pink1;
         font-size: 2.5rem;
@@ -39,6 +41,7 @@ h1 {
         text-transform: none;
     }
 }
+
 h2 {
     font-size: 3.5rem;
     font-weight: 400;
@@ -46,6 +49,7 @@ h2 {
     margin: 0 0 35px;
     text-transform: uppercase;
 }
+
 h3 {
     font-size: 2.8rem;
     font-weight: 300;
@@ -53,37 +57,66 @@ h3 {
     margin: 0 0 35px;
     text-transform: uppercase;
 }
-h4 {
 
-}
 p {
-    font: 300 2.8rem/5rem $text-font-family;
+    font-size:2.8rem;
+    font-weight: 300;
+    line-height: 5rem;
     margin: 0 0 30px;
 }
-a,a:focus, a:hover{
-    font: 300 2.8rem/5rem $text-font-family;
+
+a,
+a:focus,
+a:hover {
+    outline: 0;
 }
+
 time {
     font: 400 1.5rem $text-font-family;
     color: $secondary-font-colour;
 }
+
 strong {
     font-weight: 700;
 }
+
 ol,
 ul {
     padding-left: 0;
     list-style-type: none;
+
     li {
-        font: 700 2.1rem/3.5rem $text-font-family;
-        margin: 0 0 50px;
+        font-size:2.8rem;
+        font-weight: 500;
+        line-height: 5rem;
+        margin: 0 0 30px;
     }
 }
+
+ol {
+    margin-left: 60px;
+    li{
+        list-style: decimal;
+    }
+}
+
 ol > li p:first-of-type {
     font-weight: bold;
 }
-code{
+
+code {
     color: #fff;
+}
+
+
+
+.content {
+    li p:first-of-type{
+        margin-bottom: 5px;
+    }
+    h2{
+        margin-top: 80px;
+    }
 }
 /*
 ======================
@@ -127,21 +160,27 @@ code{
     /* Uncomment for 3D effect */
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+
 .icon-doc-circled:before {
     content: '\e800';
 }
+
 .icon-home:before {
     content: '\e801';
 }
+
 .icon-rss-alt:before {
     content: '\e803';
 }
+
 .icon-link-ext:before {
     content: '\e804';
 }
+
 .icon-codepen:before {
     content: '\e805';
 }
+
 .icon-github:before {
     content: '\e806';
 }

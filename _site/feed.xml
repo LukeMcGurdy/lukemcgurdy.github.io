@@ -7,34 +7,14 @@
     <atom:link href="http://lukemcgurdy.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Glip - one year on</title>
-        <description>&lt;h1 id=&quot;glip---one-year-on&quot;&gt;Glip - one year on&lt;/h1&gt;
-
-&lt;p&gt;In a previous blog entry I talked about Glip. At the time of writing the original post it was just a few days into an experiment in which our company transition from using Slack to Glip. But now a year has passed and I think I’m in a better position to share some thoughts on how this went. This isn’t an exhaustive review, nor am I offering a direct comparison between Glip and its competitors. It’s more of a brain dump on my experiences&lt;/p&gt;
-
-&lt;p&gt;When assessing Glip the question I ask myself is how works in a company of about 25 people, with about half of those using it on a daily basis. The short answer is it works very well. And yet there are a couple of caveats that go along with this endorsement. I’m going to focus on the areas: practicality, features and reliability.&lt;/p&gt;
-
-&lt;h2 id=&quot;practicality&quot;&gt;Practicality&lt;/h2&gt;
-
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-&lt;p&gt;We use Glip primarily as a way of sending internal communications. In truth Glip has a lot of features that could potentially replace existing tools (for example, it has an integrated calendar that can by synced with 3rd party calendars) but for one reason or another I don’t think that these&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://lukemcgurdy.github.io//glip-one-year-on/</link>
-        <guid isPermaLink="true">http://lukemcgurdy.github.io//glip-one-year-on/</guid>
-      </item>
-    
-      <item>
-        <title>Basic Grunt Setup - a noob&#39;s guide (written by a noob)</title>
-        <description>&lt;h1 id=&quot;basic-grunt-setup---a-noobs-guide&quot;&gt;Basic Grunt Setup - a noob’s guide&lt;/h1&gt;
+        <title>Basic Grunt Setup - A noob&#39;s guide</title>
+        <description>&lt;h1 id=&quot;basic-grunt-setup---a-noobs-guide&quot;&gt;Basic Grunt Setup - A noob’s guide&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/images/post-images/grunt.png&quot; alt=&quot;Grunt logo&quot; class=&quot;full-width&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you are reading this then it’s likely that you already have some idea what Grunt is and what it does for a developer. But if like me you are a little late to the party and you don’t know anything about Grunt beyond the name then think of it as &lt;a href=&quot;https://www.youtube.com/watch?v=BFts5ISnaxQ&quot;&gt;your very own helper monkey&lt;/a&gt;. The plugins that run in Grunt perform many of the tedious tasks that you as a front-end developer don’t want to do.&lt;/p&gt;
 
-&lt;p&gt;For example, can’t be bothered pressing F5 to refresh your browser? Well, never fear. After a installing plugin like livereload and doing a little bit of configuration Grunt will automatically refresh your browser for you each time you save a file. You have saved yourself 0.3 seconds. There are many packages available and you can have a read of &lt;a href=&quot;http://ipestov.com/essential-plugins-for-grunt/ target=&amp;quot;_blank&amp;quot;&quot;&gt;here&lt;/a&gt; for list of some interesting ones.&lt;/p&gt;
+&lt;p&gt;Can’t be bothered pressing F5 to refresh your browser? Well, never fear. After installing a plugin like livereload and doing a little bit of configuration Grunt will automatically refresh your browser for you each time you save a file. Congratulations! You have saved yourself 0.3 seconds. There are many packages available and you can have a read of &lt;a href=&quot;http://ipestov.com/essential-plugins-for-grunt/ target=&amp;quot;_blank&amp;quot;&quot;&gt;here&lt;/a&gt; for list of some interesting ones.&lt;/p&gt;
 
 &lt;p&gt;I should add that I’m very new to Grunt so any correction is appreciated (once I set up a comments section ;) ).&lt;/p&gt;
 
@@ -55,103 +35,92 @@
 &lt;/ol&gt;
 
 &lt;p&gt;For more information see &lt;a href=&quot;http://gruntjs.com/getting-started&quot;&gt;here&lt;/a&gt; for official docs.
-My own working examples mentioned in this tutorial can be found &lt;a href=&quot;https://github.com/LukeMcGurdy/Basic-Grunt-Setup&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+My own working examples mentioned in this tutorial can be found &lt;a href=&quot;https://GitHub.com/LukeMcGurdy/Basic-Grunt-Setup&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;in-more-detail&quot;&gt;In more detail&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;Install Git for Windows&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://git-scm.com/download/win&quot;&gt;Git for Windows&lt;/a&gt; (AKA Git Bash) will allow you to install modules and run Grunt. I’ve gotten a little fancy and I run Git Bash (and other shells) through &lt;a href=&quot;https://conemu.github.io/&quot;&gt;ConEmu&lt;/a&gt;&amp;gt;. It has a number of nice features like support for themes, customizable fonts, and the ability to run multiple shells in one window that I think make it worth your while taking the time to set up. It’s not in any way necessary to get Grunt up and running though. You wont need this again until step 4.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://git-scm.com/download/win&quot;&gt;Git for Windows&lt;/a&gt; (AKA Git Bash) will allow you to install packages and run Grunt. I’ve gotten a little fancy and I run Git Bash through &lt;a href=&quot;https://conemu.GitHub.io/&quot;&gt;ConEmu&lt;/a&gt;. It has a number of nice features like support for themes, customizable fonts, and the ability to run multiple shells in one window. You won’t need Git Bash again until step 4.&lt;/p&gt;
 
-    &lt;p&gt;If you are not comfortable using the command line (and many of us aren’t, myself included) then &lt;a href=&quot;http://leveluptuts.com/tutorials/command-line-basics&quot;&gt;here&lt;/a&gt; is a quick tutorial on the basics.&lt;/p&gt;
+    &lt;p&gt;If you are not comfortable using the command line (and many of us aren’t myself included) then &lt;a href=&quot;http://leveluptuts.com/tutorials/command-line-basics&quot;&gt;here&lt;/a&gt; is a quick tutorial on the basics.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Install Ruby&lt;/p&gt;
 
-    &lt;p&gt;Visit the &lt;a href=&quot;http://rubyinstaller.org/downloads/&quot;&gt;Ruby Installer download page&lt;/a&gt; and install the appropriate version. Presumably this will be the latest stable 32-bit release (v2.3.0 at the time of writing). I stand to be corrected but the 64-bit version is still relatively new on Windows and possibly not fully stable.&lt;/p&gt;
+    &lt;p&gt;Visit the &lt;a href=&quot;http://rubyinstaller.org/downloads/&quot;&gt;Ruby Installer download page&lt;/a&gt; and install the appropriate version. Presumably, this will be the latest stable 32-bit release (v2.3.0 at the time of writing). I stand to be corrected, but I think that the 64-bit version is still relatively new to Windows and possibly not fully stable so I’d avoid this.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Install node.js &amp;amp; npm (node package manager)&lt;/p&gt;
 
-    &lt;p&gt;Visit the &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;node.js site&lt;/a&gt; and install the “Mature and Dependable version” which was v4.2.2 LTS at time of writing. This is the environment that Grunt will run in. The good news is that you have also installed npm - which is what you will use to install the plugins that Grunt runs to make your life that bit easier.&lt;/p&gt;
+    &lt;p&gt;Visit the &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;node.js site&lt;/a&gt; and install the “Mature and Dependable version” which was v4.2.2 LTS at the time of writing. This is the environment that Grunt will run in. The good news is that you have also installed npm - which is what you will use to install the packages that Grunt runs.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Install Grunt CLI&lt;/p&gt;
 
-    &lt;p&gt;OK, now the correct environment has been installed and you are ready to install Grunt. Open up Git Bash (you don’t have to be in a particular directory) and run the following command.&lt;/p&gt;
+    &lt;p&gt;OK, so now the correct environment has been installed and you are ready to install Grunt. Open up Git Bash and run the following command.&lt;/p&gt;
 
     &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install -g grunt-cli&lt;/code&gt;&lt;/p&gt;
 
-    &lt;p&gt;What this does is install the Grunt command line interface (cli) globally (hence the -g) and this allows you to run multiple versions of Grunt on your machine. You run the above command just the once and then forget about it. From here on in you will be set up and run Grunt on a per project basis&lt;/p&gt;
+    &lt;p&gt;What this does is install the Grunt command line interface (CLI) globally (hence the -g) and this allows you to run multiple versions of Grunt on your machine. You run the above command just the once and from any directory and then forget about it. From here on in you will set up and run Grunt on a per project basis.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Create your project folder&lt;/p&gt;
 
-    &lt;p&gt;A basic example looks something like this:&lt;/p&gt;
+    &lt;p&gt;This is when Grunt starts to work for you. A basic example of a project folder looks something like this:&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;
-        assets
-        ├── Gruntfile.js
-        ├── package.json (see below for more on creating Gruntfile.js and package.json)
-        ├── css/
-            ├── main.css
-        ├── sass/
-            ├── main.scss
-        ├── js/
-            ├── main.js
-        ├── images/
-            ├── pic.jpg  
+assets/
+    ├── package.json
+    ├── Gruntfile.js
+    ├── node_modules/
+    ├── css/
+        ├── main.css
+    ├── sass/
+        ├── main.scss
+    ├── js/
+        ├── main.js
+    ├── images/
+        ├── pic.jpg         
 &lt;/pre&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;Create a file called package.json.&lt;/p&gt;
 
-    &lt;p&gt;In this file you identify your project essentials such as project name, description, version etc. Most importantly it lists the plugins (also known as dependencies) that you wish to run. (To my mind the terms plugin, dependency and package are all interchangeable.)&lt;/p&gt;
+    &lt;p&gt;In this file, you identify your project essentials such as project name, description, version etc. Most importantly it lists the packages (also known as dependencies) that you wish to run. (To my mind the terms package, dependency, and plugin are all interchangeable with respect to Grunt.)&lt;/p&gt;
 
-    &lt;p&gt;If you have a pre-configured package.json file you simply run the following command from the root of your project folder. Sit back and watch your specified plugins and their dependencies automatically install.&lt;/p&gt;
+    &lt;p&gt;If you have a pre-configured package.json file you simply run the &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; command from the root of your project folder and sit back and watch your specified packages automatically install.&lt;/p&gt;
 
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;If you wish to install an individual package then run &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install package-a --save-dev&lt;/code&gt;. Or you can install multiple packages at once by running &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install plugin-a plugin-b plugin-c --save-dev&lt;/code&gt;.&lt;/p&gt;
 
-    &lt;p&gt;If you wish to install individual packages then run&lt;/p&gt;
+    &lt;p&gt;As long as you put &lt;code class=&quot;highlighter-rouge&quot;&gt;--save-dev&lt;/code&gt; at the end of the command then it also updates your package.json file - which is a good thing.&lt;/p&gt;
 
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install package-a --save-dev&lt;/code&gt;&lt;/p&gt;
-
-    &lt;p&gt;Alternatively, you can install multiple packages at once&lt;/p&gt;
-
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install package-a package-b package-c --save-dev&lt;/code&gt;&lt;/p&gt;
-
-    &lt;p&gt;As long as you put &lt;code class=&quot;highlighter-rouge&quot;&gt;--save-dev&lt;/code&gt; at the end of the command then it also updates your package.json file.&lt;/p&gt;
-
-    &lt;p&gt;Once you run any of the above commands a new folder called node_modules will be created in the project folder root. Ultimately, this is not a folder you will want to transfer to another environment primarily because it’s huge. You have all you need from your package.json and Gruntfile.js files.&lt;/p&gt;
+    &lt;p&gt;Once you run any of the above commands a new folder called &lt;code class=&quot;highlighter-rouge&quot;&gt;node_modules&lt;/code&gt; will be created in the project root folder. This is where all the dependencies are stored and it’s not something I’ve ever had occasion to touch. This is also not a folder you will want to transfer to another environment because it contains 1000’s of files. So make sure to add &lt;code class=&quot;highlighter-rouge&quot;&gt;node_modules&lt;/code&gt; to your &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; file. You have all you need in your package.json and Gruntfile.js files along with the &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; command to rebuild the &lt;code class=&quot;highlighter-rouge&quot;&gt;node_modules&lt;/code&gt; folder on any project.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Create a file called Gruntfile.js&lt;/p&gt;
 
-    &lt;p&gt;In the previous step you installed plugins and now you need to configure them to run in Grunt. This is the most time consuming step in setting up Grunt. Each plugin has its own options so make sure to visit the relevant npm or github page for each package and read the docs.&lt;/p&gt;
+    &lt;p&gt;In the previous step you installed your packages and now you need to configure them to run in Grunt. This is the most time-consuming step in this process. Each package has its own options so make sure to visit the npm or GitHub page for the docs.&lt;/p&gt;
 
-    &lt;p&gt;Please see &lt;a href=&quot;https://github.com/LukeMcGurdy/Basic-Grunt-Setup&quot;&gt;here&lt;/a&gt; for a copy of packages.json and Gruntfile.js.&lt;/p&gt;
+    &lt;p&gt;Please see &lt;a href=&quot;https://GitHub.com/LukeMcGurdy/Basic-Grunt-Setup&quot;&gt;here&lt;/a&gt; for a copy of packages.json and Gruntfile.js.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Run Grunt&lt;/p&gt;
 
-    &lt;p&gt;To run grunt you simply navigate to the root of your project (your Gruntfile.js and package.json files should be here as well) and type type command line making sure you are in the root of your project folder when doing so.&lt;/p&gt;
+    &lt;p&gt;To run grunt you open Git Bash and cd to the same directory that contains your Gruntfile.js and package.json files and then type &lt;code class=&quot;highlighter-rouge&quot;&gt;grunt&lt;/code&gt;. This will run all tasks that you have defined in the default task list in your Gruntfile. (When I say task list please look out for ‘registerTask’ in the Gruntfile.)&lt;/p&gt;
 
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grunt&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Alternatively, you can create task lists so only specific tasks are run. See the bottom of Gruntfile.js for more.&lt;/p&gt;
 
-    &lt;p&gt;This will run all tasks that you have defined in the default task list in your Gruntfile. (When I say task list please look out for ‘registerTask’ in the Gruntfile.)&lt;/p&gt;
-
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grunt dist&lt;/code&gt;&lt;/p&gt;
-
-    &lt;p&gt;Alternatively you can create task lists so only specific tasks are run. See the bottom of Gruntfile.js for more.&lt;/p&gt;
+    &lt;p&gt;Once you save changes to your scss files your terminal will notify you of the updates.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Enjoy&lt;/p&gt;
 </description>
-        <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
         <link>http://lukemcgurdy.github.io//basic-grunt_setup/</link>
         <guid isPermaLink="true">http://lukemcgurdy.github.io//basic-grunt_setup/</guid>
       </item>

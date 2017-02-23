@@ -8,10 +8,6 @@ module.exports = function(grunt) {
             sass: {
                 files: 'assets/sass/**/*.scss',
                 tasks: ['sass']
-            },
-            css: {
-                files: 'assets/css/styles.css',
-                tasks: ['postcss'],
             }
         },
 
@@ -55,7 +51,7 @@ module.exports = function(grunt) {
 
     /* Run above tasks */
 
-    grunt.registerTask('default', ['watch']);
-    grunt.registerTask('dist', ['postcss', 'watch']);
+    grunt.registerTask('default', ['watch', 'postcss:dist']);
+    //grunt.registerTask('dist', ['postcss:dist', 'watch']);
 
 };

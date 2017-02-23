@@ -21,12 +21,12 @@ permalink: /blog/
   <ul class="past-blogs">
   {% endif %}
   {% endunless %}
-    <a href="{{ post.url }}">
        <li>
-            <p>{{ post.title }}</p>
-            <time>&nbsp; - &nbsp;{{ post.date | date:"%d %b %Y" }}</time>
+            <a href="{{ post.url }}">
+                <p>{{ post.title }}</p>
+                <time> <span>&#40;</span> {{ post.date | date:"%d %b %Y" }} <span>&#41;</span></time>
+            </a>
         </li>
-    </a>
 {% endfor %}
   </ul>
   </div>

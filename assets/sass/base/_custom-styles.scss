@@ -3,19 +3,20 @@
     Site-wide Styles
 ==============================================
 */
-
 body,
 html {
-    // Added to stop horx menu appearing when child elements break out of container
+    // Added to stop horX menu appearing when child elements break out of container
     overflow-x: hidden;
 }
+// Syn
 // Header
 #logo {
     fill: $pink1;
     height: 100%;
-    //transition: all 0.3s cubic-bezier(.05,.94,.54,.91);
+    transition: all 0.3s cubic-bezier(.05,.94,.54,.91);
     z-index: 99;
 }
+
 .scrolled #logo {
     position: fixed;
     top: 0;
@@ -23,6 +24,7 @@ html {
     height: 120px;
 }
 // Top nav
+
 .navbar {
     position: fixed;
     top: 30px;
@@ -30,9 +32,11 @@ html {
     width: 150px;
     padding: 0;
     z-index: 10;
+
     .navbar-header {
         height: 70px;
     }
+
     .navbar-toggle {
         float: right;
         height: 70px;
@@ -41,9 +45,11 @@ html {
         padding: 10px;
         border: 0;
         border-radius: 4px;
+
         &:focus {
             outline: 0;
         }
+
         .icon-bar {
             position: relative;
             @include transition(0.3s);
@@ -53,52 +59,66 @@ html {
             background: #fff;
             float: left;
         }
+
         .icon-bar:last-of-type {
             margin-bottom: 0;
         }
     }
 }
 // When dropdown is triggerd add animation to menu
+
 .navbar-toggle.triggered {
     .icon-bar {
         margin: 0;
     }
+
     .icon-bar:nth-child(1) {
         transform: rotate(225deg) translate(-3px,-3px);
     }
+
     .icon-bar:nth-child(2) {
         display: none;
     }
+
     .icon-bar:nth-child(3) {
         transform: rotate(-225deg) translate(-2px, 2px);
     }
+
     .icon-bar:last-of-type {
         margin-bottom: 0;
     }
 }
+
 .navbar-nav {
     margin-top: 10px;
     padding: 0;
     background: $gray3;
+
     li {
         margin-bottom: 0;
         padding: 10px 20px;
+
         &:hover {
             display: block;
             background: $gray1;
         }
+
         a {
             font-size: 2rem;
             color: #fff;
+
             &:hover {
                 border-bottom: 0;
+                text-decoration: none;
             }
         }
     }
+
     li:last-of-type {
         margin-bottom: 0;
     }
 }
+
 main {
     display: flex;
     z-index: 9;
@@ -106,11 +126,12 @@ main {
     margin-bottom: 161px;
     display: block;
     background: #fff;
-    .content{
+
+    .content {
+        margin-top: 80px;
         padding-bottom: 100px;
     }
 }
-
 // Footer
 footer {
     display: flex;
@@ -122,14 +143,17 @@ footer {
     width: 100%;
     padding: 40px 0;
     background: $gray3;
+
     a,
     small {
         color: #fff;
     }
+
     a.icon {
         display: inline;
         font-size: 2.1rem;
         border-bottom: 0;
+
         &:hover {
             background-color: transparent;
             text-decoration: none;
@@ -137,20 +161,23 @@ footer {
             border-bottom: 0;
         }
     }
+
     .icon:first-of-type {
         margin-right: 20px;
     }
+
     small {
         margin-top: 20px;
     }
 }
 //This breaks child element out of container
+
 .break-out {
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    img{
 
-        width:100%;
+    img {
+        width: 100%;
     }
 }
 /*
@@ -159,10 +186,12 @@ footer {
 ==============================================
 */
 // Front page
+
 .front {
     header {
         height: auto;
     }
+
     .jumbotron {
         height: 50vh;
         padding: 0;
@@ -170,9 +199,11 @@ footer {
         overflow: hidden;
         margin-bottom: 0;
     }
+
     .intro {
         text-align: center;
         padding: 100px 0 70px;
+
         h1 {
             font-size: 14rem;
             font-weight: 900;
@@ -180,6 +211,7 @@ footer {
             margin: 0 0 30px;
             text-transform: uppercase;
         }
+
         h6 {
             display: inline-block;
             color: $pink1;
@@ -190,12 +222,15 @@ footer {
             line-height: normal;
             text-transform: none;
         }
+
         p {
             text-align: left;
         }
     }
+
     .teasers {
         box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+
         .col-sm-6 {
             position: relative;
             background: $blue1;
@@ -204,8 +239,9 @@ footer {
             align-items: flex-end;
             overflow: hidden;
             width: 100%;
-
+            min-height:400px;
             @include transition(0.3s);
+
             svg {
                 position: absolute;
                 top: 100%;
@@ -214,115 +250,175 @@ footer {
                 fill: $gray2;
                 transition: all 0.5s cubic-bezier(0.70,-0.80,0.280,1.50);
             }
+
             &:hover {
                 background: $pink1!important;
+
                 svg {
                     transform: translateY(-100%);
                 }
             }
+
+            &:hover h3{
+                color: #fff;
+            }
         }
+
         .col-sm-6:last-of-type {
             background: $blue2;
             align-items: flex-start;
         }
+
         .card {
             max-width: 500px;
             width: 100%;
             padding: 40px;
+            a{
+                text-decoration: none;
+            }
         }
+
         .card,
         .card-header {
             background-color: transparent;
             border: 0;
         }
+
         .card-header {
             font-size: 3.5rem;
         }
+
         .card-title {
             font-size: 2.5rem;
             font-weight: bold;
         }
+
         .card-header,
         .card-text,
         .card-title {
             color: #fff;
         }
+
         .card-text {
             font-size: 2rem;
             line-height: 3.5rem;
         }
+
         .read-more {
             font-size: 2rem;
             color: #fff;
         }
+
         .col-sm-6:hover .read-more {
             text-decoration: none;
             border-bottom: 2px solid $pink1;
         }
+
         a:hover {
             text-decoration: none;
         }
     }
 }
 // Internal header
+
 header {
     height: 150px;
 }
 // Basic page
+
 .basic {
     .content a {
-        font: 300 3rem/5.5rem $text-font-family;
         border-bottom: 2px solid $pink1;
         padding: 0 5px;
         @include transition(0.3s);
+
         &:hover {
             color: $primary-font-colour;
             background: $pink1;
             text-decoration: none;
         }
     }
-    .content img{
+
+    .content img {
         width: 100%;
     }
 }
 // Blog list page
+
 .list {
-    .content ul a {
-        margin-bottom: 50px;
-        border-bottom: 0;
-        &:hover {
-            background: transparent;
-            text-decoration: none;
-        }
+    .content {
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
+
+    .content .current-blogs {
+        margin-bottom: 80px;
+    }
+
+    .content ul {
+        overflow: hidden;
+    }
+
     .content ul li {
-        margin-bottom: 30px;
-        h2{
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        a {
+            margin-bottom: 50px;
+            border-bottom: 0;
+
+            &:hover {
+                background: transparent;
+                text-decoration: none;
+            }
+        }
+
+        h2 {
             display: inline-block;
             border-bottom: 2px solid $pink1;
             margin-bottom: 0;
             padding: 0 5px;
             @include transition(0.3s);
-            &:hover{
+
+            &:hover {
                 color: $primary-font-colour;
                 background: $pink1;
                 text-decoration: none;
             }
         }
+
+        p {
+            display: block;
+            width: 100%;
+            line-height: normal;
+            margin-bottom: 0;
+            float: left;
+        }
+
+        time {
+            float: left;
+
+            span {}
+        }
     }
-    .break-out{
+
+    .break-out {
         background: $blue1;
         padding: 50px 0;
-        h2, h3, time{
+
+        h2,
+        h3,
+        time {
             color: #fff;
         }
-        h3{
+
+        h3 {
             margin-bottom: 0;
         }
     }
-    .archive {
-        font-size: 4rem;
-        line-height: 4rem;
-        font-weight: 900;
-    }
+    // .archive {
+    //     font-size: 4rem;
+    //     line-height: 4rem;
+    //     font-weight: 900;
+    // }
 }

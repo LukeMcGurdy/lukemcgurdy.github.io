@@ -9,32 +9,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About – First Things – A front-end development playground</title>
-        <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <meta name="description" content="A front-end development playground">
-    <meta property="og:description" content="A front-end development playground" />
-    
-    <meta name="author" content="First Things" />
-    
-    <meta property="og:title" content="About" />
-    <meta property="twitter:title" content="About" />
-    
-    <!-- IE Shiv -->
-    <!--[if lt IE 9]>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!-- Stylesheet -->
-
-    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
-
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
-
-    <!-- Feed -->
-    <link rel="alternate" type="application/rss+xml" title="First Things - A front-end development playground" href="/feed.xml" />
-
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% include meta.html %}
 </head>
 
 <body class="basic">
@@ -57,7 +33,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="{{ site.baseurl }}/">Home</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/blog">Blog</a></li>
                     </ul>
@@ -70,32 +46,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 test">
-                        <h1 id="about">About</h1>
-
-<p>For the past 5 years I’ve been working as a front-end developer in a Dublin based web design and development company called <a href="http://daracreative.ie">Dara Creative</a>.</p>
-
-                        <!--  -->
-
+                        {{ content }}
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-    <div>
-        <a class="icon icon-codepen" href="http://codepen.io/LMG/" target="_blank"></a>
-        <a class="icon icon-github" href="https://github.com/LukeMcGurdy" target="_blank"></a>
-    </div>
-    <small>&copy; <span id="copyright"></span></small>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-<script id="dsq-count-scr" src="//http-lukemcgurdy-com.disqus.com/count.js" async></script>
-<script src="../assets/js/scrollreveal.min.js"></script>
-<script src="../assets/js/functions.js"></script>
-
-    
-
+    {% include disqus.html %}
+    {% include footer.html %}
+    {% include analytics.html %}
 </body>
 
 </html>

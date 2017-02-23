@@ -23,14 +23,15 @@ layout: front
                         <polygon points="0 300, 850 300, 850 0, 300 0" />
                     </svg>
                     <div class="card">
-                        <a href="http://codepen.io/LMG/" target="_blank">
-                            <h2 class="card-header">Latest Project</h2>
-                            <div class="card-block">
-                                <h3 class="card-title">Coming Soon!</h3>
-                                <p class="card-text">You can check out my published pens on codepen.</p>
-                                <span class="read-more">Click me</span>
-                            </div>
-                        </a>
+                        {% for post in site.posts limit:1 %}
+                            <a href="{{ post.url }}">
+                                <h2 class="card-header">Latest Post</h2>
+                                <div class="card-block">
+                                    <h3 >{{ post.title }}</h3>
+                                    <span class="read-more">Read More</span>
+                                </div>
+                            </a>
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -38,16 +39,13 @@ layout: front
                         <polygon points="0 0, 850 0, 530 300, 0 300"></polygon>
                     </svg>
                     <div class="card">
-                        <a href="" target="_blank">
-                            <h2 class="card-header">Latest Post</h2>
+                        <a href="http://codepen.io/LMG/" target="_blank">
+                            <h2 class="card-header">Latest Project</h2>
                             <div class="card-block">
                                 <h3 class="card-title">Coming Soon!</h3>
+                                <p class="card-text">You can check out my published pens on codepen.</p>
+                                <span class="read-more">Click me</span>
                             </div>
-                            <!-- <div class="card-block">
-                                <h3 class="card-title">Basic Grunt Setup</h3>
-                                <p class="card-text">If you are reading this the it's likely that you already know what Grunt does. However, on the off chance you don't really know what Grunt is then think of it like...</p>
-                                <span class="read-more">Read More</span>
-                            </div> -->
                         </a>
                     </div>
                 </div>
